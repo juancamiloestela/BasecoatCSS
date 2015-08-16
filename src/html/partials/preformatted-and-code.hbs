@@ -1,0 +1,34 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">Preformatted Text &amp; Code</h4>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Preformatted text &amp; Code</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <pre>
+if (this.is('a') == 'chunk'){
+    // of preformatted text
+    show('it');
+    keeping = 'original formatting';
+    // but inside a &lt;code&gt; tag
+    // this is a very long line of source code that should not wrap around the preformatted text container
+}
+            </pre>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;pre&gt;&lt;code&gt;
+if (this.is('a') == 'chunk'){
+    // of preformatted text
+    show('it');
+    keeping = 'original formatting';
+    // but inside a &amp;lt;code&amp;gt; tag
+    // this is a very long line of source code that should not wrap around the preformatted text container
+}
+&lt;/code&gt;&lt;/pre&gt;
+            </code></pre>
+        </div>
+    </div>
+</div>

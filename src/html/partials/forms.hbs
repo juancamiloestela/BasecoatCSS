@@ -1,0 +1,673 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">Forms</h4>
+<p>Forms will allow you to layout your forms in several ways according to your needs. The provided styles should get you up and running in no time and offer time tested layouts that ensure your users will follow the form requirements without scaring them away. Because you know, we love our users.</p>
+
+<p>Form inputs are wrapped in a contianer with <code>class="form-field"</code> and optional <code>stacked</code>, <code>inline</code> or <code>mirrored</code> to control their presentation. These optional clases can also go in the parent form and all fields in it will conform to that style.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Input Fields</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <form>
+                <div class="form-field">
+                    <label for="name">Default Input</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                </div>
+            </form>
+
+            <form>
+                <div class="inline form-field">
+                    <label for="name">Inline Input</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                </div>
+            </form>
+
+            <form>
+                <div class="stacked form-field">
+                    <label for="name">Stacked Input</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                </div>
+            </form>
+
+            <form>
+                <div class="mirrored form-field">
+                    <label for="name">
+                        Mirrored Input
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+            </form>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Default<small>Semi-stacked Form</small></h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            
+            <form method="POST" action="/">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="" placeholder="This is your name" />
+                    <div class="help">Your full name.</div>
+                </div>
+                <div class="form-field">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" placeholder="This is your bio"></textarea>
+                    <div class="help">Your full name.</div>
+                </div>
+                <div class="form-field">
+                    <label>Techniques</label>
+                    <div class="help">Choose your preferred painting techniques.</div>
+                    <label for="inline-checkbox-1">
+                        <input type="checkbox" id="inline-checkbox-1" name="techniques[]" value="oil" />
+                        Oil Paint
+                    </label>
+                    <label for="inline-checkbox-2">
+                        <input type="checkbox" id="inline-checkbox-2" name="techniques[]" value="watercolor" />
+                        Watercolors
+                    </label>
+                    <label for="inline-checkbox-3">
+                        <input type="checkbox" id="inline-checkbox-3" name="techniques[]" value="pastels" />
+                        Pastels
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label>Radio Buttons</label>
+                    <div class="help">Choose your option.</div>
+                    <label for="radio-field-1">
+                        <input type="radio" id="radio-field-1" name="radio" value="radio-1" />
+                        Option 1
+                    </label>
+                    <label for="radio-field-2">
+                        <input type="radio" id="radio-field-2" name="radio" value="radio-2" />
+                        Option 2
+                    </label>
+                    <label for="radio-field-3">
+                        <input type="radio" id="radio-field-3" name="radio" value="radio-3" />
+                        Option 3
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label for="native-select-field">Native Select</label>
+                    <select id="native-select-field" name="native-select-field" class="native">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <div class="help">Choose an option.</div>
+                </div>
+                <div class="form-field">
+                    <label for="select-field">Select</label>
+                    <select id="select-field" name="select-field">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <div class="help">Choose an option.</div>
+                </div>
+                <div class="form-field">
+                    <label for="price">Price</label>
+                    <div class="layout-bar grouped">
+                        <label>$</label>
+                        <input type="text" id="price" name="price" value="" placeholder="This is your price" />
+                        <label>.00</label>
+                    </div>
+
+                    <div class="help">Your desired price.</div>
+                </div>
+                <div class="form-field">
+                    <label for="domain">Url</label>
+                    <div class="layout-bar grouped">
+                        <select id="protocol" name="protocol">
+                            <option value="undefined">-</option>
+                            <option value="http">http://</option>
+                            <option value="https">https://</option>
+                        </select>
+                        <input type="text" id="domain" name="domain" value="" placeholder="domain"/>
+                        <select id="tld" name="tld">
+                            <option value="undefined">.xyz</option>
+                            <option value="com">.com</option>
+                            <option value="co">.co</option>
+                            <option value="us">.us</option>
+                        </select>
+                        <a href="#" class="button">Verify</a>
+                    </div>
+                    <div class="help">Your desired domain.</div>
+                </div>
+                <div class="form-field">
+                    <label for="submit">Save</label>
+                    <a href="#" id="submit" class="button">Save</a>
+                    <a href="#">Cancel</a>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="right-aligned form-field">
+                    <div class="help">Or here.</div>
+                    <a href="#">Cancel</a>
+                    <a href="#" id="submit" class="button">Save</a>
+                </div>
+            </form>
+
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Inline Form</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            
+            <form method="POST" action="/">
+                <div class="inline form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="" placeholder="This is your name" />
+                    <div class="help">Your full name.</div>
+                </div>
+                <div class="inline form-field">
+                    <label for="inline-bio">Bio</label>
+                    <textarea id="inline-bio" name="inline-bio" placeholder="This is your bio"></textarea>
+                    <div class="help">Your full name.</div>
+                </div>
+                <div class="inline form-field">
+                    <label>Techniques</label>
+                    <label for="inline-oil">
+                        <input type="checkbox" id="inline-oil" name="techniques[]" value="oil" />
+                        Oil Paint
+                    </label>
+                    <label for="inline-watercolor">
+                        <input type="checkbox" id="inline-watercolor" name="techniques[]" value="watercolor" />
+                        Watercolors
+                    </label>
+                    <label for="inline-pastels">
+                        <input type="checkbox" id="inline-pastels" name="techniques[]" value="pastels" />
+                        Pastels
+                    </label>
+                    <div class="help">Choose your preferred painting techniques.</div>
+                </div>
+                <div class="inline form-field">
+                    <label>Radio Buttons</label>
+                    <label for="inline-radio-field-1">
+                        <input type="radio" id="inline-radio-field-1" name="inline-radio-field" value="radio-1" />
+                        Option 1
+                    </label>
+                    <label for="inline-radio-field-2">
+                        <input type="radio" id="inline-radio-field-2" name="inline-radio-field" value="radio-2" />
+                        Option 2
+                    </label>
+                    <label for="inline-radio-field-3">
+                        <input type="radio" id="inline-radio-field-3" name="inline-radio-field" value="radio-3" />
+                        Option 3
+                    </label>
+                    <div class="help">Choose your option.</div>
+                </div>
+                <div class="inline form-field">
+                    <label for="native-inline-select-field">Native Select</label>
+                    <select id="native-inline-select-field" name="native-inline-select-field" class="native">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <div class="help">Choose an option.</div>
+                </div>
+                <div class="inline form-field">
+                    <label for="inline-select-field">Select</label>
+                    <select id="inline-select-field" name="inline-select-field">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="3">Option 4</option>
+                        <option value="3">Option 5</option>
+                        <option value="3">Option 6</option>
+                        <option value="3">Option 7</option>
+                        <option value="3">Option 8</option>
+                        <option value="3">Option 9</option>
+                        <option value="3">Option 10</option>
+                        <option value="3">Option 11</option>
+                    </select>
+                    <div class="help">Choose an option.</div>
+                </div>
+                <div class="inline form-field">
+                    <label for="inline-price">Price</label>
+                    <div class="layout-bar grouped">
+                        <label>$</label>
+                        <input type="text" id="inline-price" name="inline-price" value="" placeholder="This is your price" />
+                        <label>.00</label>
+                    </div>
+                    <div class="help">Your desired price.</div>
+                </div>
+                <div class="inline form-field">
+                    <label for="domain">Domain</label>
+                    <div class="layout-bar grouped">
+                        <select id="protocol" name="protocol">
+                            <option value="undefined">-</option>
+                            <option value="http">http://</option>
+                            <option value="https">https://</option>
+                        </select>
+                        <input type="text" id="domain" name="domain" value="" placeholder="domain"/>
+                        <select id="tld" name="tld">
+                            <option value="undefined">.xyz</option>
+                            <option value="com">.com</option>
+                            <option value="co">.co</option>
+                            <option value="us">.us</option>
+                        </select>
+                        <a href="#" class="button">Verify</a>
+                    </div>
+                    <div class="help">Your desired domain.</div>
+                </div>
+                <div class="inline form-field">
+                    <label for="inline-submit">Save</label>
+                    <a href="#" id="inline-submit" class="button">Save</a>
+                    <a href="#">Cancel</a>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="right-aligned inline form-field">
+                    <div class="help">Or here.</div>
+                    <a href="#">Cancel</a>
+                    <a href="#" id="inline-submit" class="button">Save</a>
+                </div>
+            </form>
+
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Stacked Form</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            
+            <form method="POST" action="/">
+                <div class="stacked form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="" placeholder="This is your name" />
+                    <div class="help">Your full name.</div>
+                </div>
+                <div class="stacked form-field">
+                    <label for="stacked-bio">Bio</label>
+                    <textarea id="stacked-bio" name="stacked-bio" placeholder="This is your bio"></textarea>
+                    <div class="help">Your full name.</div>
+                </div>
+                <div class="stacked form-field">
+                    <label>Techniques</label>
+                    <div class="help">Choose your preferred painting techniques.</div>
+                    <label for="stacked-oil">
+                        <input type="checkbox" id="stacked-oil" name="techniques[]" value="oil" />
+                        Oil Paint
+                    </label>
+                    <label for="stacked-watercolor">
+                        <input type="checkbox" id="stacked-watercolor" name="techniques[]" value="watercolor" />
+                        Watercolors
+                    </label>
+                    <label for="stacked-pastels">
+                        <input type="checkbox" id="stacked-pastels" name="techniques[]" value="pastels" />
+                        Pastels
+                    </label>
+                </div>
+                <div class="stacked form-field">
+                    <label>Radio Buttons</label>
+                    <div class="help">Choose your option.</div>
+                    <label for="stacked-radio-field-1">
+                        <input type="radio" id="stacked-radio-field-1" name="stacked-radio-field" value="radio-1" />
+                        Option 1
+                    </label>
+                    <label for="stacked-radio-field-2">
+                        <input type="radio" id="stacked-radio-field-2" name="stacked-radio-field" value="radio-2" />
+                        Option 2
+                    </label>
+                    <label for="stacked-radio-field-3">
+                        <input type="radio" id="stacked-radio-field-3" name="stacked-radio-field" value="radio-3" />
+                        Option 3
+                    </label>
+                </div>
+                <div class="stacked form-field">
+                    <label for="native-stacked-select-field">Native Select</label>
+                    <select id="native-stacked-select-field" name="native-stacked-select-field" class="native">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <div class="help">Choose an option.</div>
+                </div>
+                <div class="stacked form-field">
+                    <label for="stacked-select-field">Select</label>
+                    <select id="stacked-select-field" name="stacked-select-field">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <div class="help">Choose an option.</div>
+                </div>
+                <div class="stacked form-field">
+                    <label for="stacked-price">Price</label>
+                    <div class="layout-bar grouped">
+                        <label>$</label>
+                        <input type="text" id="stacked-price" name="stacked-price" value="" placeholder="This is your price" />
+                        <label>.00</label>
+                    </div>
+                    <div class="help">Your desired price.</div>
+                </div>
+                <div class="stacked form-field">
+                    <label for="domain">Domain</label>
+                    <div class="layout-bar grouped">
+                        <select id="protocol" name="protocol">
+                            <option value="undefined">-</option>
+                            <option value="http">http://</option>
+                            <option value="https">https://</option>
+                        </select>
+                        <input type="text" id="domain" name="domain" value="" placeholder="This is your domain" />
+                        <select id="tld" name="tld">
+                            <option value="undefined">.xyz</option>
+                            <option value="com">.com</option>
+                            <option value="co">.co</option>
+                            <option value="us">.us</option>
+                        </select>
+                        <a href="#" class="button">Verify</a>
+                    </div>
+                    <div class="help">Your desired domain.</div>
+                </div>
+                <div class="stacked form-field">
+                    <label for="stacked-submit">Save</label>
+                    <a href="#" id="stacked-submit" class="button">Save</a>
+                    <a href="#">Cancel</a>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="right-aligned stacked form-field">
+                    <div class="help">Or here.</div>
+                    <a href="#">Cancel</a>
+                    <a href="#" id="stacked-submit" class="button">Save</a>
+                </div>
+            </form>
+
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Mirrored Form</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            
+            <form method="POST" action="/">
+                <div class="mirrored form-field">
+                    <label for="name">
+                        Name
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <input type="text" id="name" name="name" value="" placeholder="This is your name" />
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="mirrored form-field">
+                    <label for="mirrored-bio">
+                        Bio
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <textarea id="mirrored-bio" name="mirrored-bio" placeholder="This is your bio"></textarea>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="mirrored form-field">
+                    <label>
+                        Techniques
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <div class="help">Help message can also be placed here.</div>
+                    <label for="mirrored-oil">
+                        <input type="checkbox" id="mirrored-oil" name="techniques[]" value="oil" />
+                        Oil Paint
+                    </label>
+                    <label for="mirrored-watercolor">
+                        <input type="checkbox" id="mirrored-watercolor" name="techniques[]" value="watercolor" />
+                        Watercolors
+                    </label>
+                    <label for="mirrored-pastels">
+                        <input type="checkbox" id="mirrored-pastels" name="techniques[]" value="pastels" />
+                        Pastels
+                    </label>
+
+                </div>
+                <div class="mirrored form-field">
+                    <label>
+                        Radio Buttons
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <div class="help">Help message can also be placed here.</div>
+                    <label for="mirrored-radio-field-1">
+                        <input type="radio" id="mirrored-radio-field-1" name="mirrored-radio-field" value="radio-1" />
+                        Option 1
+                    </label>
+                    <label for="mirrored-radio-field-2">
+                        <input type="radio" id="mirrored-radio-field-2" name="mirrored-radio-field" value="radio-2" />
+                        Option 2
+                    </label>
+                    <label for="mirrored-radio-field-3">
+                        <input type="radio" id="mirrored-radio-field-3" name="mirrored-radio-field" value="radio-3" />
+                        Option 3
+                    </label>
+                </div>
+                <div class="mirrored form-field">
+                    <label for="native-mirrored-select-field">
+                        Native Select
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <select id="native-mirrored-select-field" name="native-mirrored-select-field" class="native">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="mirrored form-field">
+                    <label for="mirrored-select-field">
+                        Select
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <select id="mirrored-select-field" name="mirrored-select-field">
+                        <option value="undefined">Choose an option...</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="mirrored form-field">
+                    <label for="mirrored-price">
+                        Price
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <div class="layout-bar grouped">
+                        <label>$</label>
+                        <input type="text" id="mirrored-price" name="mirrored-price" value="" placeholder="This is your price" />
+                        <label>.00</label>
+                    </div>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+                <div class="mirrored form-field">
+                    <label for="domain">
+                        Domain
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <div class="layout-bar grouped">
+                        <select id="protocol" name="protocol">
+                            <option value="undefined">-</option>
+                            <option value="http">http://</option>
+                            <option value="https">https://</option>
+                        </select>
+                        <input type="text" id="domain" name="domain" value="" placeholder="domain" style="width:5.5em;"/>
+                        <select id="tld" name="tld">
+                            <option value="undefined">.xyz</option>
+                            <option value="com">.com</option>
+                            <option value="co">.co</option>
+                            <option value="us">.us</option>
+                        </select>
+                        <a href="#" class="button">Verify</a>
+                    </div>
+                    <div class="help">Your desired domain.</div>
+                </div>
+                <div class="mirrored form-field">
+                    <label for="mirrored-submit">
+                        Save
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <a href="#" id="mirrored-submit" class="button">Save</a>
+                    <a href="#">Cancel</a>
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+            </form>
+
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+
+<a id="form-states"></a>
+<h4 class="section-header">Form Feedback</h4>
+<p>Form feedback are the messages or states a form can be in to tell the user something, amongst these are alert messages, error messages and error states. Keep in mind that <em>error</em>, <em>success</em> and <em>caution</em> messages inside each form-field are by default hidden so no need to ad and remove stuff via js. Only set the desired class name and the correct message and color decorations will appear.</p>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Input Field Errors</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <form>
+                <div class="dangerous message">Whoops! We've got some errors here...</div>
+                <div class="form-field error">
+                    <label for="name">Default Input</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                    <div class="error">Please type in your name</div>
+                </div>
+
+                <div class="inline form-field error">
+                    <label for="name">Inline Input</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                    <div class="error">Please type in your name</div>
+                </div>
+
+                <div class="stacked form-field error">
+                    <label for="name">Stacked Input</label>
+                    <div class="error">Please type in your name</div>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                </div>
+
+                <div class="mirrored form-field error">
+                    <label for="name">
+                        Mirrored Input
+                        <div class="help">Help can go here.</div>
+                    </label>
+                    <div class="error">Please type in your name</div>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Help message can also be placed here.</div>
+                </div>
+            </form>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Input Field Warnings</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <form>
+                <div class="warning message">Warning! Coding without Basecoat may be hazardous for your health...</div>
+                <div class="form-field caution">
+                    <label for="name">Default Input</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                    <div class="caution">You'll regret it if you don't type your name</div>
+                </div>
+            </form>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Input Field Success</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <form>
+                <div class="rewarding message">Wohoo! Data saved successfully!</div>
+                <div class="form-field success">
+                    <label for="name">Default Input</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Full name" />
+                    <div class="help">Your full name.</div>
+                    <div class="success">Cool name!</div>
+                </div>
+            </form>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>

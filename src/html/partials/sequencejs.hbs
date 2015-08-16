@@ -1,0 +1,148 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">SequenceJS</h4>
+
+<p>With Sequencejs you can apply, in sequence, a set of classes or properties to a group of elements. This allows you to create sequenced transitions like the one below.</p>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>A sequenced list</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			<a href="#" class="button" onclick="runSequenceListDemo();">Run</a>
+			<ul class="sequenced-list">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+				<li>Item 4</li>
+				<li>Item 5</li>
+				<li>Item 6</li>
+				<li>Item 7</li>
+				<li>Item 8</li>
+				<li>Item 9</li>
+			</ul>
+
+			<style>
+				/* Default state */
+				.sequenced-list li{
+					opacity: 0;
+					-ms-transition: opacity 300ms ease-in;
+					transition: opacity 300ms ease-in;
+				}
+			</style>
+
+			<script>
+				function runSequenceListDemo(){
+					$('.sequenced-list li').sequence({
+						offset: 600, // ms between items
+						properties: {
+							opacity: 1
+						},
+						setup: function(elements){
+							// clean up
+							$(elements).removeAttr('style');
+						}
+					});
+				}
+			</script>
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+
+			</code></pre>
+		</div>
+	</div>
+</div>
+
+<p>You can also sequence the addition or removal of classes, instead of css properties. Keep in mind that sequencing many elements via classes instead of properties directly will be slower because the browser has to recalculate styles every time a class is set.</p>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>A sequenced list by classnames</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			<a href="#" class="button" onclick="runSequencePhraseDemo();">Run</a>
+			<p class="sequenced-phrase">
+				<span>Hi,</span>
+				<span>How </span>
+				<span class="ugly">are </span>
+				<span>you </span>
+				<span>today?</span>
+			</p>
+
+			<style>
+				/* Default state */
+				.sequenced-phrase span{
+					opacity: 0;
+					transform: translateY(30px);
+					-ms-transition: all 300ms ease-in;
+					transition: all 300ms ease-in;
+				}
+
+				.sequenced-phrase span.ugly{
+					background-color: green;
+					opacity: 0.5;
+					color: #fff;
+				}
+
+				/* Visible states */
+				.sequenced-phrase span.show{
+					opacity: 1;
+					transform: none;
+				}
+				.sequenced-phrase span.red{
+					color:red;
+				}
+			</style>
+
+			<script>
+				function runSequencePhraseDemo(){
+					$('.sequenced-phrase span').sequence({
+						offset: 1000, // ms between items
+						add: 'show red', // adds the class show and red
+						remove: 'ugly', // removes the class 'ugly'
+						setup: function(elements){
+							$(elements).removeClass('show red');
+							alert('Starting phrase sequence');
+						},
+						done: function(elements){
+							alert('Finished phrase sequence');
+						}
+					});
+				}
+			</script>
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+
+			</code></pre>
+		</div>
+	</div>
+</div>
+
+<p>If you don't have jQuery (or a replacement), you can still use sequencejs. But keep in mind that when setting css properties directly, you must set the vendor prefixed properties also as if you were doing a <code>element.style.PROPERTY</code></p>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>A non-jquery Sequence</h6>
+	</div>
+	<div class="panel-content">
+			<pre><code class="language-javascript">
+			var sequence = new Sequencejs('.side-nav a', {
+				setup: function(){
+					console.log('setup!');
+				},
+				offset: 1000,
+				properties: {
+					backgroundSize: '100%',
+					webkitTransform: 'translateX(10px)',
+					transform: 'translateX(10px)'
+				},
+				done: function(){
+					console.log('done!');
+				}
+			}).play();
+			</code></pre>
+	</div>
+</div>

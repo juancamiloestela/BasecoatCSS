@@ -1,0 +1,21 @@
+.divider{
+	text-align: center;
+	overflow: hidden;
+	margin: 0;
+
+	&:before,
+	&:after{
+		content:'';
+		border-style: solid;
+		border-width:0 0 1px 0;
+		width:50%;
+		display:inline-block;
+		height: 0;
+		vertical-align: middle;
+		margin:0 2% 0 -55%;
+	}
+
+	&:after{
+		margin:0 -55% 0 2%;
+	}
+}

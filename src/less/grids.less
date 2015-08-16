@@ -1,0 +1,282 @@
+
+
+.columns{
+	width:100%;
+	display:block;
+	box-sizing: border-box;
+	clear:both;
+
+	&:after{
+		.clearfix();
+	}
+
+	& > *{
+		float: left;
+		box-sizing: border-box;
+		padding:0;// 1em;
+		width:100%;
+		line-height: inherit;
+
+		/*&:first-child{
+			padding-left:0;
+		}
+		&:last-child{
+			padding-right:0;
+		}*/
+
+		//margin:0 1%;
+		padding:0 0.8em; // side by side results in 1.6 ~ 1.618ems of content separation
+
+		&.unpadded{
+			padding:0;
+		}
+
+		& > *:first-child{
+			margin-top:0;
+		}
+	}
+
+	&.unpadded{
+		& > *{
+			padding:0;
+		}
+	}
+}
+
+
+.displayShow(){
+	display:block;
+
+	input&,
+	.button&,
+	span&,
+	select&{
+		display: inline-block;
+	}
+}
+
+&.desktop-show,
+&.tablet-show,
+&.mobile-hide{
+	display:none;
+}
+
+&.tablet-only,
+&.desktop-only{
+	display:none;
+}
+/*&.mobile-only{
+	display:block;
+}*/
+
+@media only screen and (min-width: @mid-breakpoint){
+	.columns{
+		& > *{
+			//padding:0 0.5em;
+		}
+	}
+
+	&.tablet-show,
+	&.mobile-hide{
+		.displayShow();
+	}
+	&.tablet-hide{
+		display:none;
+	}
+
+	&.mobile-only,
+	&.desktop-only{
+		display:none;
+	}
+	&.tablet-only{
+		.displayShow();
+	}
+}
+
+@media only screen and (min-width: @large-breakpoint){
+	.columns{
+		& > *{
+			//padding:0 1em;
+		}
+	}
+
+	.desktop-show,
+	.tablet-hide,
+	.mobile-hide{
+		.displayShow();
+	}
+	.desktop-hide{
+		display:none;
+	}
+
+	.mobile-only,
+	.tablet-only{
+		display:none;
+	}
+	.desktop-only{
+		.displayShow();
+	}
+}
+
+
+@names: one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen;
+@classes: "" ".two" ".three" ".four" ".five" ".six" ".seven" ".eight" ".nine" ".ten" ".eleven" ".twelve" ".thirteen" ".fourteen" ".fifteen" ".sixteen";
+
+.col (@i; @count; @prefix; @suffix) when (@i > 0) {
+	@name: e(extract(@names, @i));
+	//& > .col-@{i}@{suffix},
+	& > .@{prefix}@{name}.wide{
+		width: round(percentage(1 / @count * @i) - 0, 3);
+	}
+	.col(@i - 1, @count, @prefix, @suffix);
+}
+
+.basicRows(@counter) when (@counter > 0) {
+	.basicRows((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	@{class}.columns{
+		& > *{
+			width: round(percentage(1 / @counter) - 0, 3); // -2
+		}
+	}
+}
+
+.basicRowColumns(@counter) when (@counter > 1) {
+	.basicRowColumns((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	@{class}.columns{
+		.col(16, @counter, ~"", ~"");
+	}
+}
+
+.basicRowTabletColumns(@counter) when (@counter > 0) {
+	.basicRowTabletColumns((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	@{class}.columns{
+		.col(16, @counter, tablet-, -tablet);
+	}
+}
+
+.basicRowDesktopColumns(@counter) when (@counter > 0) {
+	.basicRowDesktopColumns((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	@{class}.columns{
+		.col(16, @counter, desktop-, -desktop);
+	}
+}
+
+
+
+.tabletRows(@counter) when (@counter > 0) {
+	.tabletRows((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	.tablet-@{name}.columns{
+		& > *{
+			width: round(percentage(1 / @counter) - 0, 3); // -2
+		}
+	}
+
+	@{class}.columns{
+		.col(16, @counter, tablet-, -tablet);
+	}
+}
+
+.tabletRowColumns(@counter) when (@counter > 0) {
+	.tabletRowColumns((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	.tablet-@{name}.columns{
+		.col(16, @counter, ~"", ~"");
+	}
+}
+
+.tabletRowTabletColumns(@counter) when (@counter > 0) {
+	.tabletRowTabletColumns((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	.tablet-@{name}.columns{
+		.col(16, @counter, tablet-, -tablet);
+	}
+}
+
+.desktopRows(@counter) when (@counter > 0) {
+	.desktopRows((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	.desktop-@{name}.columns{
+		& > *{
+			width: round(percentage(1 / @counter) - 0, 3); // -2
+		}
+	}
+
+	@{class}.columns{
+		.col(16, @counter, desktop-, -desktop);
+	}
+}
+
+.desktopRowColumns(@counter) when (@counter > 0) {
+	.desktopRowColumns((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	.desktop-@{name}.columns{
+		.col(16, @counter, ~"", ~"");
+	}
+}
+
+.desktopRowDesktopColumns(@counter) when (@counter > 0) {
+	.desktopRowDesktopColumns((@counter - 1));
+	@class: e(extract(@classes, @counter));
+	@name: e(extract(@names, @counter));
+
+	.desktop-@{name}.columns{
+		.col(16, @counter, desktop-, -desktop);
+	}
+}
+
+.rows(@count) {
+	.basicRows(@count);
+	.basicRowColumns(@count);
+
+	@media only screen and (min-width: @mid-breakpoint){
+		.tabletRows(@count);
+		.tabletRowColumns(@count);
+		.tabletRowTabletColumns(@count);
+	}
+
+	@media only screen and (min-width: @large-breakpoint){
+		.desktopRows(@count);
+		.desktopRowColumns(@count);
+		.desktopRowDesktopColumns(@count);
+	}
+}
+
+
+/*
+.X.row > *
+.X.row > .X.wide
+.X.row > .desktop-X.wide
+
+.tablet-X.row > *
+.tablet-X.row > .X.wide
+.tablet-X.row > .tablet-X.wide
+
+.desktop-X.row > *
+.desktop-X.row > .X.wide
+.desktop-X.row > .desktop-X.wide
+*/
+
+.rows(16);

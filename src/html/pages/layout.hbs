@@ -1,0 +1,45 @@
+---
+title: Layout
+sections: 
+    - name: Panels
+    - name: Dividers
+    - name: Layout Bar
+    - name: Tables
+    - name: Grids
+    - name: Responsive Helpers
+    - name: Layouts
+    - name: Layout Object
+---
+
+<div class="layout-primary">
+    <div class="layout-content-fluid">
+        <div class="seven columns">
+            <div>&nbsp;</div>
+            <div class="seven desktop-six wide">
+                <h1 class="section-title">
+                    Layout
+                    <small>Well behaved boxes for your content</small>
+                </h1>
+            </div>
+        </div>
+        <div class="seven columns">
+            <div class="desktop-only">
+                <ul class="unstyled right-aligned">
+                    {{#each sections}}
+                    <li><a href="#{{chain 'lowercase' 'hyphenate' name}}">{{ name }}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="seven desktop-six wide">
+
+                <p>Layout elements in Basecoat aim to be as simple as possible. Their only purpose is to position content as desired en all screens and resolutions while keeping a coherent visual style that protects typographical balance.</p>
+
+                <p>These are the only elements that are responsive by default. Any additional responsive behavior is considered custom and should be implemented as a <a href="themes.html">coat</a>. Basecoat defines media queries for <code>mobile</code> first (0 to 30em), <code>tablet</code> (31em to 50em) and <code>desktop</code> (50em and up). Breakpoints are defined in ems and not in pixels because it is the font size that will determine if the content should be reorganized or not. You could have a 320px screen with a large font size which will make the content break in many lines or you could have the same screen with a tiny font which would look like a zoomed out version of a desktop page. In Basecoat it is the <em>content and the screen</em> that define if it should reorganize itself, not the screen alone.</p>
+
+                {{#each sections}}
+                    {{ partial name }}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

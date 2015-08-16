@@ -1,0 +1,187 @@
+
+.h1() {
+    font-size: 4.875em;
+    margin:0.5em 0 0.3334em 0;
+
+    small{
+        font-size: 0.5em;
+    }
+}
+.h2() {
+    font-size: 4.0625em;
+    margin:0.6em 0 0.4em 0;
+
+    small{
+        font-size: 0.4em;
+    }
+}
+.h3() {
+    font-size: 3.25em;
+    margin:0.5em 0;
+
+    small{
+        font-size: 0.5em;
+    }
+}
+.h4() {
+    font-size: 2.4375em;
+    margin:0.666667em 0;
+
+    small{
+        font-size: 0.6667em;
+    }
+}
+.h5() {
+    font-size: 1.625em;
+    margin:0.5em 0;
+
+    small{
+        font-size: 0.5em;
+    }
+}
+.h6() {
+    font-size: 1em;
+    margin:1em 0;
+
+    small{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+// TODO: text selection colors
+
+body {
+    font-size: 16px;
+    line-height: 1.625em;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-style: normal;
+    font-weight: bold;
+    margin:0;
+    line-height: 1em;
+
+    small{
+        display: block;
+        font-weight: normal;
+        line-height: 1em;
+
+        button,
+        .button{
+            margin: 0;
+            line-height: 1.6em;
+        }
+    }
+
+    i{
+        line-height: 0.9em;
+    }
+}
+
+h1 { .h3(); }
+h2 { .h4(); }
+h3 { .h5(); }
+h4 { .h5(); }
+h5 { .h5(); }
+h6 { .h6(); }
+
+
+p, 
+figure {
+    line-height: 1.625em;
+    margin:1.625em 0;
+}
+
+p{
+    max-width: 50em;
+}
+
+label{
+    font-weight:bold;
+    line-height: 1em;
+}
+
+/* Ensure 1em line height for @font-face's */
+b,
+strong,
+em,
+i,
+cite{
+    line-height:1em;
+}
+
+
+
+/* helpers */
+.centered{
+    text-align:center;
+}
+
+.justified{
+    text-align: justify;
+}
+
+
+.right-aligned{
+    text-align: right;
+}
+
+.left-aligned{
+    text-align: left;
+}
+
+
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bolder;
+}
+.light{
+    font-weight: lighter;
+}
+.strikethrough{
+    text-decoration: line-through;
+}
+.underlined{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (min-width: @mid-breakpoint){
+    body {
+        font-size: 16px;
+    }
+
+    h1 { .h2(); }
+    h2 { .h3(); }
+    h3 { .h4(); }
+    h4 { .h4(); }
+    //h5 { .h5(); }
+    //h6 { .h6(); }
+}
+
+@media only screen and (min-width: @large-breakpoint){
+    body {
+        font-size: 16px;
+        color:red;
+    }
+
+    h1 { .h1(); }
+    h2 { .h2(); }
+    h3 { .h3(); }
+    h4 { .h4(); }
+    //h5 { .h5(); }
+    //h6 { .h6(); }
+}

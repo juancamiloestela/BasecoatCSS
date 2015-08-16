@@ -1,0 +1,207 @@
+form{
+
+}
+
+.form-field{
+	margin:1.625em 0;
+
+	.message{
+
+	}
+
+	label{
+		display:block;
+		line-height: inherit;
+		font-weight: bold;
+	}
+
+	input{
+		-moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	select{
+
+	}
+
+	.help{
+		font-size: 0.8em;
+		display: inline-block;
+		line-height: 1.625em;
+	}
+
+	&:after{
+		.clearfix();
+	}
+
+
+	.inline &,
+	.inline&{
+
+		label{
+			display:inline;
+			margin-right:0.5em;
+		}
+
+		/*.stack{
+
+			&.horizontal{
+				width: 60%;
+				display: inline-block;
+				vertical-align: bottom;
+			}
+		}*/
+	}
+
+	.stacked &,
+	.stacked&{
+		
+		label{
+			display:block;
+		}
+
+		& > [type="text"],
+		& > [type="password"],
+		& > [type="date"],
+		& > [type="datetime"],
+		& > [type="datetime-local"],
+		& > [type="email"],
+		& > [type="month"],
+		& > [type="number"],
+		& > [type="search"],
+		& > [type="tel"],
+		& > [type="time"],
+		& > [type="url"],
+		& > [type="week"],
+		& > textarea{
+			display:block;
+			width:100%;
+			height: 1.625em;
+		}
+
+		.help{
+			display:block;
+			line-height: 2.0315em;
+		}
+
+		/*.stack{
+
+			&.horizontal{
+				width:100%;
+
+				& > .label,
+				& > label{
+					display: table-cell;
+				}
+			}
+		}*/
+	}
+
+	.mirrored &,
+	.mirrored&{
+
+		& > label{
+			width:62%;
+			float:right;
+
+			input{
+				float:none;
+				width:auto;
+			}
+
+			.help{
+				float: none;
+				text-align: right;
+				width: 100%;
+				font-weight: normal;
+			}
+
+			&:first-child{
+				width:35%;
+				margin-right:3%;
+				text-align: right;
+				float:left;
+			}
+		}
+
+		& > input{
+			width:62%;
+			float:right;
+			height: 1.625em;
+		}
+
+		.help{
+			display:block;
+			float:right;
+			width:62%;
+			line-height: 2.0315em
+		}
+
+		/*.stack{
+			width:62%;
+			clear:none;
+
+			&.horizontal{
+				float:right;
+				
+				& > .label,
+				& > label{
+					float:left;
+					width:auto;
+					margin:0;
+					text-align: center;
+				}
+			}
+		}*/
+	}
+
+	.error,
+	.success,
+	.warning{
+		display:none;
+	}
+
+	&.error{
+		input,
+		textarea,
+		.selectjs{
+			background-color: lighten(@dangerous, 37%);
+			border-left: 0.3em solid @dangerous;
+		}
+
+		.error{
+			display:block;
+			color: @dangerous;
+		}
+	}
+
+	&.success{
+		input,
+		textarea,
+		.selectjs{
+			background-color: lighten(@rewarding, 37%);
+			border-left: 0.3em solid @rewarding;
+		}
+
+		.success{
+			display:block;
+			color: @rewarding;
+		}
+	}
+
+	&.caution{
+		input,
+		textarea,
+		.selectjs{
+			background-color: lighten(@warning, 30%);
+			border-left: 0.3em solid @warning;
+		}
+
+		.caution{
+			display:block;
+			color: @warning;
+		}
+	}
+}
+

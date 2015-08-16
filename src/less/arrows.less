@@ -1,0 +1,25 @@
+.arrow {
+	border-width: 0.8em;
+	border-style: solid;
+	border-color: transparent transparent transparent transparent;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: bottom;
+
+	&.up{
+		border-color: transparent transparent inherit transparent;
+	}
+
+	&.down{
+		border-color: #c0c0c0 transparent transparent transparent;
+	}
+
+	&.left{
+		border-color: transparent #c0c0c0 transparent transparent;
+	}
+
+	&.right{
+		border-color: transparent transparent transparent #c0c0c0;
+	}
+}

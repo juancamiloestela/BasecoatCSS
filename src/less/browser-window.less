@@ -1,0 +1,35 @@
+.browser-window{
+	box-shadow: 0 2px 8px #CACACA;
+	border-radius: 7px 7px 0 0;
+	border-width: 1.8em 3px 3px 3px;
+	border-style:solid;
+	border-color: #C0C0C0;
+	box-sizing: border-box;
+	position:relative;
+
+	&:before{
+		content: '···';
+		font-size: 2.5em;
+		font-weight: bold;
+		position: absolute;
+		top: -0.65em;
+	}
+
+	.browser-title{
+		position: absolute;
+		color: #EEE;
+		z-index: 99999;
+		top: -1.7em;
+		text-align: center;
+		width: 100%;
+		font-size: 0.9em;
+		font-weight: lighter;
+	}
+
+	.browser-content{
+		height:100%;
+		width:100%;
+		background-color: #FFFFFF;
+		overflow:auto;
+	}
+}

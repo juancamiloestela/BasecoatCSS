@@ -1,0 +1,144 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">Grids</h4>
+<p>In Basecoat, grids are not restricted to the famous 12 column grid. In Basecoat you choose how many columns your grid should have from 2 to 16. Any element can become a grid, a <code>div</code>, <code>span</code> you name it. Grids also have no margins, gutters are achieved via cell paddings which gives you more flexibility when styling your layouts because it is the inner content who defines it's presentation, the grid only provides a space for the content to exist.</p>
+
+<p>Because we can choose the number of columns to use, the syntax is a little different than what you might be used to. It is much more intuitive. Lets say you need to divide a container into five equal columns. We would need a five column grid, then that element's class will be <code>five columns</code>, that simple. You can replace the word "five" for any number between "two" and "sixteen".</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Basic Grid</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="five columns">
+                <div>1</div>
+                <div>2</div>
+                <span>3</span>
+                <strong>4</strong>
+                <div>5</div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Controlling column span is also simple. Lets say you need a three column wide element, then that element's class will be <code>three wide</code>. You can also use the <code>unpadded</code> class on a row or cell element to remove padding, or set your custom padding via css.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Grid with multiple column span</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example unpadded-example">
+            <div class="five columns">
+                <div>1</div>
+                <div>2</div>
+                <span class="three wide">3</span>
+            </div>
+            <div class="five unpadded columns">
+                <div>1 <code>.unpadded</code> row</div>
+                <div>2 <code>.unpadded</code> row</div>
+                <span class="three wide">3 <code>.unpadded</code> row</span>
+            </div>
+            <div class="five columns">
+                <div>1</div>
+                <div class="unpadded">2 <code>.unpadded</code> cell</div>
+                <span class="three wide">3</span>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Controlling column offset is done via empty offset cells.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Grid with multiple column span and offset columns</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="five columns">
+                <div class="two wide">offset cell</div>
+                <span class="three wide">2</span>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Rows and cells can be responsive. The three main breakpoints are mobile first, tablet and desktop. Resize your browser to test the following example. On mobile it will have 2 columns, on tablet 3, and on desktop 6. Also cell number 7 will be full width on every device and cells 8 and 9 will be split 1-1, 1-2 and 3-3 respectively.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Responsive Grid</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="two tablet-three desktop-six columns">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div class="two tablet-three desktop-six wide">7</div>
+                <div class="tablet-one desktop-three wide">8</div>
+                <div class="tablet-two desktop-three wide">9</div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<p>You can also use nested grids!</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Responsive Nested Grids</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="two tablet-three desktop-six columns">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div class="two tablet-three desktop-six wide">7</div>
+                <div class="tablet-one desktop-three wide">8</div>
+                <div class="tablet-two desktop-three wide">
+                    <div class="two desktop-four columns">
+                        <div>1</div>
+                        <div>2</div>
+                        <div class="two desktop-one">3</div>
+                        <div class="two desktop-one">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>

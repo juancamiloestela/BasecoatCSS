@@ -1,0 +1,41 @@
+.bubbleAnimation{
+	0% {
+        transform: scale(0,0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1,1);
+        opacity: 0.1;
+    }
+}
+
+@keyframes bubble-keyframes {.bubbleAnimation;}
+@-webkit-keyframes bubble-keyframes {.bubbleAnimation;}
+@-moz-keyframes bubble-keyframes {.bubbleAnimation;}
+@-o-keyframes bubble-keyframes {.bubbleAnimation;}
+
+.loading{
+
+
+	&.bubble {
+		height: 1em;
+		width: 1em;
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+		display: inline-block;
+
+		&:before{
+			animation: bubble-keyframes 1s infinite ease-in-out;
+			border-color: transparent;
+			background-color: rgba(0,0,0,0.2);
+			width: 1em;
+			height: 1em;
+			border-radius: 50%;
+			content: '';
+			line-height: 1em;
+			display: block;
+		}
+	}
+}

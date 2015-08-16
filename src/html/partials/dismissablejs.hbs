@@ -1,0 +1,39 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">DismissableJS</h4>
+
+<p>The dismissable plugin listens for clicks on any element with class <code>.dismiss</code> that is inside an element with class <code>.dismissable</code>. When a click is detected, the element with class <code>.dismissable</code> will fade out and then removed from the dom. There is no initialization or configuration, the plugin is as simple as possible and autostarts when the om is ready. It listens for clicks on the body of the document so if a the dismissable element is inside a container that stops propagation, nothing will happen.</p>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>A dismissable message</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			<div class="dismissable secondary message">
+				<a href="#" class="close dismiss">&#xD7;</a>
+				<strong>A dismissable message!</strong> <br> You can send me away :(
+			</div>
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+
+			</code></pre>
+		</div>
+	</div>
+</div>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>A dismissable paragraph</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			<p class="dismissable">If you don't like this paragraph you can <a href="#" class="dismiss">remove</a> it.</p>
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+
+			</code></pre>
+		</div>
+	</div>
+</div>

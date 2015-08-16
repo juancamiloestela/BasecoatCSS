@@ -1,0 +1,105 @@
+---
+title: Frequently Asked Questions
+sections: 
+---
+
+<div class="layout-primary">
+    <div class="layout-content-fluid">
+        <div class="seven columns">
+            <div>&nbsp;</div>
+            <div class="seven desktop-six wide">
+                <h1 class="section-title">
+                    FAQ
+                    <small>Where all the cool questions live</small>
+                </h1>
+            </div>
+        </div>
+        <div class="seven columns">
+            <div class="desktop-only">
+                &nbsp;
+                <ul class="unstyled right-aligned">
+                    {{#each sections}}
+                    <li><a href="#{{chain 'lowercase' 'hyphenate' name}}">{{ name }}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="seven desktop-three wide">
+
+                <p>Faq intro</p>
+
+                {{#each sections}}
+                    {{ partial name }}
+                {{/each}}
+
+                <div class="chat">
+                    <div class="question">Why oh why another CSS framework?!</div>
+                    <div class="answer">lol</div>
+                    <div class="answer">I know...</div>
+                    <div class="answer">The thing is that after years of developing, client's needs were often so custom that using Bootstrap or Foundation eventually required tons of styles to override the ones provided by the framework, sometimes even having to fight against predefined <code>!importants</code> (headbang)...</div>
+                    <div class="answer">So I went over all my work over the previous years in front end and recompiled and updated a set of styles which became Basecoat, a framework that aims to be as simple, yet as beautiful as possible, and that empowers you to build on top of it :)</div>
+
+                    <div class="question">Are you saying that I shouldn't use Bootstrap or Foundation?</div>
+                    <div class="answer">Not at all!</div>
+                    <div class="answer">those are amazing projects made by awesome developers which served as an inspiration for Basecoat. They are great for prototypes or projects where visual design is not so custom, but they are not necessarily the best choice for every single project.</div>
+
+                    <div class="question">Ok, who made this one?</div>
+                    <div class="answer">I did</div>
+                    <div class="question">...</div>
+                    <div class="answer">My name is <a href="">Juan Camilo Estela</a>, I'm a Colombian dude.</div>
+                    <div class="answer">Kudos also to XYZ who helped out with valuable feedback</div>
+
+                    <div class="question">What browsers and devices does it support?</div>
+                    <div class="answer">Currently...</div>
+                    <div class="answer">chrome latest</div>
+                    <div class="answer">firefox X+</div>
+                    <div class="answer">safari X+</div>
+                    <div class="answer">ie X+</div>
+                    <div class="answer">chrome and safari on mobile</div>
+
+                    <div class="question">What if I find a bug?</div>
+                    <div class="answer">First make sure it is a bug by checking the docs and coding communities like <a href="http://stackoverflow.com/questions/tagged/basecoatcss">StackOverflow</a>. If it is, then head up to the <a href="https://github.com/juancamiloestela/BasecoatCSS/issues">github repo</a> and file the bug.</div>
+
+                    <div class="question">Where can I find additional support?</div>
+                    <div class="answer">Check <a href="http://stackoverflow.com/questions/tagged/basecoatcss">StackOverflow</a> for questions tagged <code>#basecoatcss</code> or ask your own question there.</div>
+
+                    <div class="question">How is Basecoat licensed?</div>
+                    <div class="answer">l</div>
+
+                    <div class="question">Can I use it for commercial or personal projects?</div>
+                    <div class="answer">Yes, it is free "as is" so I am not responsible of any consequences.</div>
+
+                    <div class="question">Can I use it in websites and embed it in hybrid mobile apps?</div>
+                    <div class="answer">Of course!</div>
+
+                    <div class="question">Can I help out?</div>
+                    <div class="answer">Absolutely! You can help out with issues or planned features via pull requests on github.</div>
+
+                    <div class="question">How does Basecoat make money?</div>
+                    <div class="answer">It doesn't.</div>
+
+                    <div class="question">Why is it called "Basecoat"?</div>
+                    <div class="answer">When artists paint on a canvas, they first apply a basecoat of primer to it. This basecoat serves as a neutral color and as a structure for further paint coats to glide over the canvas and provide support that allows the painting to stand the test of time. A paint coat can be the background colors, the highlights or a clear protective coating in the end.</div>
+                    <div class="answer">This is exactly the purpose of this framework, to provide the least amount of style possible that offers an aesthetically pleasing result that can be easily enhanced with few additional styles.</div>
+
+                    <div class="question">What are coats?</div>
+                    <div class="answer">Short answer... coats are themes, but a special kind of theme.</div>
+                    <div class="answer">They can be mixed and stacked on top of each other to match your needs.</div>
+                    <div class="answer">As with art, in css you can apply coats to basecoat. These coats can make your elements rounded, change the color palette, change the typography or even add a functionality like a date picker.</div>
+
+                    <div class="question">Won't having many coats make my site slow?</div>
+                    <div class="answer">Yes, any site with too much css and/or js will eventually get slow. That is why Basecoat aims to be as simple an minimalistic as possible so that you can add a couple of coats on top of it.</div>
+                    <div class="answer">This approach ensures that the styles you add via coats are styles you need. Instead of a huge framework with tons of styles you will not use or will have a hard time overwriting. In every case, concatenating Basecoat and its coats is highly recommended.</div>
+
+                    <div class="question">But I need "____" feature, will you make it?</div>
+                    <div class="answer">Additional features in Basecoat will come by demand and by evolution of technology. For example...</div>
+                    <div class="answer">grids will eventually be replaced by flexbox layouts when they are widely supported.</div>
+                    <div class="answer">But an image slider despite being a common feature, is highly improbable to match everyone's specific needs so it is better that another plugin or coat be added on a per project basis.</div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+            

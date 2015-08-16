@@ -1,0 +1,25 @@
+.layout-object{
+    zoom:1;
+    overflow:hidden;
+
+    & > *{
+        overflow:hidden;
+        display:block;
+    }
+    
+    & > *:first-child{
+        float:left;
+        margin-right:0.5em;
+        overflow:visible;
+    }
+    
+    &.right > *:first-child{
+        float:right;
+        margin-right:0;
+        margin-left:0.5em;
+    }
+}
+
+.layout-object img{
+    display:block;
+}

@@ -1,0 +1,56 @@
+ul,
+ol{
+	margin:1.625em 0;
+	padding: 0 0 0 2em;
+}
+
+ul.unstyled,
+ol.unstyled{
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+
+ul.horizontal{
+	& > li{
+		display: table-cell;
+	}
+}
+
+li > ul,
+li > ol{
+	margin:0;
+}
+
+dt{
+	font-weight:bold;
+}
+
+dl{
+	margin: 0.8125em 0;
+
+	&.inline{
+		margin:1.625em 0;
+
+		dt{
+			float:left;
+			width:20%;
+			text-align: right;
+			padding-right: 1em;
+			-moz-box-sizing: border-box;
+	        -webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		dd{
+			float:left;
+			width:80%;
+			margin:0;
+		}
+
+		&:after{
+			.clearfix();
+		}
+
+	}
+}

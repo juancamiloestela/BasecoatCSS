@@ -1,0 +1,43 @@
+---
+title: Components
+sections: 
+    - name: CheckboxJS
+    - name: SelectJS
+    - name: PeekJS
+    - name: SequenceJS
+    - name: DismissableJS
+    - name: Messages
+    - name: Tooltips
+    - name: Loaders
+---
+
+<div class="layout-primary">
+    <div class="layout-content-fluid">
+        <div class="seven columns">
+            <div>&nbsp;</div>
+            <div class="seven desktop-six wide">
+                <h1 class="section-title">
+                    Components
+                    <small>All the other stuff</small>
+                </h1>
+            </div>
+        </div>
+        <div class="seven columns">
+            <div class="desktop-only">
+                <ul class="unstyled right-aligned">
+                    {{#each sections}}
+                    <li><a href="#{{chain 'lowercase' 'hyphenate' name}}">{{ name }}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="seven desktop-six wide">
+
+                <p>Components in Basecoat also aim to be as simple as possible so that you can skin them or configure them as needed. However using them out of the box will give a beautiful minimalistic result.</p>
+
+                {{#each sections}}
+                    {{ partial name }}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

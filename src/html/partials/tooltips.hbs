@@ -1,0 +1,91 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">Tooltips</h4>
+
+<p>Tooltips in Basecoat are glorified messages, they do not depend on js. They are made only in css reducing unnecessary code and resource consumption.</p>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>Default Tooltip</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			Hover to open a 
+			<span class="tooltip">
+				<em>Default Tooltip</em>
+				<div class="message">
+					Hello you :)
+				</div>
+			</span>
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+
+			</code></pre>
+		</div>
+	</div>
+</div>
+
+<p>You can also change the orientation and the color of each tooltip. Tooltips can even have action items like buttons inside. By default tooltips have a fixed width, but you can set the width to any size you need.</p>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>Tooltip orientations</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			<p>
+				<span class="tooltip up">
+					I open Up
+					<span class="message">
+						Get up!
+						<a class="button">Do stuff</a>
+					</span>
+				</span>
+			</p>
+
+			<p>
+				<span class="tooltip right">
+					I open to the Right
+					<span class="message">
+						Wohoo!
+					</span>
+				</span>
+			</p>
+
+			<p class="right-aligned">
+				<span class="tooltip left">
+					I open to the Left
+					<span class="message">
+						Everybody conga to the Left!
+					</span>
+				</span>
+			</p>
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+
+			</code></pre>
+		</div>
+	</div>
+</div>
+
+<div class="{{ name }}-demo panel">
+	<div class="panel-title">
+		<h6>Colored Tooltips</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			<span class="tooltip">
+				<em>Colored Tooltip</em>
+				<div class="primary message"  style="width:24em;">
+					This is a very cool tooltip with a very cool <a href="#" class="button">Button</a>
+				</div>
+			</span> with custom width
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+
+			</code></pre>
+		</div>
+	</div>
+</div>

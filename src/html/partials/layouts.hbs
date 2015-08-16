@@ -1,0 +1,228 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">Layouts</h4>
+<p>Layouts are simple layout structures that can be used on any part of your page and can be nested to achieve more complex layouts. They come in two flavors, row based layouts and column based layouts. As with grids, any element can be a layout, but beware! layouts use flexbox so older browsers will blow up.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Basic row layout</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary">
+                            This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>You can make either the header, the footer or both elements fixed</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Row layout with fixed header and footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary">
+                            This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>When a row based layout is fixed, only the primary content will be <code>overflow: auto;</code> by default.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Row layout with fixed footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <div class="layout-primary">
+                            <header style="background-color:#E5E5E5;">This is the header</header>
+                            This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Basic column layout</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-columns">
+                        <div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                        <div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                        <div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Basic column layout with header and footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-columns">
+                            <div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            <div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                            <div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Column layout with fixed header and footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary">
+                            <div class="layout-columns">
+                                <div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                                <div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                                <div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            </div>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Column layout with independent columns</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary layout-columns">
+                            <div class="layout-navigation layout-scrollable" style="background-color:#EEEEEE;">
+                                <div>Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            </div>
+                            <div class="layout-secondary" style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            <div class="layout-primary layout-scrollable">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Additionally layouts offer two helper classes to control the way content is padded and wrapped inside other containers</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Layout helpers</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="layout-content">
+                This content will wrap at 50ems width, has side padding and will be centered inside its parent if its width is less than its parent's.
+            </div>
+            <div class="layout-content-fluid">
+                This content will not wrap, it will try to occupy 100% width but with a side padding.
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>

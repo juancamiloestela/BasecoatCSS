@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BasecoatCSS | Layout</title>
+    <meta name="description" content="The CSS framework for artists">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:700,400" rel="stylesheet" type="text/css">
+    
+    <link href="http://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Princess+Sofia|Bubblegum+Sans|Emilys+Candy|Neucha|Milonga|Lancelot" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Averia+Serif+Libre:400,700,400italic|Vollkorn:400italic,400,700|Cookie|Goudy+Bookletter+1911|Donegal+One|Alegreya:400italic,400,700" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet" type="text/css">
+
+
+
+
+    <link href="bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bower_components/prism/themes/prism.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/basecoat.css">
+    <link rel="stylesheet" href="app-oldie.css">
+    <!--[if gt IE 8]><!-->
+    <!-- build:css css/basecoat.min.css -->
+    <!--link rel="stylesheet" href="css/basecoat.css"-->
+    <!-- endbuild -->
+    <!--<![endif]-->
+
+    <!-- build:css css/fonts.min.css -->
+    <link rel="stylesheet" href="css/coats/fonts.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/pressable.min.css -->
+    <link rel="stylesheet" href="css/coats/pressable.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/rounded.min.css -->
+    <link rel="stylesheet" href="css/coats/rounded.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/fancy.min.css -->
+    <!--link rel="stylesheet" href="css/coats/fancy.css"-->
+    <!-- endbuild -->
+
+    <!-- build:css css/site.min.css -->
+    <link rel="stylesheet" href="css/site.css">
+    <!-- endbuild -->
+
+    <!-- build:js js/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body class="peek-effect-door">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="peek-left-content">
+        <a href="#" class="close peek-toggle-left">&#xD7;</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <a href="#" class="peek-close-all">Close All</a>
+        <a href="#" class="peek-close-left">Close left</a>
+        <a href="#" class="peek-open-right">Open Right</a>
+    </div>
+
+    <div class="peek-right-content">
+        <a href="#" class="close peek-toggle-right">&#xD7;</a>
+
+        <nav class="side-nav">
+            <a href="getting-started.html">Getting Started</a>
+            <a href="typography.html">Typography</a>
+            <a href="layout.html">Layout</a>
+            <a href="forms.html">Forms</a>
+            <a href="components.html">Components</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="themes.html">Themes</a>
+            <a href="faq.html">FAQ</a>
+            <a href="download.html" class="primary button">Download</a>
+        </nav>
+    </div>
+
+    <div class="peek-container">
+        <div class="layout-rows">
+            <div class="layout-content-fluid">
+                <header class="four unpadded columns">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                        </a>
+                    </div>
+                    <nav class="main-nav three wide right-aligned desktop-only">
+                        <a href="getting-started.html">Getting Started</a>
+                        <a href="typography.html">Typography</a>
+                        <a href="layout.html">Layout</a>
+                        <a href="forms.html">Forms</a>
+                        <a href="components.html">Components</a>
+                        <a href="themes.html">Themes</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="download.html" class="button">Download</a>
+                    </nav>
+                    <nav class="three wide right-aligned desktop-hide">
+                        <a href="#" class="peek-toggle-right">MENU</a>
+                    </nav>
+                </header>
+            </div>
+            
+
+<div class="layout-primary">
+    <div class="layout-content-fluid">
+        <div class="seven columns">
+            <div>&#xA0;</div>
+            <div class="seven desktop-six wide">
+                <h1 class="section-title">
+                    Layout
+                    <small>Well behaved boxes for your content</small>
+                </h1>
+            </div>
+        </div>
+        <div class="seven columns">
+            <div class="desktop-only">
+                <ul class="unstyled right-aligned">
+                    
+                    <li><a href="#panels">Panels</a></li>
+                    
+                    <li><a href="#dividers">Dividers</a></li>
+                    
+                    <li><a href="#layout-bar">Layout Bar</a></li>
+                    
+                    <li><a href="#tables">Tables</a></li>
+                    
+                    <li><a href="#grids">Grids</a></li>
+                    
+                    <li><a href="#responsive-helpers">Responsive Helpers</a></li>
+                    
+                    <li><a href="#layouts">Layouts</a></li>
+                    
+                    <li><a href="#layout-object">Layout Object</a></li>
+                    
+                </ul>
+            </div>
+            <div class="seven desktop-six wide">
+
+                <p>Layout elements in Basecoat aim to be as simple as possible. Their only purpose is to position content as desired en all screens and resolutions while keeping a coherent visual style that protects typographical balance.</p>
+
+                <p>These are the only elements that are responsive by default. Any additional responsive behavior is considered custom and should be implemented as a <a href="themes.html">coat</a>. Basecoat defines media queries for <code>mobile</code> first (0 to 30em), <code>tablet</code> (31em to 50em) and <code>desktop</code> (50em and up). Breakpoints are defined in ems and not in pixels because it is the font size that will determine if the content should be reorganized or not. You could have a 320px screen with a large font size which will make the content break in many lines or you could have the same screen with a tiny font which would look like a zoomed out version of a desktop page. In Basecoat it is the <em>content and the screen</em> that define if it should reorganize itself, not the screen alone.</p>
+
+                
+                    <a id="panels"></a>
+<h4 class="section-header">Panels</h4>
+<p>Panels are defined sections used to contain specific content. Below you can see an example of a panel. On this site, panels are used to present every example/code pair in the framework.</p>
+
+<div class="panels-demo panel">
+    <div class="panel-title">
+        <h6>Basic Panel</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="panel">
+                This is the panel&apos;s content
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;panel&quot;&gt;
+    This is the panel&amp;apos;s content
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>You can place the <code>panel-title</code> either at the top, bottom or both. The content inside the panel or panel title is completely up to you. It can be simple text up to a complex nested grid</p>
+
+<div class="panels-demo panel">
+    <div class="panel-title">
+        <h6>Alternate Panel</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="panel">
+                <div class="panel-title">
+                    <h6>The Panel Top Title</h6>
+                </div>
+                <div class="panel-content">
+                    This is the panel&apos;s content
+                </div>
+                <div class="panel-title">
+                    <h6>The Panel Bottom Title</h6>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;panel&quot;&gt;
+    &lt;div class=&quot;panel-title&quot;&gt;
+        &lt;h6&gt;The Panel Top Title&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-content&quot;&gt;
+        This is the panel&amp;apos;s content
+    &lt;/div&gt;
+    &lt;div class=&quot;panel-title&quot;&gt;
+        &lt;h6&gt;The Panel Bottom Title&lt;/h6&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="dividers"></a>
+<h4 class="section-header">Dividers</h4>
+
+<p>Showing the user that content is loading is a must for a rich user experience. Basecoat provides a simple loading bubble that can be used inline with text or as a prominent loading message. The loader bubble is also proportional to the current font size so it will be perfectly aligned with your content. You can also change the color of the loading bubble by setting its background color.</p>
+
+<div class="dividers-demo panel">
+	<div class="panel-title">
+		<h6>Horizontal Dividers</h6>
+	</div>
+	<div class="tablet-two columns panel-content">
+		<div class="example">
+			<div class="divider">Divide and Conquer!</div>
+		</div>
+		<div class="source">
+			<pre><code class="language-markup">
+&lt;div class=&quot;divider&quot;&gt;Divide and Conquer!&lt;/div&gt;
+		</code></pre>
+		</div>
+	</div>
+</div>
+                
+                    <a id="layout-bar"></a>
+<h4 class="section-header">Layout Bars</h4>
+<p>Layout bars allow you to position items on different horizontal arrangements while preserving correct line heights and vertical alignments between its elements.</p>
+
+<!--div class="layout-bar-demo panel">
+    <div class="panel-title">
+        <h6>Basic Menubar</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <header class="layout-bar">
+                <a href="#" class="layout-bar-primary">Brand</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <span>Logged</span>
+            </header>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;header class="layout-bar"&gt;
+&lt;a href="#" class="layout-bar-primary"&gt;Brand&lt;/a&gt;
+&lt;a href="#"&gt;Products&lt;/a&gt;
+&lt;a href="#"&gt;About&lt;/a&gt;
+&lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;span&gt;Logged&lt;/span&gt;
+&lt;/header&gt;
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="layout-bar-demo panel">
+    <div class="panel-title">
+        <h6>Extreme Menubar</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <header class="layout-bar extremes">
+                <a href="#" class="layout-bar-primary">Brand</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <span>Logged</span>
+            </header>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;header class="layout-bar extremes"&gt;
+&lt;a href="#" class="layout-bar-primary"&gt;Brand&lt;/a&gt;
+&lt;a href="#"&gt;Products&lt;/a&gt;
+&lt;a href="#"&gt;About&lt;/a&gt;
+&lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;span&gt;Logged&lt;/span&gt;
+&lt;/header&gt;
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="layout-bar-demo panel">
+    <div class="panel-title">
+        <h6>Extreme Menubar with Elements</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="layout-bar extremes">
+                <a href="#" class="layout-bar-primary"><i class="fa fa-camera"></i> Brand</a>
+                <a href="#">Products</a>
+                <select>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <span>Logged</span>
+                <a href="#" class="button">Download</a>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class="layout-bar extremes"&gt;
+&lt;a href="#" class="layout-bar-primary"&gt;&lt;i class="fa fa-camera"&gt;&lt;/i&gt;Brand&lt;/a&gt;
+&lt;a href="#"&gt;Products&lt;/a&gt;
+&lt;select&gt;
+&lt;option&gt;Yes&lt;/option&gt;
+&lt;option&gt;No&lt;/option&gt;
+&lt;/select&gt;
+&lt;span&gt;Logged&lt;/span&gt;
+&lt;a href="#" class="button"&gt;Download&lt;/a&gt;
+&lt;/div&gt;
+            </code></pre>
+        </div>
+    </div>
+</div-->
+
+<div class="layout-bar-demo panel">
+    <div class="panel-title">
+        <h6>Menubar with more Elements</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="layout-bar">
+                <a href="#" class="layout-bar-primary">Hello</a>
+                <a href="#" class="button">Sign up</a>
+                <a href="#" class="button desktop-only">About</a>
+                <input type="text" placeholder="Age" class="desktop-only">
+                <label>
+                    Accept:
+                    <input type="checkbox">
+                </label>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-bar&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;layout-bar-primary&quot;&gt;Hello&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Sign up&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button desktop-only&quot;&gt;About&lt;/a&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Age&quot; class=&quot;desktop-only&quot;&gt;
+    &lt;label&gt;
+        Accept:
+        &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="layout-bar-demo panel">
+    <div class="panel-title">
+        <h6>Grouped layout-bar</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            Lorem ipsum <div class="layout-bar grouped">
+                <a href="#" class="layout-bar-primary">Hello</a>
+                <span>you</span>
+                <a href="#" class="button">About</a>
+                <input type="text" placeholder="Age" style="width:3em">
+                <label class="desktop-only">
+                    Accept:
+                    <input type="checkbox">
+                </label>
+                <select>
+                    <option>M</option>
+                    <option>F</option>
+                </select>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+Lorem ipsum &lt;div class=&quot;layout-bar grouped&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;layout-bar-primary&quot;&gt;Hello&lt;/a&gt;
+    &lt;span&gt;you&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;About&lt;/a&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Age&quot; style=&quot;width:3em&quot;&gt;
+    &lt;label class=&quot;desktop-only&quot;&gt;
+        Accept:
+        &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;/label&gt;
+    &lt;select&gt;
+        &lt;option&gt;M&lt;/option&gt;
+        &lt;option&gt;F&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="tables"></a>
+<h4 class="section-header">Tables</h4>
+<p>Tables are designed to present tabular data in a pleasant way for the user.</p>
+
+<div class="tables-demo panel">
+    <div class="panel-title">
+        <h6>Basic Table</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>User</th>
+                        <th>&#xA0;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Leo</td>
+                        <td>Da Vinci</td>
+                        <td>leo</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Claude</td>
+                        <td>Monet</td>
+                        <td>monet</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Paul</td>
+                        <td>Cezanne</td>
+                        <td>cezanne</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;First&lt;/th&gt;
+            &lt;th&gt;Last&lt;/th&gt;
+            &lt;th&gt;User&lt;/th&gt;
+            &lt;th&gt;&amp;#xA0;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Leo&lt;/td&gt;
+            &lt;td&gt;Da Vinci&lt;/td&gt;
+            &lt;td&gt;leo&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Claude&lt;/td&gt;
+            &lt;td&gt;Monet&lt;/td&gt;
+            &lt;td&gt;monet&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Paul&lt;/td&gt;
+            &lt;td&gt;Cezanne&lt;/td&gt;
+            &lt;td&gt;cezanne&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="tables-demo panel">
+    <div class="panel-title">
+        <h6>Table with Horizontal Borders</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <table class="horizontal borders">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>User</th>
+                        <th>&#xA0;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Leo</td>
+                        <td>Da Vinci</td>
+                        <td>leo</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Claude</td>
+                        <td>Monet</td>
+                        <td>monet</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Paul</td>
+                        <td>Cezanne</td>
+                        <td>cezanne</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;table class=&quot;horizontal borders&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;First&lt;/th&gt;
+            &lt;th&gt;Last&lt;/th&gt;
+            &lt;th&gt;User&lt;/th&gt;
+            &lt;th&gt;&amp;#xA0;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Leo&lt;/td&gt;
+            &lt;td&gt;Da Vinci&lt;/td&gt;
+            &lt;td&gt;leo&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Claude&lt;/td&gt;
+            &lt;td&gt;Monet&lt;/td&gt;
+            &lt;td&gt;monet&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Paul&lt;/td&gt;
+            &lt;td&gt;Cezanne&lt;/td&gt;
+            &lt;td&gt;cezanne&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="tables-demo panel">
+    <div class="panel-title">
+        <h6>Table with Vertical Borders</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <table class="vertical borders">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>User</th>
+                        <th>&#xA0;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Leo</td>
+                        <td>Da Vinci</td>
+                        <td>leo</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Claude</td>
+                        <td>Monet</td>
+                        <td>monet</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Paul</td>
+                        <td>Cezanne</td>
+                        <td>cezanne</td>
+                        <td><a href="#">Action</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;table class=&quot;vertical borders&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;First&lt;/th&gt;
+            &lt;th&gt;Last&lt;/th&gt;
+            &lt;th&gt;User&lt;/th&gt;
+            &lt;th&gt;&amp;#xA0;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Leo&lt;/td&gt;
+            &lt;td&gt;Da Vinci&lt;/td&gt;
+            &lt;td&gt;leo&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Claude&lt;/td&gt;
+            &lt;td&gt;Monet&lt;/td&gt;
+            &lt;td&gt;monet&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Paul&lt;/td&gt;
+            &lt;td&gt;Cezanne&lt;/td&gt;
+            &lt;td&gt;cezanne&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="grids"></a>
+<h4 class="section-header">Grids</h4>
+<p>In Basecoat, grids are not restricted to the famous 12 column grid. In Basecoat you choose how many columns your grid should have from 2 to 16. Any element can become a grid, a <code>div</code>, <code>span</code> you name it. Grids also have no margins, gutters are achieved via cell paddings which gives you more flexibility when styling your layouts because it is the inner content who defines it&apos;s presentation, the grid only provides a space for the content to exist.</p>
+
+<p>Because we can choose the number of columns to use, the syntax is a little different than what you might be used to. It is much more intuitive. Lets say you need to divide a container into five equal columns. We would need a five column grid, then that element&apos;s class will be <code>five columns</code>, that simple. You can replace the word &quot;five&quot; for any number between &quot;two&quot; and &quot;sixteen&quot;.</p>
+
+<div class="grids-demo panel">
+    <div class="panel-title">
+        <h6>Basic Grid</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="five columns">
+                <div>1</div>
+                <div>2</div>
+                <span>3</span>
+                <strong>4</strong>
+                <div>5</div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;five columns&quot;&gt;
+    &lt;div&gt;1&lt;/div&gt;
+    &lt;div&gt;2&lt;/div&gt;
+    &lt;span&gt;3&lt;/span&gt;
+    &lt;strong&gt;4&lt;/strong&gt;
+    &lt;div&gt;5&lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Controlling column span is also simple. Lets say you need a three column wide element, then that element&apos;s class will be <code>three wide</code>. You can also use the <code>unpadded</code> class on a row or cell element to remove padding, or set your custom padding via css.</p>
+
+<div class="grids-demo panel">
+    <div class="panel-title">
+        <h6>Grid with multiple column span</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example unpadded-example">
+            <div class="five columns">
+                <div>1</div>
+                <div>2</div>
+                <span class="three wide">3</span>
+            </div>
+            <div class="five unpadded columns">
+                <div>1 <code>.unpadded</code> row</div>
+                <div>2 <code>.unpadded</code> row</div>
+                <span class="three wide">3 <code>.unpadded</code> row</span>
+            </div>
+            <div class="five columns">
+                <div>1</div>
+                <div class="unpadded">2 <code>.unpadded</code> cell</div>
+                <span class="three wide">3</span>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;five columns&quot;&gt;
+    &lt;div&gt;1&lt;/div&gt;
+    &lt;div&gt;2&lt;/div&gt;
+    &lt;span class=&quot;three wide&quot;&gt;3&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;five unpadded columns&quot;&gt;
+    &lt;div&gt;1 &lt;code&gt;.unpadded&lt;/code&gt; row&lt;/div&gt;
+    &lt;div&gt;2 &lt;code&gt;.unpadded&lt;/code&gt; row&lt;/div&gt;
+    &lt;span class=&quot;three wide&quot;&gt;3 &lt;code&gt;.unpadded&lt;/code&gt; row&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;five columns&quot;&gt;
+    &lt;div&gt;1&lt;/div&gt;
+    &lt;div class=&quot;unpadded&quot;&gt;2 &lt;code&gt;.unpadded&lt;/code&gt; cell&lt;/div&gt;
+    &lt;span class=&quot;three wide&quot;&gt;3&lt;/span&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Controlling column offset is done via empty offset cells.</p>
+
+<div class="grids-demo panel">
+    <div class="panel-title">
+        <h6>Grid with multiple column span and offset columns</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="five columns">
+                <div class="two wide">offset cell</div>
+                <span class="three wide">2</span>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;five columns&quot;&gt;
+    &lt;div class=&quot;two wide&quot;&gt;offset cell&lt;/div&gt;
+    &lt;span class=&quot;three wide&quot;&gt;2&lt;/span&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Rows and cells can be responsive. The three main breakpoints are mobile first, tablet and desktop. Resize your browser to test the following example. On mobile it will have 2 columns, on tablet 3, and on desktop 6. Also cell number 7 will be full width on every device and cells 8 and 9 will be split 1-1, 1-2 and 3-3 respectively.</p>
+
+<div class="grids-demo panel">
+    <div class="panel-title">
+        <h6>Responsive Grid</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="two tablet-three desktop-six columns">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div class="two tablet-three desktop-six wide">7</div>
+                <div class="tablet-one desktop-three wide">8</div>
+                <div class="tablet-two desktop-three wide">9</div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;two tablet-three desktop-six columns&quot;&gt;
+    &lt;div&gt;1&lt;/div&gt;
+    &lt;div&gt;2&lt;/div&gt;
+    &lt;div&gt;3&lt;/div&gt;
+    &lt;div&gt;4&lt;/div&gt;
+    &lt;div&gt;5&lt;/div&gt;
+    &lt;div&gt;6&lt;/div&gt;
+    &lt;div class=&quot;two tablet-three desktop-six wide&quot;&gt;7&lt;/div&gt;
+    &lt;div class=&quot;tablet-one desktop-three wide&quot;&gt;8&lt;/div&gt;
+    &lt;div class=&quot;tablet-two desktop-three wide&quot;&gt;9&lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<p>You can also use nested grids!</p>
+
+<div class="grids-demo panel">
+    <div class="panel-title">
+        <h6>Responsive Nested Grids</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="two tablet-three desktop-six columns">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div class="two tablet-three desktop-six wide">7</div>
+                <div class="tablet-one desktop-three wide">8</div>
+                <div class="tablet-two desktop-three wide">
+                    <div class="two desktop-four columns">
+                        <div>1</div>
+                        <div>2</div>
+                        <div class="two desktop-one">3</div>
+                        <div class="two desktop-one">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;two tablet-three desktop-six columns&quot;&gt;
+    &lt;div&gt;1&lt;/div&gt;
+    &lt;div&gt;2&lt;/div&gt;
+    &lt;div&gt;3&lt;/div&gt;
+    &lt;div&gt;4&lt;/div&gt;
+    &lt;div&gt;5&lt;/div&gt;
+    &lt;div&gt;6&lt;/div&gt;
+    &lt;div class=&quot;two tablet-three desktop-six wide&quot;&gt;7&lt;/div&gt;
+    &lt;div class=&quot;tablet-one desktop-three wide&quot;&gt;8&lt;/div&gt;
+    &lt;div class=&quot;tablet-two desktop-three wide&quot;&gt;
+        &lt;div class=&quot;two desktop-four columns&quot;&gt;
+            &lt;div&gt;1&lt;/div&gt;
+            &lt;div&gt;2&lt;/div&gt;
+            &lt;div class=&quot;two desktop-one&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;two desktop-one&quot;&gt;4&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="responsive-helpers"></a>
+<h4 class="section-header">Responsive Helpers</h4>
+<p>To control content presence on breakpoints you can use responsive helper clases. These will allow you to show or hide elements according to the current device, or to the responsive sequence defined.</p>
+
+<div class="responsive-helpers-demo panel">
+    <div class="panel-title">
+        <h6>Responsive Helpers</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="mobile-only">Current: Mobile</div>
+            <div class="tablet-only">Current: Tablet</div>
+            <div class="desktop-only">Current: Desktop</div>
+
+            <div class="mobile-show">This will appear on mobile</div>
+            <div class="tablet-show">This will appear on tablet</div>
+            <div class="desktop-show">This will appear on desktop</div>
+
+            <div class="mobile-hide">This will dissapear on mobile</div>
+            <div class="tablet-hide">This will dissapear on tablet</div>
+            <div class="desktop-hide">This will dissapear on desktop</div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;mobile-only&quot;&gt;Current: Mobile&lt;/div&gt;
+&lt;div class=&quot;tablet-only&quot;&gt;Current: Tablet&lt;/div&gt;
+&lt;div class=&quot;desktop-only&quot;&gt;Current: Desktop&lt;/div&gt;
+
+&lt;div class=&quot;mobile-show&quot;&gt;This will appear on mobile&lt;/div&gt;
+&lt;div class=&quot;tablet-show&quot;&gt;This will appear on tablet&lt;/div&gt;
+&lt;div class=&quot;desktop-show&quot;&gt;This will appear on desktop&lt;/div&gt;
+
+&lt;div class=&quot;mobile-hide&quot;&gt;This will dissapear on mobile&lt;/div&gt;
+&lt;div class=&quot;tablet-hide&quot;&gt;This will dissapear on tablet&lt;/div&gt;
+&lt;div class=&quot;desktop-hide&quot;&gt;This will dissapear on desktop&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="layouts"></a>
+<h4 class="section-header">Layouts</h4>
+<p>Layouts are simple layout structures that can be used on any part of your page and can be nested to achieve more complex layouts. They come in two flavors, row based layouts and column based layouts. As with grids, any element can be a layout, but beware! layouts use flexbox so older browsers will blow up.</p>
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Basic row layout</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary">
+                            This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-rows&quot;&gt;
+    &lt;header style=&quot;background-color:#E5E5E5;&quot;&gt;This is the header&lt;/header&gt;
+    &lt;div class=&quot;layout-primary&quot;&gt;
+        This is the content&lt;br&gt;that&lt;br&gt;can&lt;br&gt;span&lt;br&gt;many&lt;br&gt;lines&lt;br&gt;to&lt;br&gt;allow&lt;br&gt;the&lt;br&gt;main&lt;br&gt;container&lt;br&gt;to&lt;br&gt;scroll&lt;br&gt;
+    &lt;/div&gt;
+    &lt;footer style=&quot;background-color:#E5E5E5;&quot;&gt;This is the footer&lt;/footer&gt;
+&lt;/div&gt;
+                </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>You can make either the header, the footer or both elements fixed</p>
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Row layout with fixed header and footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary">
+                            This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-rows layout-fixed&quot;&gt;
+    &lt;header style=&quot;background-color:#E5E5E5;&quot;&gt;This is the header&lt;/header&gt;
+    &lt;div class=&quot;layout-primary&quot;&gt;
+        This is the content&lt;br&gt;that&lt;br&gt;can&lt;br&gt;span&lt;br&gt;many&lt;br&gt;lines&lt;br&gt;to&lt;br&gt;allow&lt;br&gt;the&lt;br&gt;main&lt;br&gt;container&lt;br&gt;to&lt;br&gt;scroll&lt;br&gt;
+    &lt;/div&gt;
+    &lt;footer style=&quot;background-color:#E5E5E5;&quot;&gt;This is the footer&lt;/footer&gt;
+&lt;/div&gt;
+                </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>When a row based layout is fixed, only the primary content will be <code>overflow: auto;</code> by default.</p>
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Row layout with fixed footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <div class="layout-primary">
+                            <header style="background-color:#E5E5E5;">This is the header</header>
+                            This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-rows layout-fixed&quot;&gt;
+    &lt;div class=&quot;layout-primary&quot;&gt;
+        &lt;header style=&quot;background-color:#E5E5E5;&quot;&gt;This is the header&lt;/header&gt;
+        This is the content&lt;br&gt;that&lt;br&gt;can&lt;br&gt;span&lt;br&gt;many&lt;br&gt;lines&lt;br&gt;to&lt;br&gt;allow&lt;br&gt;the&lt;br&gt;main&lt;br&gt;container&lt;br&gt;to&lt;br&gt;scroll&lt;br&gt;
+    &lt;/div&gt;
+    &lt;footer style=&quot;background-color:#E5E5E5;&quot;&gt;This is the footer&lt;/footer&gt;
+&lt;/div&gt;
+                </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Basic column layout</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-columns">
+                        <div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                        <div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                        <div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-columns&quot;&gt;
+    &lt;div style=&quot;background-color:#EEEEEE;&quot;&gt;Navigation content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+    &lt;div class=&quot;layout-primary&quot;&gt;This is the content&lt;br&gt;that&lt;br&gt;can&lt;br&gt;span&lt;br&gt;many&lt;br&gt;lines&lt;br&gt;to&lt;br&gt;allow&lt;br&gt;the&lt;br&gt;main&lt;br&gt;container&lt;br&gt;to&lt;br&gt;scroll&lt;br&gt;&lt;/div&gt;
+    &lt;div style=&quot;background-color:#EEEEEE;&quot;&gt;Secondary content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Basic column layout with header and footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-columns">
+                            <div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            <div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                            <div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-rows&quot;&gt;
+    &lt;header style=&quot;background-color:#E5E5E5;&quot;&gt;This is the header&lt;/header&gt;
+    &lt;div class=&quot;layout-columns&quot;&gt;
+        &lt;div style=&quot;background-color:#EEEEEE;&quot;&gt;Navigation content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+        &lt;div class=&quot;layout-primary&quot;&gt;This is the content&lt;br&gt;that&lt;br&gt;can&lt;br&gt;span&lt;br&gt;many&lt;br&gt;lines&lt;br&gt;to&lt;br&gt;allow&lt;br&gt;the&lt;br&gt;main&lt;br&gt;container&lt;br&gt;to&lt;br&gt;scroll&lt;br&gt;&lt;/div&gt;
+        &lt;div style=&quot;background-color:#EEEEEE;&quot;&gt;Secondary content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer style=&quot;background-color:#E5E5E5;&quot;&gt;This is the footer&lt;/footer&gt;
+&lt;/div&gt;
+                </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Column layout with fixed header and footer</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary">
+                            <div class="layout-columns">
+                                <div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                                <div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                                <div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            </div>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-rows layout-fixed&quot;&gt;
+    &lt;header style=&quot;background-color:#E5E5E5;&quot;&gt;This is the header&lt;/header&gt;
+    &lt;div class=&quot;layout-primary&quot;&gt;
+        &lt;div class=&quot;layout-columns&quot;&gt;
+            &lt;div style=&quot;background-color:#EEEEEE;&quot;&gt;Navigation content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+            &lt;div class=&quot;layout-primary&quot;&gt;This is the content&lt;br&gt;that&lt;br&gt;can&lt;br&gt;span&lt;br&gt;many&lt;br&gt;lines&lt;br&gt;to&lt;br&gt;allow&lt;br&gt;the&lt;br&gt;main&lt;br&gt;container&lt;br&gt;to&lt;br&gt;scroll&lt;br&gt;&lt;/div&gt;
+            &lt;div style=&quot;background-color:#EEEEEE;&quot;&gt;Secondary content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer style=&quot;background-color:#E5E5E5;&quot;&gt;This is the footer&lt;/footer&gt;
+&lt;/div&gt;
+                </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Column layout with independent columns</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="browser-window">
+                <span class="browser-title">Header and Footer Demo</span>
+                <div class="browser-content">
+                    <div class="layout-rows layout-fixed">
+                        <header style="background-color:#E5E5E5;">This is the header</header>
+                        <div class="layout-primary layout-columns">
+                            <div class="layout-navigation layout-scrollable" style="background-color:#EEEEEE;">
+                                <div>Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            </div>
+                            <div class="layout-secondary" style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+                            <div class="layout-primary layout-scrollable">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+                        </div>
+                        <footer style="background-color:#E5E5E5;">This is the footer</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-rows layout-fixed&quot;&gt;
+    &lt;header style=&quot;background-color:#E5E5E5;&quot;&gt;This is the header&lt;/header&gt;
+    &lt;div class=&quot;layout-primary layout-columns&quot;&gt;
+        &lt;div class=&quot;layout-navigation layout-scrollable&quot; style=&quot;background-color:#EEEEEE;&quot;&gt;
+            &lt;div&gt;Navigation content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;layout-secondary&quot; style=&quot;background-color:#EEEEEE;&quot;&gt;Secondary content.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;&lt;/div&gt;
+        &lt;div class=&quot;layout-primary layout-scrollable&quot;&gt;This is the content&lt;br&gt;that&lt;br&gt;can&lt;br&gt;span&lt;br&gt;many&lt;br&gt;lines&lt;br&gt;to&lt;br&gt;allow&lt;br&gt;the&lt;br&gt;main&lt;br&gt;container&lt;br&gt;to&lt;br&gt;scroll&lt;br&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer style=&quot;background-color:#E5E5E5;&quot;&gt;This is the footer&lt;/footer&gt;
+&lt;/div&gt;
+                </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Additionally layouts offer two helper classes to control the way content is padded and wrapped inside other containers</p>
+
+<div class="layouts-demo panel">
+    <div class="panel-title">
+        <h6>Layout helpers</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="layout-content">
+                This content will wrap at 50ems width, has side padding and will be centered inside its parent if its width is less than its parent&apos;s.
+            </div>
+            <div class="layout-content-fluid">
+                This content will not wrap, it will try to occupy 100% width but with a side padding.
+            </div>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-content&quot;&gt;
+    This content will wrap at 50ems width, has side padding and will be centered inside its parent if its width is less than its parent&amp;apos;s.
+&lt;/div&gt;
+&lt;div class=&quot;layout-content-fluid&quot;&gt;
+    This content will not wrap, it will try to occupy 100% width but with a side padding.
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+                
+                    <a id="layout-object"></a>
+<h4 class="section-header">Layout Object</h4>
+<p>The famous media object which lays out content in a very standard and reusable way.</p>
+
+<div class="layout-object-demo panel">
+    <div class="panel-title">
+        <h6>Layout Object</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <div class="layout-object">
+                <img src="Layout Object" width="80" height="80">
+                <div>This content could be anything, from simple text to more complex controls scoped to the element on the left.</div>
+            </div>
+
+            <div class="layout-object right">
+                <img src="Layout Object" width="80" height="80">
+                <div>The same media object but with the primary element to the right.</div>
+            </div>
+
+            <div class="layout-object">
+                <img src="Layout Object" width="80" height="80">
+                <div>
+                    And nested media objects
+                    <div class="layout-object">
+                        <img src="Sub Object" width="80" height="80">
+                        <div>Feels like inception</div>
+                    </div>
+                </div>
+            </div>
+            <em>* Element backgrounds colored for demonstration purposes</em>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;div class=&quot;layout-object&quot;&gt;
+    &lt;img src=&quot;Layout Object&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
+    &lt;div&gt;This content could be anything, from simple text to more complex controls scoped to the element on the left.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;layout-object right&quot;&gt;
+    &lt;img src=&quot;Layout Object&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
+    &lt;div&gt;The same media object but with the primary element to the right.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;layout-object&quot;&gt;
+    &lt;img src=&quot;Layout Object&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
+    &lt;div&gt;
+        And nested media objects
+        &lt;div class=&quot;layout-object&quot;&gt;
+            &lt;img src=&quot;Sub Object&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
+            &lt;div&gt;Feels like inception&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;em&gt;* Element backgrounds colored for demonstration purposes&lt;/em&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+            <footer class="four columns">
+                <div class="four desktop-three wide info">
+                    A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+                </div>
+                <div class="four desktop-one wide github">
+                    <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
+                    <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
+                    <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <!-- build:js js/basecoat.min.js -->
+    <script src="js/basecoat.js"></script>
+    <script src="js/console.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/dismissable.js"></script>
+    <script src="js/elevator.js"></script>
+    <script src="js/peek.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/broken.js"></script>
+    <script src="js/sequence.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/scripts.min.js -->
+    <script src="bower_components/prism/prism.js"></script>
+    <script src="js/site.js"></script>
+    <!-- endbuild -->
+
+    <script>
+    var _gaq = [
+        ['_setAccount', 'UA-XXXXX-X'],
+        ['_trackPageview']
+    ];
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+    </script>
+
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

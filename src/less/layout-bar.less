@@ -1,0 +1,79 @@
+.layout-bar{
+	margin-bottom:1em;
+
+	&:after{
+		.clearfix();
+	}
+
+	& > *{
+		display: inline-block;
+		vertical-align: middle;
+		margin-top:0;
+		margin-bottom:0;
+		line-height: 2.23em;
+
+		& + *{
+			padding: 0 0.5em;
+		}
+	}
+
+	& > input[type="text"]{
+		height: 2.23em;
+	}
+
+	/* grab layout-bars inside input fields */
+	& > label,
+	& > .selectjs{
+		line-height: 2.23em;
+	}
+
+	& > .layout-bar-primary{
+		font-size: 2em;
+		font-weight: bold;
+		color: #333;
+		line-height: 1.12em;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	&.extremes{
+		text-align: right;
+
+		& > .layout-bar-primary{
+			float:left;
+		}
+	}
+
+	/*&.compact{
+		& > *{
+			float:left;
+		}
+	}*/
+
+	&.bordered{
+		border: 1px solid #D0D0D0;
+		//border-radius: 0.3em;
+	}
+
+	&.grouped{
+		display: inline-block;
+		background-color: #ECECEC;
+		margin:0;
+		vertical-align: middle;
+
+		& > *{
+			float:left;
+			padding:0 0.3em;
+
+			& + *{
+				border-left:1px solid #D0D0D0;
+			}
+		}
+	}
+
+	/*&.separating{
+		border-bottom: 1px solid #EAEAEA;
+	}*/
+}

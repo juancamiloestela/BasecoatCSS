@@ -1,0 +1,145 @@
+.tooltip{
+	position:relative;
+	cursor: pointer;
+
+	.message{
+		cursor: auto;
+		position: absolute;
+		background-color: silver;
+		padding: 0.2em 0.5em;
+		min-width: 6em;
+		left: 0;
+		visibility: collapse;
+		font-size:0.9em;
+		opacity: 0;
+		z-index: 1;
+		margin: 1em 0 0 0;
+		transition: opacity 150ms ease-in, top 150ms, bottom 150ms, left 150ms, right 150ms;
+
+		&:before{
+			content: '';
+			width: 0;
+			height: 0;
+			bottom:100%;
+			left: 1em;
+			border-width: 0.8em;
+			border-style: solid;
+			border-color: transparent transparent silver;
+			position: absolute;
+			z-index:2;
+		}
+
+		&:after{
+			content: '';
+			position:absolute;
+			width:100%;
+			height:1em;
+			background-color:transparent;
+			z-index:1;
+			bottom:100%;
+			left:0;
+		}
+	}
+
+	&.hover,
+	&:hover{
+
+		.message{
+			opacity:1;
+			visibility: visible;
+			top: 100%;
+		}
+	}
+
+
+
+	&.up{
+
+		.message{
+			margin: 0 0 1em 0;
+
+			&:before{
+				border-color: silver transparent transparent transparent;
+				top:100%;
+			}
+
+			&:after{
+				top:100%;
+			}
+		}
+
+		&.hover,
+		&:hover{
+
+			.message{
+				bottom: 100%;
+				top:auto;
+			}
+		}
+	}
+
+
+	&.right{
+
+		.message{
+			margin: 0 0 0 1em;
+			top:-0.5em;
+
+			&:before{
+				border-color: transparent silver transparent transparent;
+				top:0.4em;
+				right:100%;
+				left:auto;
+			}
+
+			&:after{
+				top: 0;
+				right: 100%;
+				width: 1em;
+				height: 100%;
+				left:auto;
+			}
+		}
+
+		&.hover,
+		&:hover{
+
+			.message{
+				left:100%;
+			}
+		}
+	}
+
+
+	&.left{
+
+		.message{
+			margin: 0 1em 0 0;
+			top:-0.5em;
+
+			&:before{
+				border-color: transparent transparent transparent silver;
+				top:0.4em;
+				left:100%;
+			}
+
+			&:after{
+				top: 0;
+				left: 100%;
+				width: 1em;
+				height: 100%;
+			}
+		}
+
+		&.hover,
+		&:hover{
+
+			.message{
+				right:100%;
+				left:auto;
+			}
+		}
+	}
+
+}
+

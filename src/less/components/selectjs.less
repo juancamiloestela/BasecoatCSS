@@ -1,0 +1,49 @@
+.selectjs{
+
+	display:inline-block;
+	line-height:inherit;
+	background-color:#AAA;
+	color:#fff;
+	vertical-align: middle;
+	cursor: pointer;
+
+	&.block{
+		
+	}
+
+	&.focused{
+		background-color:#888;
+	}
+
+	&.hover{
+		background-color:#888;
+	}
+
+	&.disabled{
+		pointer-events: none;
+		cursor: not-allowed;
+		opacity: .6;
+		filter: alpha(opacity=60);
+	}
+
+	div.label{
+		padding:0 2em 0 1em;
+		overflow: hidden;
+		white-space: nowrap;
+		position:relative;
+		background-color: inherit;
+
+		&:after{
+			content: '\25be';
+			position: absolute;
+			right: 0;
+			background-color: inherit;
+			width: 1.3em;
+			padding-left: 0.5em;
+		}
+	}
+
+	select{
+		color:initial;
+	}
+}

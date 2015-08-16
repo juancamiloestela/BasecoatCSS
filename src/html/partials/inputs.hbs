@@ -1,0 +1,224 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">Inputs</h4>
+<p>Inputs fields are designed te be accessible and lightweight while maintaining typographic consistency.</p>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Basic Inputs</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <label for="text">Text</label> 
+            <input type="text" placeholder="Text" id="text" /><br>
+
+            <label for="password">Password</label> 
+            <input type="password" placeholder="Password" id="password" /><br>
+
+            <label for="textarea">Textarea</label> 
+            <textarea id="textarea" placeholder="Textarea"></textarea>
+
+            <label for="left-label-native-radio">
+                Left label native radio button <input type="radio" class="native" id="left-label-native-radio"/>
+            </label><br>
+
+            <label for="right-label-native-radio">
+                <input type="radio" class="native" id="right-label-native-radio"/> Right label native radio button
+            </label><br>
+
+            <label for="left-label-native-checkbox">
+                Left label native checkbox <input type="checkbox" class="native" id="left-label-native-checkbox"/>
+            </label><br>
+
+            <label for="right-label-native-checkbox">
+                <input type="checkbox" class="native" id="right-label-native-checkbox"/> Right label native checkbox
+            </label><br>
+
+            <label for="native-select">Native Select</label> 
+            <select id="native-select" class="native">
+                <option>Da Vinci</option>
+                <option>Monet</option>
+                <option>Picasso</option>
+                <option>Cézanne</option>
+            </select><br>
+
+
+            <p>New Html5 inputs are also taken into account</p>
+
+            <label for="input-color">Color</label> <input type="color" id="input-color"><br>
+            <label for="input-date">Date</label> <input type="date" id="input-date"><br>
+            <label for="input-datetime">DateTime</label> <input type="datetime" id="input-datetime"><br>
+            <label for="input-datetime-local">DateTime Local</label> <input type="datetime-local" id="input-datetime-local"><br>
+            <label for="input-email">Email</label> <input type="email" id="input-email"><br>
+            <label for="input-number">Number</label> <input type="number" id="input-number"><br>
+            <label for="input-range">Range</label> <input type="range" id="input-range"><br>
+            <label for="input-search">Search</label> <input type="search" id="input-search"><br>
+            <label for="input-tel">Tel</label> <input type="tel" id="input-tel"><br>
+            <label for="input-url">Url</label> <input type="url" id="input-url"><br>
+            <label for="input-time">Time</label> <input type="time" id="input-time"><br>
+            <label for="input-month">Month</label> <input type="month" id="input-month"><br>
+            <label for="input-week">Week</label> <input type="week" id="input-week"><br>
+
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<p>Some form elements vary their style and rendering between operating systems and browsers. This is why Basecoat provides an ultra lightweight jQuery plugin to skin checkboxes, radio buttons and selects with a normalized skin which you can extend, while retaining accessibility via keyboard, mouse or touch events. To see more information about these plugins check out the sections for <a href="components.html#checkboxjs">Checkboxjs</a> and <a href="components.html#selectjs">Selectjs</a> in the <a href="components.html">Components page</a>. All selects are skinned by default, no class is needed.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Skinned Inputs</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            
+            <label for="left-label-radio">
+                Left label radio button <input type="radio" id="left-label-radio"/>
+            </label><br>
+
+            <label for="right-label-radio">
+                <input type="radio" id="right-label-radio"/> Right label radio button
+            </label><br>
+
+            <label for="left-label-checkbox">
+                Left label checkbox <input type="checkbox" id="left-label-checkbox"/>
+            </label><br>
+
+            <label for="right-label-checkbox">
+                <input type="checkbox" id="right-label-checkbox"/> Right label checkbox
+            </label><br>
+
+            <label for="skinned-select">Skinned Select</label> 
+            <select id="skinned-select">
+                <option>Da Vinci</option>
+                <option>Monet</option>
+                <option>Picasso</option>
+                <option>Cézanne</option>
+            </select>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Inline Inputs</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <p>This is a paragraph demonstrating the use of a <input type="text" placeholder="text field" /> and a <input type="password" placeholder="password field" /> inline with text. Even <label for="inline-radio-1"><input type="radio" id="inline-radio-1" name="inline-radio"> Radio Button 1</label> <label for="inline-radio-2"><input type="radio" id="inline-radio-2" name="inline-radio"> Radio Button 2</label> or a <label for="inline-checkbox"><input type="checkbox" id="inline-checkbox"> Checkbox</label> can also be used. Also a basic select 
+                <select class="native">
+                    <option>Native Select</option>
+                    <option>Native Select 1</option>
+                    <option>Native Select 2</option>
+                    <option>Native Select 3</option>
+                </select>
+                 or an 
+                <select>
+                    <option>Skinned Select</option>
+                    <option>Skinned Select 1</option>
+                    <option>Skinned Select 2</option>
+                    <option>Skinned Select 3</option>
+                </select> 
+            can be placed inline with text. By default inline inputs inherit the line-height of the container.</p>
+
+            <p>Although html5 input elements are not yet widely supported we can still use them inline and maintain the vertical rythm. For example a color input <input type="color"> or a date input <input type="date" >. A date time input <input type="datetime"> corrected for a local timezone <input type="datetime-local">. Also emails <input type="email" placeholder="email"> or numbers <input type="number">. Even a range picker <input type="range">. You can put a search field <input type="search"> or a phone <input type="tel"> or a url input <input type="url" >. There's also the super cool time input <input type="time">, month <input type="month" > and week input <input type="week">.</p>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Inputs can also behave like block level elements, taking up all the horizontal space they can.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>Block Inputs</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <label for="block-text">Text</label> 
+            <input type="text" placeholder="Text" id="block-text" class="block"/>
+
+            <label for="block-password">Password</label> 
+            <input type="password" placeholder="Password" id="block-password" class="block"/>
+
+            <label for="block-textarea">Textarea</label> 
+            <textarea id="block-textarea" class="block" placeholder="Textarea"></textarea>
+
+            <label for="block-select">Select</label> 
+            <select id="block-select" class="native block">
+                <option>Da Vinci</option>
+                <option>Monet</option>
+                <option>Picasso</option>
+                <option>Cézanne</option>
+            </select>
+
+            <label for="block-input-color">Color</label>
+            <input type="color" id="block-input-color" class="block">
+
+            <label for="bloack-input-date">Date</label>
+            <input type="date" id="bloack-input-date" class="block">
+
+            <label for="block-input-datetime">DateTime</label>
+            <input type="datetime" id="block-input-datetime" class="block">
+
+            <label for="block-input-datetime-local">DateTime Local</label>
+            <input type="datetime-local" id="block-input-datetime-local" class="block">
+
+            <label for="block-input-email">Email</label>
+            <input type="email" id="block-input-email" class="block">
+
+            <label for="block-input-number">Number</label>
+            <input type="number" id="block-input-number" class="block">
+
+            <label for="block-input-range">Range</label>
+            <input type="range" id="block-input-range" class="block">
+
+            <label for="block-input-search">Search</label>
+            <input type="search" id="block-input-search" class="block">
+
+            <label for="block-input-tel">Tel</label>
+            <input type="tel" id="block-input-tel" class="block">
+
+            <label for="block-input-url">Url</label>
+            <input type="url" id="block-input-url" class="block">
+
+            <label for="block-input-time">Time</label>
+            <input type="time" id="block-input-time" class="block">
+
+            <label for="block-input-month">Month</label>
+            <input type="month" id="block-input-month" class="block">
+
+            <label for="block-input-week">Week</label>
+            <input type="week" id="block-input-week" class="block">
+
+            <label for="block-skinned-select">Skinned Block Select</label> 
+            <select id="block-skinned-select" class="block">
+                <option>Da Vinci</option>
+                <option>Monet</option>
+                <option>Picasso</option>
+                <option>Cézanne</option>
+            </select>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>

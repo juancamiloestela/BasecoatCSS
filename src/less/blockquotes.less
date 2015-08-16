@@ -1,0 +1,29 @@
+blockquote{
+    font-size:1.8em;
+    line-height: 1.3543em;
+    text-align: center;
+    margin:0.903em 0;
+    font-family: serif;
+    max-width: 50em;
+
+    p{
+        margin:0;
+        line-height:1.3544em;
+
+        &:before{
+            content:"\201C";
+        }
+        &:after{
+            content:"\201D";
+        }
+    }
+        
+    small,
+    .author{
+       display:block;
+       text-align:right;
+       font-size: 0.55em;
+       line-height: 1.642em;
+       font-family: sans-serif;
+    }
+}

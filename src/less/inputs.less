@@ -1,0 +1,203 @@
+input,
+textarea{
+    border: 0;
+    line-height: inherit;
+    padding: 0 0.5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+textarea{
+    height:3.25em;
+    display:block;
+}
+
+
+input{
+
+    height: 1.425em;
+    line-height: 1.525em;
+
+    &.block{
+        height: 1.625em;
+        line-height: inherit;
+    }
+
+    /* All texty inputs */
+    &[type="text"],
+    &[type="password"],
+    &[type="date"],
+    &[type="datetime"],
+    &[type="datetime-local"],
+    &[type="email"],
+    &[type="month"],
+    &[type="number"],
+    &[type="search"],
+    &[type="tel"],
+    &[type="time"],
+    &[type="url"],
+    &[type="week"]{
+
+    }
+
+    /* All boxy inputs */
+    &[type="radio"],
+    &[type="checkbox"]{
+        height:auto;
+        vertical-align: initial;
+    }
+
+
+    &[type="text"]{
+
+    }
+
+    &[type="password"]{
+        
+    }
+
+    &[type="radio"]{
+        
+    }
+
+    &[type="checkbox"]{
+        
+    }
+
+    &[type="color"]{
+        padding: 0 0.2em;
+        height: 1.4em;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+
+    &[type="date"]{
+        height: 1.425em;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+
+    &[type="datetime"]{
+        height: 1.425em;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+
+    &[type="datetime-local"]{
+        height: 1.425em;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+
+    &[type="email"]{
+        
+    }
+
+    &[type="month"]{
+        height: 1.425em;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+
+    &[type="number"]{
+        
+    }
+
+    &[type="range"]{
+        height:0.5em;
+        background-color:transparent;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+
+    &[type="search"]{
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing:border-box;
+    }
+
+    &[type="tel"]{
+        
+    }
+
+    &[type="time"]{
+        height: 1.425em;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+
+    &[type="url"]{
+        
+    }
+
+    &[type="week"]{
+        height: 1.425em;
+
+        &.block{
+            height:1.625em;
+        }
+    }
+}
+
+select{
+    font-size:1em;
+    /*padding:0.3125em 0;*/
+    /*height:1.625em;*/
+
+    &.block{
+        margin-top:5px;
+        height:21px;
+    }
+}
+
+
+
+.stack{
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"]{
+        height:1.625em;
+    }
+
+    label{
+        line-height: 1.625em;
+        padding:0 0.5em;
+    }
+
+    &.horizontal{
+        
+        input[type="checkbox"],
+        input[type="radio"]{
+
+        }
+    }
+}

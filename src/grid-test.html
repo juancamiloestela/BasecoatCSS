@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BasecoatCSS | Grids test</title>
+    <meta name="description" content="The CSS framework for artists">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:700,400" rel="stylesheet" type="text/css">
+    
+    <link href="http://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Princess+Sofia|Bubblegum+Sans|Emilys+Candy|Neucha|Milonga|Lancelot" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Averia+Serif+Libre:400,700,400italic|Vollkorn:400italic,400,700|Cookie|Goudy+Bookletter+1911|Donegal+One|Alegreya:400italic,400,700" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet" type="text/css">
+
+
+
+
+    <link href="bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bower_components/prism/themes/prism.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/basecoat.css">
+    <link rel="stylesheet" href="app-oldie.css">
+    <!--[if gt IE 8]><!-->
+    <!-- build:css css/basecoat.min.css -->
+    <!--link rel="stylesheet" href="css/basecoat.css"-->
+    <!-- endbuild -->
+    <!--<![endif]-->
+
+    <!-- build:css css/fonts.min.css -->
+    <link rel="stylesheet" href="css/coats/fonts.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/pressable.min.css -->
+    <link rel="stylesheet" href="css/coats/pressable.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/rounded.min.css -->
+    <link rel="stylesheet" href="css/coats/rounded.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/fancy.min.css -->
+    <!--link rel="stylesheet" href="css/coats/fancy.css"-->
+    <!-- endbuild -->
+
+    <!-- build:css css/site.min.css -->
+    <link rel="stylesheet" href="css/site.css">
+    <!-- endbuild -->
+
+    <!-- build:js js/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body class="peek-effect-door">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="peek-left-content">
+        <a href="#" class="close peek-toggle-left">&#xD7;</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <a href="#" class="peek-close-all">Close All</a>
+        <a href="#" class="peek-close-left">Close left</a>
+        <a href="#" class="peek-open-right">Open Right</a>
+    </div>
+
+    <div class="peek-right-content">
+        <a href="#" class="close peek-toggle-right">&#xD7;</a>
+
+        <nav class="side-nav">
+            <a href="getting-started.html">Getting Started</a>
+            <a href="typography.html">Typography</a>
+            <a href="layout.html">Layout</a>
+            <a href="forms.html">Forms</a>
+            <a href="components.html">Components</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="themes.html">Themes</a>
+            <a href="faq.html">FAQ</a>
+            <a href="download.html" class="primary button">Download</a>
+        </nav>
+    </div>
+
+    <div class="peek-container">
+        <div class="layout-rows">
+            <div class="layout-content-fluid">
+                <header class="four unpadded columns">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                        </a>
+                    </div>
+                    <nav class="main-nav three wide right-aligned desktop-only">
+                        <a href="getting-started.html">Getting Started</a>
+                        <a href="typography.html">Typography</a>
+                        <a href="layout.html">Layout</a>
+                        <a href="forms.html">Forms</a>
+                        <a href="components.html">Components</a>
+                        <a href="themes.html">Themes</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="download.html" class="button">Download</a>
+                    </nav>
+                    <nav class="three wide right-aligned desktop-hide">
+                        <a href="#" class="peek-toggle-right">MENU</a>
+                    </nav>
+                </header>
+            </div>
+            
+<h1>Grids Test</h1>
+<div class="test-container">
+
+	<label>Helpers</label>
+	<div class="mobile-only">Current: Mobile</div>
+	<div class="tablet-only">Current: Tablet</div>
+	<div class="desktop-only">Current: Desktop</div>
+
+	<div class="mobile-show">Visible on mobile. </div>
+	<div class="tablet-show">Visible on tablet. </div>
+	<div class="desktop-show">Visible on desktop. </div>
+
+	<div class="mobile-hide">Hidden on mobile. </div>
+	<div class="tablet-hide">Hidden on tablet. </div>
+	<div class="desktop-hide">Hidden on desktop. </div>
+
+	<label>A basic grid row</label>
+	<div class="three columns">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+
+	<label>Mobile-six columns</label>
+	<div class="six columns">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+
+	<label>Table-six columns</label>
+	<div class="tablet-six columns">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+
+	<label>Desktop-six columns</label>
+	<div class="desktop-six columns">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+
+	<label>Mobile two - Tablet Three - Desktop-six columns</label>
+	<div class="two tablet-three desktop-six columns">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+
+	<label>Widths</label>
+	<div class="sixteen columns">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+		<div>13</div>
+		<div>14</div>
+		<div>15</div>
+		<div>16</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+		<div>13</div>
+		<div>14</div>
+		<div class="two wide">15</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+		<div>13</div>
+		<div class="three wide">14</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+		<div class="four wide">13</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div class="five wide">12</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div class="six wide">11</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div class="seven wide">10</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div class="eight wide">9</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div class="nine wide">8</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div class="ten wide">7</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div class="eleven wide">6</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div class="twelve wide">5</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div class="thirteen wide">4</div>
+
+		<div>1</div>
+		<div>2</div>
+		<div class="fourteen wide">3</div>
+
+		<div>1</div>
+		<div class="fifteen wide">2</div>
+
+		<div class="sixteen wide">1</div>
+
+
+
+		<div class="fourteen wide">1</div>
+		<div class="two wide">2</div>
+
+		<div class="thirteen wide">1</div>
+		<div class="three wide">2</div>
+
+		<div class="twelve wide">1</div>
+		<div class="four wide">2</div>
+
+		<div class="eleven wide">1</div>
+		<div class="five wide">2</div>
+
+		<div class="ten wide">1</div>
+		<div class="six wide">2</div>
+
+		<div class="nine wide">1</div>
+		<div class="seven wide">2</div>
+
+		<div class="eight wide">1</div>
+		<div class="eight wide">2</div>
+
+		<div class="seven wide">1</div>
+		<div class="nine wide">2</div>
+
+		<div class="six wide">1</div>
+		<div class="ten wide">2</div>
+
+		<div class="five wide">1</div>
+		<div class="eleven wide">2</div>
+
+		<div class="four wide">1</div>
+		<div class="twelve wide">2</div>
+
+		<div class="three wide">1</div>
+		<div class="thirteen wide">2</div>
+
+		<div class="two wide">1</div>
+		<div class="fourteen wide">2</div>
+
+		<div class="four wide">1</div>
+		<div class="four wide">2</div>
+		<div class="four wide">3</div>
+		<div class="four wide">4</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	Multiple rows per row !TODO: wrong paddings should be via nth-child?
+	<div class="three desktop-two tablet-four columns">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div class="desktop-two wide">5</div>
+		<div class="desktop-two tablet-three wide">6</div>
+	</div>
+
+	On mobile [123]
+	On tablet [123]
+	On desktop [122]
+	<div class="three columns">
+		<div>1</div>
+		<div class="desktop-two wide">2</div>
+		<div class="desktop-hide">3</div>
+	</div>
+
+</div>
+            <footer class="four columns">
+                <div class="four desktop-three wide info">
+                    A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+                </div>
+                <div class="four desktop-one wide github">
+                    <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
+                    <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
+                    <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <!-- build:js js/basecoat.min.js -->
+    <script src="js/basecoat.js"></script>
+    <script src="js/console.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/dismissable.js"></script>
+    <script src="js/elevator.js"></script>
+    <script src="js/peek.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/broken.js"></script>
+    <script src="js/sequence.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/scripts.min.js -->
+    <script src="bower_components/prism/prism.js"></script>
+    <script src="js/site.js"></script>
+    <!-- endbuild -->
+
+    <script>
+    var _gaq = [
+        ['_setAccount', 'UA-XXXXX-X'],
+        ['_trackPageview']
+    ];
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+    </script>
+
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

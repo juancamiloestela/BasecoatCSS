@@ -1,0 +1,159 @@
+@default: #AAAAAA; // default (gray)
+@primary: #0e90d2; // primary (blue)
+@secondary: #8058A5; // secondary (purple)
+@rewarding: #5eb95e; // rewarding (green)
+@dangerous: #dd514c; // dangerous (red)
+@engaging: #F37B1D; // engaging (orange)
+@warning: #FAD232; // warning (yellow)
+
+body{
+    color:#666;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:#333;
+}
+
+pre,
+pre code{
+    background-color: transparent;
+}
+
+code{
+    color: #4d4d4d;
+    background-color: #FEE9CC;
+}
+
+input,
+.progress,
+textarea{
+    background-color:#efefef;
+}
+    input:focus,
+    textarea:focus{
+        background-color:#dfdfdf;
+    }
+
+small,
+blockquote .author,
+.input.field .help{
+    color:#cacaca;
+}
+
+.divider{
+    &:before,
+    &:after{
+        border-color:#cacaca;
+    }
+}
+
+::-webkit-input-placeholder {
+
+}
+:-moz-placeholder {
+  
+}
+::-moz-placeholder {
+ 
+}
+:-ms-input-placeholder {  
+ 
+}
+
+
+a{
+    color:#2982E2;
+}
+    a:hover{
+        color:#2475CC;
+    }
+
+.button,
+button,
+.badge,
+.message,
+.selectjs,
+/*.progress > div*/{
+    background-color:@default;
+    color:#fff;
+}
+    button:hover,
+    .button:hover,
+    .selectjs:hover{
+        background-color: darken(@default, 10%);
+        color:#fff;
+    }
+
+
+.color(@name; @color; @color-hover; @color-foreground; @color-foreground-hover){
+    
+    .background-@{name}{
+        background-color:@color;
+        color:@color-foreground;
+    }
+
+    .@{name}{
+        color:@color;
+
+        a&:hover{
+            color:@color-hover;
+        }
+
+        button&,
+        &.button,
+        &.badge,
+        &.message,
+        &.selectjs{
+            background-color:@color;
+            color:@color-foreground;
+        }
+            button&:hover,
+            .button&:hover,
+            .selectjs&:hover{
+                background-color:@color-hover;
+                color:@color-foreground-hover;
+            }
+    }
+
+    .tooltip{
+        & > .@{name}.message{
+            &:before{
+                border-color: transparent transparent @color;
+            }
+        }
+
+        &.up{
+            & > .@{name}.message{
+                &:before{
+                    border-color: @color transparent transparent transparent;
+                }
+            }
+        }
+
+        &.left{
+            & > .@{name}.message{
+                &:before{
+                    border-color: transparent transparent transparent @color;
+                }
+            }
+        }
+
+        &.right{
+            & > .@{name}.message{
+                &:before{
+                    border-color: transparent @color transparent transparent;
+                }
+            }
+        }
+        /* TODO: check if tooltip can degrade using rotated cube instead of border-arrow */
+    }
+}
+
+
+
+.color(~"primary", @primary, multiply(@primary, #ffcccc), #fff, #fff);
+.color(~"secondary", @secondary, multiply(@secondary, #ffcccc), #fff, #fff);
+.color(~"rewarding", @rewarding, multiply(@rewarding, #ffcccc), #fff, #fff);
+.color(~"dangerous", @dangerous, multiply(@dangerous, #ffcccc), #fff, #fff);
+.color(~"engaging", @engaging, multiply(@engaging, #ffcccc), #fff, #fff);
+.color(~"warning", @warning, multiply(@warning, #ffcccc), #fff, #fff);

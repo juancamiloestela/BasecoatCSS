@@ -1,0 +1,87 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">CheckboxJS</h4>
+
+<p>CheckboxJS, like SelectJS, aims to skin the checkbox and radio button controls as efficiently as possible. This allows us to make the inputs behave and maintain correct typographical dimensions and relation to surrounding elements, while keeping accessibility, tabbed navigation and keyboard controls robust on all device/browser combinations.</p>
+
+<div class="{{ name }}-demo panel">
+    <div class="panel-title">
+        <h6>CheckboxJS states</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <form>
+                <div class="mirrored form-field">
+                    <label>
+                        Checkboxjs Checkbox Demo
+                        <span class="help">Demo of all checkbox scenarios.</span>
+                    </label>
+                    <label for="checkboxjs-checkbox-demo-1">
+                        <input type="checkbox" id="checkboxjs-checkbox-demo-1" name="demo[]" value="1" checked="checked">
+                        Option 1
+                    </label>
+                    <label for="checkboxjs-checkbox-demo-2">
+                        <input type="checkbox" id="checkboxjs-checkbox-demo-2" name="demo[]" value="2">
+                        Option 2
+                    </label>
+                    <label for="checkboxjs-checkbox-demo-3">
+                        <input type="checkbox" id="checkboxjs-checkbox-demo-3" name="demo[]" value="3">
+                        Option 3
+                    </label>
+                    <label for="checkboxjs-checkbox-demo-4">
+                        <input type="checkbox" id="checkboxjs-checkbox-demo-4" name="demo[]" value="4" disabled="disabled">
+                        Disabled
+                    </label>
+                    <label for="checkboxjs-checkbox-demo-5">
+                        <input type="checkbox" id="checkboxjs-checkbox-demo-5" name="demo[]" value="5" class="native">
+                        Ignored
+                    </label>
+                    <label for="checkboxjs-checkbox-demo-6">
+                        <input type="checkbox" id="checkboxjs-checkbox-demo-6" name="demo[]" value="6" class="switch">
+                        Switch
+                    </label>
+                </div>
+                <div class="mirrored form-field">
+                    <label>
+                        Checkboxjs Radio Button Demo
+                        <span class="help">Demo of all radio button scenarios.</span>
+                    </label>
+                    <label for="checkboxjs-radio-demo-1">
+                        <input type="radio" id="checkboxjs-radio-demo-1" name="radio-demo" value="1" checked="checked">
+                        Option 1
+                    </label>
+                    <label for="checkboxjs-radio-demo-2">
+                        <input type="radio" id="checkboxjs-radio-demo-2" name="radio-demo" value="2">
+                        Option 2
+                    </label>
+                    <label for="checkboxjs-radio-demo-3">
+                        <input type="radio" id="checkboxjs-radio-demo-3" name="radio-demo" value="3">
+                        Option 3
+                    </label>
+                    <label for="checkboxjs-radio-demo-4">
+                        <input type="radio" id="checkboxjs-radio-demo-4" name="radio-demo" value="4" disabled="disabled">
+                        Disabled
+                    </label>
+                    <label for="checkboxjs-radio-demo-5">
+                        <input type="radio" id="checkboxjs-radio-demo-5" name="radio-demo" value="5" class="native">
+                        Ignored
+                    </label>
+                    <label for="checkboxjs-radio-demo-6">
+                        <input type="radio" id="checkboxjs-radio-demo-6" name="radio-demo" value="6" class="switch">
+                        Switch
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>The plugin is auto initialized on document ready. You can also trigger the plugin manually to skin elements added dynamically via the following command.</p>
+
+<pre><code class="language-javascript">
+$('.my-checkboxes').checkbox();
+</code></pre>

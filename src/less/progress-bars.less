@@ -1,0 +1,26 @@
+.progress{
+    height:1.625em;
+    padding: 0.2em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .progress div{
+        width:30%;
+        height:100%;
+    }
+
+    @keyframes progress-stripes {
+		0% {
+			background-position: 0 0;
+		}
+		100% {
+			background-position: -3em 0;
+		}
+	}
+    .progress.striped div{
+    	background-size: 3em 3em;
+    	background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent);
+    	animation: progress-stripes 1s linear infinite;
+        transform: translate3d(0,0,0);
+    }

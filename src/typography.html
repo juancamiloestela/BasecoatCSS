@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BasecoatCSS | Typography</title>
+    <meta name="description" content="The CSS framework for artists">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:700,400" rel="stylesheet" type="text/css">
+    
+    <link href="http://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Princess+Sofia|Bubblegum+Sans|Emilys+Candy|Neucha|Milonga|Lancelot" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Averia+Serif+Libre:400,700,400italic|Vollkorn:400italic,400,700|Cookie|Goudy+Bookletter+1911|Donegal+One|Alegreya:400italic,400,700" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet" type="text/css">
+
+
+
+
+    <link href="bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bower_components/prism/themes/prism.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/basecoat.css">
+    <link rel="stylesheet" href="app-oldie.css">
+    <!--[if gt IE 8]><!-->
+    <!-- build:css css/basecoat.min.css -->
+    <!--link rel="stylesheet" href="css/basecoat.css"-->
+    <!-- endbuild -->
+    <!--<![endif]-->
+
+    <!-- build:css css/fonts.min.css -->
+    <link rel="stylesheet" href="css/coats/fonts.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/pressable.min.css -->
+    <link rel="stylesheet" href="css/coats/pressable.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/rounded.min.css -->
+    <link rel="stylesheet" href="css/coats/rounded.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/fancy.min.css -->
+    <!--link rel="stylesheet" href="css/coats/fancy.css"-->
+    <!-- endbuild -->
+
+    <!-- build:css css/site.min.css -->
+    <link rel="stylesheet" href="css/site.css">
+    <!-- endbuild -->
+
+    <!-- build:js js/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body class="peek-effect-door">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="peek-left-content">
+        <a href="#" class="close peek-toggle-left">&#xD7;</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <a href="#" class="peek-close-all">Close All</a>
+        <a href="#" class="peek-close-left">Close left</a>
+        <a href="#" class="peek-open-right">Open Right</a>
+    </div>
+
+    <div class="peek-right-content">
+        <a href="#" class="close peek-toggle-right">&#xD7;</a>
+
+        <nav class="side-nav">
+            <a href="getting-started.html">Getting Started</a>
+            <a href="typography.html">Typography</a>
+            <a href="layout.html">Layout</a>
+            <a href="forms.html">Forms</a>
+            <a href="components.html">Components</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="themes.html">Themes</a>
+            <a href="faq.html">FAQ</a>
+            <a href="download.html" class="primary button">Download</a>
+        </nav>
+    </div>
+
+    <div class="peek-container">
+        <div class="layout-rows">
+            <div class="layout-content-fluid">
+                <header class="four unpadded columns">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/basecoat.svg" alt="Basecoat" class="logo">
+                        </a>
+                    </div>
+                    <nav class="main-nav three wide right-aligned desktop-only">
+                        <a href="getting-started.html">Getting Started</a>
+                        <a href="typography.html">Typography</a>
+                        <a href="layout.html">Layout</a>
+                        <a href="forms.html">Forms</a>
+                        <a href="components.html">Components</a>
+                        <a href="themes.html">Themes</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="download.html" class="button">Download</a>
+                    </nav>
+                    <nav class="three wide right-aligned desktop-hide">
+                        <a href="#" class="peek-toggle-right">MENU</a>
+                    </nav>
+                </header>
+            </div>
+            
+
+<div class="layout-primary">
+    <div class="layout-content-fluid">
+        <div class="seven columns">
+            <div>&#xA0;</div>
+            <div class="seven desktop-six wide">
+                <h1 class="section-title">
+                    Typography
+                    <small>Great content deserves great typography</small>
+                </h1>
+            </div>
+        </div>
+        <div class="seven columns">
+            <div>
+                <ul class="unstyled right-aligned desktop-only">
+                    
+                    <li><a href="#headings">Headings</a></li>
+                    
+                    <li><a href="#inline-elements">Inline Elements</a></li>
+                    
+                    <li><a href="#lists">Lists</a></li>
+                    
+                    <li><a href="#blockquotes">Blockquotes</a></li>
+                    
+                    <li><a href="#preformatted-&amp;-code">Preformatted &amp; Code</a></li>
+                    
+                    <li><a href="#links">Links</a></li>
+                    
+                    <li><a href="#badges">Badges</a></li>
+                    
+                    <li><a href="#icons">Icons</a></li>
+                    
+                    <li><a href="#helpers">Helpers</a></li>
+                    
+                </ul>
+                <a href="#" class="peek-toggle-left desktop-hide">Sections</a>
+            </div>
+            <div class="seven desktop-six wide">
+
+                <p>Typography in Basecoat is king. All elements are carefully styled to match vertical rythms and ensure optimum readability. All dimensions are handled in <code>ems</code> so typography controls the dimensions of all other elements, even if you extend Basecoat to use other font families. All containers are targeted to have a <code>max-width</code> of <code>50em</code>, this way each line of text will be the ideal width so that users can easily find the beginning of the next.</p>
+
+                <p>By default the font family used is <em>sans-serif</em> but you can easiy change the font in the <code>&lt;body&gt;</code> element and all elements will update accordingly.</p>
+
+                
+                    <a id="headings"></a>
+<!--div class="layout-bar alternate">
+    <strong class="layout-bar-primary">Headings</strong>
+    <a href="#headings">Description</a>
+    <a href="#headings-usage">Usage</a>
+    <a href="#headings-variations">Variations</a>
+</div-->
+<h4 class="section-header">Headings</h4>
+<p>Headings are styled and sized in a golden ratio scale.</p>
+
+<div class="headings-demo panel">
+    <div class="panel-title">
+        <h6>Basic Headings</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>They can also have nested taglines.</p>
+
+<div class="headings-demo panel">
+    <div class="panel-title">
+        <h6>Headings with taglines</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <h3>H3 Heading
+                <small>This is the super cool tagline or sub header text</small>
+            </h3>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;h3&gt;H3 Heading
+    &lt;small&gt;This is the super cool tagline or sub header text&lt;/small&gt;
+&lt;/h3&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Or icons. In this example we are using <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> icons but you can use any icon set you want.</p>
+
+<div class="headings-demo panel">
+    <div class="panel-title">
+        <h6>Headings with icons</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <h3>
+                <i class="fa fa-camera-retro"></i> 
+                H3 Heading
+            </h3>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;h3&gt;
+    &lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt; 
+    H3 Heading
+&lt;/h3&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>Or even both!</p>
+
+<div class="headings-demo panel">
+    <div class="panel-title">
+        <h6>Headings with taglines and icons</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <h3 class="layout-object">
+                <i class="fa fa-camera-retro"></i> 
+                <div>H3 Heading <small>This is the super cool tagline or sub header text</small></div>
+            </h3>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;h3 class=&quot;layout-object&quot;&gt;
+    &lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt; 
+    &lt;div&gt;H3 Heading &lt;small&gt;This is the super cool tagline or sub header text&lt;/small&gt;&lt;/div&gt;
+&lt;/h3&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="inline-elements"></a>
+<h4 class="section-header">Inline Elements</h4>
+<p>Inline elements are all tested to maintain the vertical rythm, even new html5 input controls.</p>
+
+<div class="inline-elements-demo panel">
+    <div class="panel-title">
+        <h6>Inline Elements</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <p>This is a paragraph to demonstrate all the inline elements with styles. For example this is <a href="#">a link</a>. An this is <strong>strong text</strong> which should look the same as <b>bold text</b>. You can also <em>emphasize text</em> or make it <i>italic</i>. If you deleted content you can show it as <strike>strikethrough text</strike>.</p>
+
+            <p>Text can also have abbreviations like <abbr title="Federal Bureau of Investigation">FBI</abbr> or acronyms like <acronym title="as soon as possible">ASAP</acronym>. You can even show <sub>Sub</sub> text and <sup>Sup</sup> Text.</p>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;p&gt;This is a paragraph to demonstrate all the inline elements with styles. For example this is &lt;a href=&quot;#&quot;&gt;a link&lt;/a&gt;. An this is &lt;strong&gt;strong text&lt;/strong&gt; which should look the same as &lt;b&gt;bold text&lt;/b&gt;. You can also &lt;em&gt;emphasize text&lt;/em&gt; or make it &lt;i&gt;italic&lt;/i&gt;. If you deleted content you can show it as &lt;strike&gt;strikethrough text&lt;/strike&gt;.&lt;/p&gt;
+
+&lt;p&gt;Text can also have abbreviations like &lt;abbr title=&quot;Federal Bureau of Investigation&quot;&gt;FBI&lt;/abbr&gt; or acronyms like &lt;acronym title=&quot;as soon as possible&quot;&gt;ASAP&lt;/acronym&gt;. You can even show &lt;sub&gt;Sub&lt;/sub&gt; text and &lt;sup&gt;Sup&lt;/sup&gt; Text.&lt;/p&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="lists"></a>
+<h4 class="section-header">Lists</h4>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<div class="lists-demo panel">
+    <div class="panel-title">
+        <h6>Unordered Lists</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3
+                    <ul>
+                        <li>subitem 1</li>
+                        <li>subitem 2</li>
+                        <li>subitem 3</li>
+                    </ul>
+                </li>
+                <li>item 4</li>
+            </ul>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;ul&gt;
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3
+        &lt;ul&gt;
+            &lt;li&gt;subitem 1&lt;/li&gt;
+            &lt;li&gt;subitem 2&lt;/li&gt;
+            &lt;li&gt;subitem 3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;item 4&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="lists-demo panel">
+    <div class="panel-title">
+        <h6>Ordered Lists</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3
+                    <ol>
+                        <li>subitem 1</li>
+                        <li>subitem 2</li>
+                        <li>subitem 3</li>
+                    </ol>
+                </li>
+                <li>item 4</li>
+            </ol>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;ol&gt;
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3
+        &lt;ol&gt;
+            &lt;li&gt;subitem 1&lt;/li&gt;
+            &lt;li&gt;subitem 2&lt;/li&gt;
+            &lt;li&gt;subitem 3&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;item 4&lt;/li&gt;
+&lt;/ol&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="lists-demo panel">
+    <div class="panel-title">
+        <h6>Unstyled Lists</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <ul class="unstyled">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3
+                    <ol class="unstyled">
+                        <li>subitem 1</li>
+                        <li>subitem 2</li>
+                        <li>subitem 3</li>
+                    </ol>
+                </li>
+                <li>item 4</li>
+            </ul>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;ul class=&quot;unstyled&quot;&gt;
+    &lt;li&gt;item 1&lt;/li&gt;
+    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;li&gt;item 3
+        &lt;ol class=&quot;unstyled&quot;&gt;
+            &lt;li&gt;subitem 1&lt;/li&gt;
+            &lt;li&gt;subitem 2&lt;/li&gt;
+            &lt;li&gt;subitem 3&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;item 4&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="definition-lists-demo panel">
+    <div class="panel-title">
+        <h6>Definition Lists</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <dl>
+                <dt>Coffee</dt>
+                <dd>black-hole hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;dl&gt;
+    &lt;dt&gt;Coffee&lt;/dt&gt;
+    &lt;dd&gt;black-hole hot drink&lt;/dd&gt;
+    &lt;dt&gt;Milk&lt;/dt&gt;
+    &lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="inline-definition-lists-demo panel">
+    <div class="panel-title">
+        <h6>Inline Definition Lists</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <dl class="inline">
+                <dt>Coffee</dt>
+                <dd>black-hole hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;dl class=&quot;inline&quot;&gt;
+    &lt;dt&gt;Coffee&lt;/dt&gt;
+    &lt;dd&gt;black-hole hot drink&lt;/dd&gt;
+    &lt;dt&gt;Milk&lt;/dt&gt;
+    &lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="blockquotes"></a>
+<h4 class="section-header">Blockquotes</h4>
+
+<div class="blockquotes-demo panel">
+    <div class="panel-title">
+        <h6>Blockquotes</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>&#x2014; Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                </small>
+            </blockquote>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+    &lt;small&gt;&amp;#x2014; Someone famous in
+        &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+    &lt;/small&gt;
+&lt;/blockquote&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="preformatted-and-code"></a>
+<h4 class="section-header">Preformatted Text &amp; Code</h4>
+
+<div class="preformatted-and-code-demo panel">
+    <div class="panel-title">
+        <h6>Preformatted text &amp; Code</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <pre>
+if (this.is(&apos;a&apos;) == &apos;chunk&apos;){
+    // of preformatted text
+    show(&apos;it&apos;);
+    keeping = &apos;original formatting&apos;;
+    // but inside a &lt;code&gt; tag
+    // this is a very long line of source code that should not wrap around the preformatted text container
+}
+            </pre>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;pre&gt;
+if (this.is(&amp;apos;a&amp;apos;) == &amp;apos;chunk&amp;apos;){
+    // of preformatted text
+    show(&amp;apos;it&amp;apos;);
+    keeping = &amp;apos;original formatting&amp;apos;;
+    // but inside a &amp;lt;code&amp;gt; tag
+    // this is a very long line of source code that should not wrap around the preformatted text container
+}
+&lt;/pre&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="links"></a>
+<h4 class="section-header">Links</h4>
+
+<div class="links-demo panel">
+    <div class="panel-title">
+        <h6>Basic &amp; Colored Links</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <a href="#">This is a Default link</a><br>
+            <a href="#" class="primary">This is a primary colored link</a><br>
+            <a href="#" class="secondary">This is a secondary colored link</a><br>
+            <a href="#" class="rewarding">This is a rewarding colored link</a><br>
+            <a href="#" class="dangerous">This is a dangerous colored link</a><br>
+            <a href="#" class="engaging">This is a engaging colored link</a><br>
+            <a href="#" class="warning">This is a warning colored link</a><br>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;a href=&quot;#&quot;&gt;This is a Default link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;#&quot; class=&quot;primary&quot;&gt;This is a primary colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;#&quot; class=&quot;secondary&quot;&gt;This is a secondary colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;#&quot; class=&quot;rewarding&quot;&gt;This is a rewarding colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;#&quot; class=&quot;dangerous&quot;&gt;This is a dangerous colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;#&quot; class=&quot;engaging&quot;&gt;This is a engaging colored link&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;#&quot; class=&quot;warning&quot;&gt;This is a warning colored link&lt;/a&gt;&lt;br&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+
+<p>For more info on colors, check the <a href="themes.html">Themes</a> page.</p>
+                
+                    <a id="badges"></a>
+<h4 class="section-header">Badges</h4>
+
+<p>Badges are a great way to give extra information to your users in a concise and efficient manner. In Basecoat badges align coherently with surrounding content and can have a <code>circular</code> class for rounded borders. Badges with class <code>tag</code> will get a pointed left edge like a real life tag and will degrade gracefully on older browsers to look like a squared paper tag.</p>
+
+<div class="badges-demo panel">
+    <div class="panel-title">
+        <h6>Badges</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <span class="badge">Default</span>
+            <span class="primary badge">3</span>
+            <span class="warning badge">1,954</span>
+            <span class="dangerous badge">New!</span>
+            <span class="secondary badge"><i class="fa fa-camera"></i> with icon <a href="#"><i class="fa fa-times"></i></a></span>
+            <span class="rewarding badge"><i class="fa fa-camera"></i></span>
+            <span class="warning circular badge">Sale!</span>
+            <span class="engaging tag badge">javascript <a href="#"><i class="fa fa-times"></i></a></span>
+            <p>Inline with text <span class="primary circular badge">Deprecated</span></p>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;span class=&quot;badge&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;primary badge&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;warning badge&quot;&gt;1,954&lt;/span&gt;
+&lt;span class=&quot;dangerous badge&quot;&gt;New!&lt;/span&gt;
+&lt;span class=&quot;secondary badge&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; with icon &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;rewarding badge&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class=&quot;warning circular badge&quot;&gt;Sale!&lt;/span&gt;
+&lt;span class=&quot;engaging tag badge&quot;&gt;javascript &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;p&gt;Inline with text &lt;span class=&quot;primary circular badge&quot;&gt;Deprecated&lt;/span&gt;&lt;/p&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+                    <a id="icons"></a>
+<h4 class="section-header">Icons</h4>
+
+<p>Basecoat&apos;s aim is to serve as a robust and graphically coherent starting point for your app or website. It can be used by itself for a minimalistic look but you are encouraged to extend the base styles and create your own coats. When it comes to icons we understand there are trillions of icons out there, each with their own particular icon set and style. This is why we do not include an icon set with Basecoat. If we did, you would most likely have to include another iconset to meet your specific needs.</p>
+
+<p>There are several very high quality icon sets available, some of which we have tried and work wonderfully with Basecoat are:</p>
+
+<ul>
+    <li><a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a></li>
+    <li><a href="http://fontello.com/">Fontello</a></li>
+    <li><a href="http://typicons.com/">Typicons</a></li>
+</ul>
+                
+                    <a id="helpers"></a>
+<h4 class="section-header">Helpers</h4>
+
+<p>Because we all need a little help once in a while :)</p>
+
+<div class="helpers-demo panel">
+    <div class="panel-title">
+        <h6>Helpers</h6>
+    </div>
+    <div class="tablet-two columns panel-content">
+        <div class="example">
+            <p class="right-aligned">To make this paragraph right aligned just set it&apos;s class to &quot;right-aligned&quot;. This is just some extra text to test the multiline behavior.</p>
+            <p class="left-aligned">To make this paragraph left aligned just set it&apos;s class to &quot;left-aligned&quot;. This is just some extra text to test the multiline behavior.</p>
+            <p class="justified">To make this paragraph justified just set it&apos;s class to &quot;justified&quot;. This is just some extra text to test the multiline behavior.</p>
+            <p class="centered">To make this paragraph centered just set it&apos;s class to &quot;centered&quot;. This is just some extra text to test the multiline behavior.</p>
+
+            <p class="italic">This paragraph has the class &apos;italic&apos;.</p>
+            <p class="bold">This paragraph has the class &apos;bold&apos;.</p>
+            <p class="strikethrough">This paragraph has the class &apos;strikethrough&apos;.</p>
+            <p class="underlined">This paragraph has the class &apos;underlined&apos;.</p>
+        </div>
+        <div class="source">
+            <pre><code class="language-markup">
+&lt;p class=&quot;right-aligned&quot;&gt;To make this paragraph right aligned just set it&amp;apos;s class to &amp;quot;right-aligned&amp;quot;. This is just some extra text to test the multiline behavior.&lt;/p&gt;
+&lt;p class=&quot;left-aligned&quot;&gt;To make this paragraph left aligned just set it&amp;apos;s class to &amp;quot;left-aligned&amp;quot;. This is just some extra text to test the multiline behavior.&lt;/p&gt;
+&lt;p class=&quot;justified&quot;&gt;To make this paragraph justified just set it&amp;apos;s class to &amp;quot;justified&amp;quot;. This is just some extra text to test the multiline behavior.&lt;/p&gt;
+&lt;p class=&quot;centered&quot;&gt;To make this paragraph centered just set it&amp;apos;s class to &amp;quot;centered&amp;quot;. This is just some extra text to test the multiline behavior.&lt;/p&gt;
+
+&lt;p class=&quot;italic&quot;&gt;This paragraph has the class &amp;apos;italic&amp;apos;.&lt;/p&gt;
+&lt;p class=&quot;bold&quot;&gt;This paragraph has the class &amp;apos;bold&amp;apos;.&lt;/p&gt;
+&lt;p class=&quot;strikethrough&quot;&gt;This paragraph has the class &amp;apos;strikethrough&amp;apos;.&lt;/p&gt;
+&lt;p class=&quot;underlined&quot;&gt;This paragraph has the class &amp;apos;underlined&amp;apos;.&lt;/p&gt;
+        </code></pre>
+        </div>
+    </div>
+</div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <footer class="four columns">
+                <div class="four desktop-three wide info">
+                    A <a href="http://www.revolutiondynamics.co" target="_blank">Rev&#xF8;lution Dynamics</a> tool<br class="desktop-hide"> made in Colombia with &#x2665; by <a href="http://www.revolutiondynamics.co/juan-camilo-estela" target="_blank">Juan Camilo Estela</a>
+                </div>
+                <div class="four desktop-one wide github">
+                    <a class="github-button" href="https://github.com/juancamiloestela/BasecoatCSS" data-icon="octicon-star" data-count-href="/juancamiloestela/BasecoatCSS/stargazers" data-count-api="/repos/juancamiloestela/BasecoatCSS#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star juancamiloestela/BasecoatCSS on GitHub">Star</a> 
+                    <a href="https://github.com/juancamiloestela/BasecoatCSS" target="_blank">Github</a> 
+                    <a href="https://github.com/juancamiloestela/BasecoatCSS/issues" target="_blank">Issues</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <!-- build:js js/basecoat.min.js -->
+    <script src="js/basecoat.js"></script>
+    <script src="js/console.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/dismissable.js"></script>
+    <script src="js/elevator.js"></script>
+    <script src="js/peek.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/broken.js"></script>
+    <script src="js/sequence.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/scripts.min.js -->
+    <script src="bower_components/prism/prism.js"></script>
+    <script src="js/site.js"></script>
+    <!-- endbuild -->
+
+    <script>
+    var _gaq = [
+        ['_setAccount', 'UA-XXXXX-X'],
+        ['_trackPageview']
+    ];
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+    </script>
+
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

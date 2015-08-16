@@ -1,0 +1,50 @@
+button,
+.button{
+        margin: 0.5em auto;
+        line-height: 2.25em;
+        text-align: center;
+        border:0;
+        display:inline-block;
+        padding:0 1em;
+        -webkit-user-select: none;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: pointer;
+        vertical-align: baseline;
+    }
+
+    button{
+        font-family:inherit;
+    }
+
+        button:focus,
+        .button:focus{
+            outline: none;
+        }
+        button:hover,
+        .button:hover{
+            text-decoration: none;
+        }
+        button:active,
+        .button:active,
+        button.active,
+        .button.active{
+            
+        }
+        button[disabled],
+        .button[disabled],
+        button.disabled,
+        .button.disabled{
+            pointer-events: none;
+            cursor: not-allowed;
+            opacity: .6;
+            filter: alpha(opacity=60);
+        }
+
+        button.block,
+        .button.block{
+            display:inline-block;
+            width:100%;
+        }
+

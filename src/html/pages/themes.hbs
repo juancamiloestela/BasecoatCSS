@@ -1,0 +1,37 @@
+---
+title: Themes
+sections: 
+---
+
+<div class="layout-primary">
+    <div class="layout-content-fluid">
+        <div class="seven columns">
+            <div>&nbsp;</div>
+            <div class="seven desktop-six wide">
+                <h1 class="section-title">
+                    Themes
+                    <small>Shiny finish paint coats<br> for the artist inside every<span> developer, designer, one</span></small>
+                </h1>
+            </div>
+        </div>
+        <div class="seven columns">
+            <div class="desktop-only">
+                <ul class="unstyled right-aligned">
+                    {{#each sections}}
+                    <li><a href="#{{chain 'lowercase' 'hyphenate' name}}">{{ name }}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="seven desktop-six wide">
+
+                <p>Themes intro</p>
+
+                {{#each sections}}
+                    {{ partial name }}
+                {{/each}}
+
+            </div>
+        </div>
+    </div>
+</div>
+            

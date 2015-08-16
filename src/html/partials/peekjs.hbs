@@ -1,0 +1,113 @@
+<a id="{{ name }}"></a>
+<h4 class="section-header">PeekJS</h4>
+
+<p>Peekjs gives you a full fledged off canvas menu that is triggered by css classes and also provides touch controlled animations on mobile devices. The effects have been abstracted so that you can choose the way the off canvas content is shown by applying the desired coat.</p>
+
+<h5>Try it!</h5>
+<a href="#" class="color1 button peek-toggle-left">Toggle Left Menu</a>
+<a href="#" class="color1 button peek-toggle-right">Toggle Right Menu</a>
+
+<h5>Usage</h5>
+<p>To use peekjs, your layout must have a specific structure. In your <code>&lt;body&gt;</code> you must set the class that defines which effect to use.</p>
+
+<pre><code class="language-markup">
+&lt;body class=&quot;peek-effect-door&quot;&gt;
+</code></pre>
+
+<p>Right inside the <code>&lt;body&gt;</code> tag you must define one or two containers that will have the off canvas content. These will hold your off canvas content.</p>
+
+<pre><code class="language-markup">
+&lt;body class=&quot;peek-effect-door&quot;&gt;
+    &lt;div class=&quot;peek-left&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-left&quot;&gt;Close&lt;/a&gt;
+        This is your off canvas content shown on the left
+    &lt;/div&gt;
+
+    &lt;div class=&quot;peek-right&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-right&quot;&gt;Close&lt;/a&gt;
+        This is your off canvas content shown on the right
+    &lt;/div&gt;
+</code></pre>
+
+<p>At the same level of the peek left and right containers you must now define a <code>peek-container</code>. This element will crop the page during peek events. This allows us to have content inside it that behaves as if it had position fixed, but it won&apos;t screw up when filling forms on iOS. In this example we have set up a fixed header. If we wanted the header to scroll with the rest of the content we would move it into the next required element, the container with class <code>peek-scroll-mask</code>. Inside this container you can place all the content of your page.</p>
+
+<pre><code class="language-markup">
+&lt;body class=&quot;peek-effect-door&quot;&gt;
+    &lt;div class=&quot;peek-left&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-left&quot;&gt;Close&lt;/a&gt;
+        This is your off canvas content shown on the left
+    &lt;/div&gt;
+
+    &lt;div class=&quot;peek-right&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;peek-toggle-right&quot;&gt;Close&lt;/a&gt;
+        This is your off canvas content shown on the right
+    &lt;/div&gt;
+
+    &lt;div class=&quot;peek-container&quot;&gt;
+        Your page
+    &lt;/div&gt;
+</code></pre>
+
+<p>At the end of the document you can optionally set the curtain element that will cover the page content when the user is peeking off canvas. You can create it if you need a custom curtain, if not, peekjs will create a default one.</p>
+
+<pre><code class="language-markup">
+    &lt;div class=&quot;peek-overlay&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<h5>Peek Controls</h5>
+
+<p>To peek into the off canvas containers you can set on any element the <code>class=&quot;peek-toggle-right/left&quot;</code> and when these elements are clicked, the content will be shown. To control it via js you can call the exposed Peekjs methods.</p>
+
+<pre><code class="language-markup">
+&lt;a href=&quot;#&quot; class=&quot;peek-toggle-right&quot;&gt;Toggle Menu&lt;/a&gt;
+&lt;a href=&quot;#&quot; onclick=&quot;Peekjs.openRight();&quot;&gt;Open Menu&lt;/a&gt;
+</code></pre>
+
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>Peekjs.openLeft();</code></td>
+        <td>Opens the left container</td>
+    </tr>
+    <tr>
+        <td><code>Peekjs.openRight();</code></td>
+        <td>Opens the right container</td>
+    </tr>
+    <tr>
+        <td><code>Peekjs.closeLeft();</code></td>
+        <td>Closes the left container</td>
+    </tr>
+    <tr>
+        <td><code>Peekjs.closeRight();</code></td>
+        <td>Closes the right container</td>
+    </tr>
+    <tr>
+        <td><code>Peekjs.toggleLeft();</code></td>
+        <td>Toggles the left container</td>
+    </tr>
+    <tr>
+        <td><code>Peekjs.toggleRight();</code></td>
+        <td>Toggles the right container</td>
+    </tr>
+    <tr>
+        <td><code>Peekjs.closeAll();</code></td>
+        <td>Closes all containers</td>
+    </tr>
+</table>
+
+<h5>Hide Content on Peek</h5>
+<p>To hide elements (eg. a floating header) when the user peeks, just give the elements you wish to hide the class <code>class=&quot;peek-hide-on-peek&quot;</code>.</p>
+
+<h5>Customizing the effect</h5>
+<p>Peekjs comes with 4 effects, to define an effect you do it via a class on the <code>&lt;body&gt;</code> tag. The effects are &apos;peek-effect-door&apos;, &apos;peek-effect-minimize&apos;, &apos;peek-effect-lay-down&apos; and no class for the default effect.</p>
+
+<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;);Peekjs.openRight();">Open Right Default</a>
+<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;) + &apos; peek-effect-door&apos;;Peekjs.openRight();">Open Right Door</a>
+<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;) + &apos; peek-effect-minimize&apos;;Peekjs.openRight();">Open Right Minimize</a>
+<a href="#" class="color1 button" onclick="document.body.className=document.body.className.replace(/peek-effect-[a-z-]+/, &apos; &apos;) + &apos; peek-effect-lay-down&apos;;Peekjs.openRight();">Open Right Lay Down</a>
+
+<p>When the user peeks, the <code>&lt;body&gt;</code> gets a set of classes that can be used to design your preferred transition. When peeking via a button click, or a js method. The body will get a class of <code>peek-open-left/right</code>. When peeking on a mobile device via drag, you will get two additional classes, <code>peek-transitioning</code> and <code>peek-opening/closing-transition</code>.</p>
