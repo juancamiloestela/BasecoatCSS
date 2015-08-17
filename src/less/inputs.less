@@ -15,6 +15,7 @@ textarea{
 textarea{
     height:3.25em;
     display:block;
+    border-radius: 0;
 }
 
 
@@ -42,7 +43,7 @@ input{
     &[type="time"],
     &[type="url"],
     &[type="week"]{
-
+        border-radius: 0;
     }
 
     /* All boxy inputs */
@@ -166,38 +167,5 @@ select{
     &.block{
         margin-top:5px;
         height:21px;
-    }
-}
-
-
-
-.stack{
-    input[type="text"],
-    input[type="password"],
-    input[type="date"],
-    input[type="datetime"],
-    input[type="datetime-local"],
-    input[type="email"],
-    input[type="month"],
-    input[type="number"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="time"],
-    input[type="url"],
-    input[type="week"]{
-        height:1.625em;
-    }
-
-    label{
-        line-height: 1.625em;
-        padding:0 0.5em;
-    }
-
-    &.horizontal{
-        
-        input[type="checkbox"],
-        input[type="radio"]{
-
-        }
     }
 }

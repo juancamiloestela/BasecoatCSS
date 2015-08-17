@@ -1,6 +1,9 @@
 {
   "name": "basecoat",
-  "description": "The front-end framework for artists",
+  "description": "The front end framework for artists",
+  "homepage": "http://basecoatcss.com",
+  "license": "MIT",
+  "version": "0.0.18",
   "keywords": [
     "css",
     "js",
@@ -12,11 +15,8 @@
     "web",
     "phone-gap"
   ],
-  "homepage": "http://basecoatcss.com",
-  "license": "MIT",
-  "version": "0.0.13",
   "main": [
-    "src/less/basecoat.less",
+    "build/css/basecoat.css",
     "build/js/basecoat.min.js"
   ],
   "ignore": [
@@ -24,11 +24,10 @@
     "**/*.txt"
   ],
   "dependencies": {
-    "modernizr": "latest",
     "normalize-css": "3.0.1",
-    "components-font-awesome": "latest"
-  },
-  "devDependencies": {
-    "prism": "~1.0.1"
+    "selectjs": "*",
+    "checkboxjs": "*",
+    "peekjs": "*",
+    "dismissablejs": "*"
   }
 }

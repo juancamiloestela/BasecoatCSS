@@ -1,11 +1,9 @@
 {
   "name": "basecoat",
-  "version": "0.0.13",
-  "repository": "https://bitbucket.org/juancamiloestela/basecoat",
+  "version": "0.0.18",
+  "repository": "https://github.com/juancamiloestela/BasecoatCSS",
   "dependencies": {},
   "devDependencies": {
-    "assemble": "^0.4.42",
-    "cheerio": "^0.19.0",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "~0.7.3",
     "grunt-contrib-clean": "^0.6.0",
@@ -16,12 +14,9 @@
     "grunt-contrib-less": "~0.11.4",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-include-replace": "^3.0.0",
-    "grunt-mustache-html": "^0.1.9",
     "grunt-newer": "^1.1.1",
     "grunt-notify": "^0.3.1",
     "grunt-stripmq": "0.0.6",
-    "grunt-usemin": "^2.4.0",
     "grunt-version": "^0.3.0",
     "time-grunt": "^1.0.0"
   }

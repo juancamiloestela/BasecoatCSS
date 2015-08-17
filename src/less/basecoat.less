@@ -1,6 +1,13 @@
 @import (inline) "../bower_components/normalize-css/normalize.css";
 
+/***************** BASECOAT *****************/
+
+/* Helpers */
+@import "helpers.less";
+@import "browser-window.less";
 @import "mixins.less";
+
+/* Vars */
 @mid-breakpoint: 30em;
 @large-breakpoint: 50em;
 
@@ -15,40 +22,25 @@
 @import "lists.less";
 @import "forms.less";
 @import "images.less";
-@import "tables.less";
 @import "figures.less";
+@import "badges.less";
+@import "icons.less";
+
+/* Layout */
+@import "tables.less";
 @import "dividers.less";
 @import "layout-bar.less";
 @import "panels.less";
-
-/* Helpers */
-@import "helpers.less";
 @import "layouts.less";
-@import "browser-window.less";
-
-/* Organizers */
-//@import "stacks.less";
 @import "grids.less";
+@import "layout-object.less";
 
 /* Components */
 @import "tooltips.less";
-@import "badges.less";
-@import "layout-object.less";
-//@import "progress-bars.less";
 @import "messages.less";
-@import "icons.less";
 @import "loaders.less";
-
-//@import "sizes.less";
-
 @import "colors.less";
 
-@import "components/checkboxjs.less";
-@import "components/dismissablejs.less";
-@import "components/dropdownjs.less";
-@import "components/elevatorjs.less";
-//@import "components/paneljs.less";
-@import "components/peekjs.less";
-@import "components/selectjs.less";
-//@import "components/broken.less";
-//@import "components/header.less";
+@import (inline) "../bower_components/checkboxjs/dist/css/checkboxjs.css";
+@import (inline) "../bower_components/selectjs/dist/css/selectjs.css";
+@import (inline) "../bower_components/peekjs/dist/css/peekjs.css";
