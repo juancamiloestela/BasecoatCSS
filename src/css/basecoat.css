@@ -7249,13 +7249,13 @@ a:hover {
 button,
 .badge,
 .message,
-.selectjs {
+.selectjs .label {
   background-color: #aaaaaa;
   color: #fff;
 }
 button:hover,
 .button:hover,
-.selectjs:hover {
+.selectjs:hover .label {
   background-color: #919191;
   color: #fff;
 }
@@ -7273,13 +7273,13 @@ button.primary,
 .primary.button,
 .primary.badge,
 .primary.message,
-.primary.selectjs {
+.primary.selectjs .label {
   background-color: #0e90d2;
   color: #ffffff;
 }
 button.primary:hover,
 .button.primary:hover,
-.selectjs.primary:hover {
+.selectjs.primary:hover .label {
   background-color: #0e73a8;
   color: #ffffff;
 }
@@ -7312,13 +7312,13 @@ button.secondary,
 .secondary.button,
 .secondary.badge,
 .secondary.message,
-.secondary.selectjs {
+.secondary.selectjs .label {
   background-color: #8058a5;
   color: #ffffff;
 }
 button.secondary:hover,
 .button.secondary:hover,
-.selectjs.secondary:hover {
+.selectjs.secondary:hover .label {
   background-color: #804684;
   color: #ffffff;
 }
@@ -7351,13 +7351,13 @@ button.rewarding,
 .rewarding.button,
 .rewarding.badge,
 .rewarding.message,
-.rewarding.selectjs {
+.rewarding.selectjs .label {
   background-color: #5eb95e;
   color: #ffffff;
 }
 button.rewarding:hover,
 .button.rewarding:hover,
-.selectjs.rewarding:hover {
+.selectjs.rewarding:hover .label {
   background-color: #5e944b;
   color: #ffffff;
 }
@@ -7390,13 +7390,13 @@ button.dangerous,
 .dangerous.button,
 .dangerous.badge,
 .dangerous.message,
-.dangerous.selectjs {
+.dangerous.selectjs .label {
   background-color: #dd514c;
   color: #ffffff;
 }
 button.dangerous:hover,
 .button.dangerous:hover,
-.selectjs.dangerous:hover {
+.selectjs.dangerous:hover .label {
   background-color: #dd413d;
   color: #ffffff;
 }
@@ -7429,13 +7429,13 @@ button.engaging,
 .engaging.button,
 .engaging.badge,
 .engaging.message,
-.engaging.selectjs {
+.engaging.selectjs .label {
   background-color: #f37b1d;
   color: #ffffff;
 }
 button.engaging:hover,
 .button.engaging:hover,
-.selectjs.engaging:hover {
+.selectjs.engaging:hover .label {
   background-color: #f36217;
   color: #ffffff;
 }
@@ -7468,13 +7468,13 @@ button.warning,
 .warning.button,
 .warning.badge,
 .warning.message,
-.warning.selectjs {
+.warning.selectjs .label {
   background-color: #fad232;
   color: #ffffff;
 }
 button.warning:hover,
 .button.warning:hover,
-.selectjs.warning:hover {
+.selectjs.warning:hover .label {
   background-color: #faa828;
   color: #ffffff;
 }
@@ -7493,6 +7493,10 @@ button.warning:hover,
 .tooltip.right > .warning.message:before {
   border-color: transparent #fad232 transparent transparent;
 }
+.broken {
+  background-color: #cacaca;
+}
+/*# sourceMappingURL=broken-js.css.map */
 .checkbox {
   display: inline-block;
   width: 1em;
@@ -7610,19 +7614,19 @@ button.warning:hover,
 .no-csstransforms3d .checkboxjs.switch.checked .indicator {
   left: 50%;
 }
-/*# sourceMappingURL=checkboxjs.css.map */
+/*# sourceMappingURL=checkbox-js.css.map */
 .selectjs {
   display: inline-block;
   line-height: inherit;
-  background-color: #AAA;
+  background-color: transparent;
   vertical-align: middle;
   cursor: pointer;
   color: #fff;
 }
-.selectjs.focused {
+.selectjs.focused .label {
   background-color: #888;
 }
-.selectjs.hover {
+.selectjs.hover .label {
   background-color: #888;
 }
 .selectjs.disabled {
@@ -7636,7 +7640,7 @@ button.warning:hover,
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  background-color: inherit;
+  background-color: #AAA;
   line-height: 1.5em;
 }
 .selectjs div.label:after {
@@ -7651,7 +7655,7 @@ button.warning:hover,
   color: #000;
   color: initial;
 }
-/*# sourceMappingURL=selectjs.css.map */
+/*# sourceMappingURL=select-js.css.map */
 .lt-ie9 .peek-left-content,
 .lt-ie9 .peek-right-content {
   /*display:none;*/
@@ -7880,5 +7884,5 @@ body {
 .no-csstransforms3d .peek-right .peek-container {
   right: -200px;
 }
-/*# sourceMappingURL=peekjs.css.map */
+/*# sourceMappingURL=peek-js.css.map */
 /*# sourceMappingURL=basecoat.css.map */

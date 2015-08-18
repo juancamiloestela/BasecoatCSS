@@ -1,5 +1,5 @@
-/*! basecoat - v0.0.18 - 2015-08-17 */window.Basecoat = {
-	version: "0.0.0",
+/*! basecoat - v0.0.1 - 2015-08-17 */window.Basecoat = {
+	version: "0.0.1",
 };
 // Avoid `console` errors in browsers that lack a console.
 (function() {
@@ -26,7 +26,7 @@
 
 // Place any jQuery/helper plugins in here.
 
-/*! peekjs - v0.0.1 - 2015-08-17 *//* TODO: 
+/*! peek-js - v0.0.1 - 2015-08-17 *//* TODO: 
 - this could be made more efficient:
 	- remove jquery as much as possible
 	- optimize style attribute removal
@@ -416,11 +416,11 @@
 	});
 
 }(jQuery || $));
-/*! selectjs - v0.0.1 - 2015-08-17 *//*!
+/*! select-js - v0.0.1 - 2015-08-17 *//*!
  * Select.js
  * http://www.github.com/juancamiloestela/select.js
  * MIT licensed
- * Version 0.1
+ * Version 0.0.1
  *
  * Copyright (C) 2013 Juan Camilo Estela http://www.mecannical.com
  *
@@ -565,11 +565,11 @@
 
 
 
-/*! checkboxjs - v0.0.0 - 2015-08-17 *//*!
+/*! checkbox-js - v0.0.1 - 2015-08-17 *//*!
  * Checkbox.js
  * http://www.github.com/juancamiloestela/checkbox.js
  * MIT licensed
- * Version 0.1
+ * Version 0.0.1
  *
  * Copyright (C) 2013 Juan Camilo Estela http://www.mecannical.com
  *
@@ -747,7 +747,7 @@
 
 
 
-/*! dismissablejs - v1.0.0 - 2015-08-17 */(function($){
+/*! dismissable-js - v0.0.1 - 2015-08-17 */(function($){
 	'use strict';
 
 	function dismiss(e){
@@ -764,11 +764,11 @@
 	$( document ).on('click', '.dismissable .dismiss', dismiss);
 
 })(jQuery);
-/*! sequencejs - v1.0.1 - 2015-08-17 *//*!
+/*! sequence-js - v0.0.1 - 2015-08-17 *//*!
  * Sequence.js
  * http://www.github.com/juancamiloestela/Sequence.js
  * MIT licensed
- * Version 0.1
+ * Version 0.0.1
  *
  * Copyright (C) 2013 Juan Camilo Estela http://www.mecannical.com
  *
@@ -956,11 +956,11 @@
 
 
 
-/*!
+/*! broken-js - v0.0.2 - 2015-08-17 *//*!
  * Broken.js
  * http://www.github.com/juancamiloestela/select.js
  * MIT licensed
- * Version 0.1
+ * Version 0.0.2
  *
  * Copyright (C) 2013 Juan Camilo Estela http://www.mecannical.com
  *

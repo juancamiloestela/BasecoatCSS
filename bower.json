@@ -3,7 +3,7 @@
   "description": "The front end framework for artists",
   "homepage": "http://basecoatcss.com",
   "license": "MIT",
-  "version": "0.0.18",
+  "version": "0.0.1",
   "keywords": [
     "css",
     "js",
@@ -17,7 +17,7 @@
   ],
   "main": [
     "build/css/basecoat.css",
-    "build/js/basecoat.min.js"
+    "build/js/basecoat.js"
   ],
   "ignore": [
     ".jshintrc",
@@ -25,9 +25,11 @@
   ],
   "dependencies": {
     "normalize-css": "3.0.1",
-    "selectjs": "*",
-    "checkboxjs": "*",
-    "peekjs": "*",
-    "dismissablejs": "*"
+    "select-js": "*",
+    "checkbox-js": "*",
+    "peek-js": "*",
+    "dismissable-js": "*",
+    "sequence-js": "*",
+    "broken-js": "*"
   }
 }

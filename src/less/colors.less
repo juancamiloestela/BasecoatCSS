@@ -72,14 +72,14 @@ a{
 button,
 .badge,
 .message,
-.selectjs,
+.selectjs .label,
 /*.progress > div*/{
     background-color:@default;
     color:#fff;
 }
     button:hover,
     .button:hover,
-    .selectjs:hover{
+    .selectjs:hover .label{
         background-color: darken(@default, 10%);
         color:#fff;
     }
@@ -103,13 +103,13 @@ button,
         &.button,
         &.badge,
         &.message,
-        &.selectjs{
+        &.selectjs .label{
             background-color:@color;
             color:@color-foreground;
         }
             button&:hover,
             .button&:hover,
-            .selectjs&:hover{
+            .selectjs&:hover .label{
                 background-color:@color-hover;
                 color:@color-foreground-hover;
             }

@@ -1,12 +1,7 @@
-- migrate to github
 - revolution landing page and /juan-camilo-estela page
 - cross browser device test
-- split into lib - site repos
-- check fonts and non-used libraries on main layout
 - check build system
 	- full minified site
-	- individual libraries with minified version
-- setup dev branch
 - generate release version
 - add to bower system
 - analitics code
@@ -16,16 +11,6 @@
 
 IE
 - media queries
-- white text on selects
-- no header fonts
-- flex layout rows
-
-- Modal SOMA
-- Zooka Diagram and Test
-- Basecoat + Logo test
-- Hitit/Intercambios page
-- Template tractor
-- SOMA offer page
 
 INDEX
 - slogan

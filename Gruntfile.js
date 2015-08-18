@@ -26,12 +26,12 @@ module.exports = function(grunt) {
 				src: [
 					'<%= dev %>/src/basecoat.js',
 					'<%= dev %>/src/console.js',
-					'<%= dev %>/bower_components/peekjs/dist/js/peek.js',
-					'<%= dev %>/bower_components/selectjs/dist/js/select.js',
-					'<%= dev %>/bower_components/checkboxjs/dist/js/checkbox.js',
-					'<%= dev %>/bower_components/dismissablejs/dist/js/dismissable.js',
-					'<%= dev %>/bower_components/sequence-js/dist/js/sequence.js',
-					'<%= dev %>/bower_components/brokenjs/dist/js/broken.js'
+					'<%= dev %>/bower_components/peek-js/src/js/peek.js',
+					'<%= dev %>/bower_components/select-js/src/js/select.js',
+					'<%= dev %>/bower_components/checkbox-js/src/js/checkbox.js',
+					'<%= dev %>/bower_components/dismissable-js/src/js/dismissable.js',
+					'<%= dev %>/bower_components/sequence-js/src/js/sequence.js',
+					'<%= dev %>/bower_components/broken-js/src/js/broken.js'
 				],
 				dest: '<%= dev %>/js/<%= pkg.name %>.js'
 			}
@@ -143,23 +143,29 @@ module.exports = function(grunt) {
 		},
 
 		version: {
-			options: {
-				release: 'patch'
+			options:{
+				prefix: '(\\* |")?[Vv]ersion[\'"]?\\s*[:=]?\\s*[\'"]?'
+			},
+			defaults: {
+				src: ['bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			},
 			patch: {
-				src: ['package.json', 'bower.json', '<%= prod %>/js/*.js', '<%= prod %>/css/*.css']
+				options: {
+					release: 'patch'
+				},
+				src: ['package.json', 'bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			},
 			minor:{
 				options: {
 					release: 'minor'
 				},
-				src: ['package.json', 'bower.json', '<%= prod %>/js/*.js', '<%= prod %>/css/*.css']
+				src: ['package.json', 'bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			},
 			major:{
 				options: {
 					release: 'major'
 				},
-				src: ['package.json', 'bower.json', '<%= prod %>/js/*.js', '<%= prod %>/css/*.css']
+				src: ['package.json', 'bower.json', '<%= dev %>/src/*.js', '<%= dev %>/less/*.less']
 			}
 		},
 
@@ -187,8 +193,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-stripmq');
 
 	// Default task(s).
-	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'autoprefixer', 'stripmq', 'cssmin']);
-	grunt.registerTask('build', ['default', 'clean', 'copy:main', 'version:patch']);
+	grunt.registerTask('default', ['jshint', 'version:defaults', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin']);
+	grunt.registerTask('build', ['version:patch', 'default', 'clean', 'copy:main']);
 	grunt.registerTask('minor', ['build', 'version:minor']);
 	grunt.registerTask('major', ['build', 'version:major']);
 };
