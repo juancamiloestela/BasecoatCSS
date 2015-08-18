@@ -2,6 +2,8 @@
 
 Please refer to the documentation at http://www.basecoatcss.com
 
+```bower install --save basecoat-css```
+
 # Installation Instructions for Development
 
 Navigate on terminal to the project's root folder.

@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 		concat: {
 			options: {
 				stripBanners: true,
-				banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
+				banner: '/*! basecoat - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
 			},
 			dist: {
 				src: [
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 					'<%= dev %>/bower_components/sequence-js/src/js/sequence.js',
 					'<%= dev %>/bower_components/broken-js/src/js/broken.js'
 				],
-				dest: '<%= dev %>/js/<%= pkg.name %>.js'
+				dest: '<%= dev %>/js/basecoat.js'
 			}
 		},
 
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 			},
 			my_target: {
 				files: {
-					'<%= dev %>/js/<%= pkg.name %>.min.js': ['<%= dev %>/js/<%= pkg.name %>.js']
+					'<%= dev %>/js/basecoat.min.js': ['<%= dev %>/js/basecoat.js']
 				}
 			}
 		},
@@ -55,13 +55,13 @@ module.exports = function(grunt) {
 		less: {
 			css: {
 				files: {
-					'<%= dev %>/css/<%= pkg.name %>.css': '<%= dev %>/less/<%= pkg.name %>.less'
+					'<%= dev %>/css/basecoat.css': '<%= dev %>/less/basecoat.less'
 				},
 				options: {
 					sourceMap: true,
-					sourceMapFilename: '<%= dev %>/css/<%= pkg.name %>.css.map',
+					sourceMapFilename: '<%= dev %>/css/basecoat.css.map',
 					sourceMapRootpath: '../../',
-					sourceMapURL: '<%= pkg.name %>.css.map'
+					sourceMapURL: 'basecoat.css.map'
 				},
 			}
 		},
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: {
-					'<%= dev %>/css/<%= pkg.name %>.css': '<%= dev %>/css/<%= pkg.name %>.css'
+					'<%= dev %>/css/basecoat.css': '<%= dev %>/css/basecoat.css'
 					/*// Components
 					'<%= dev %>/css/components/checkboxjs.css': '<%= dev %>/css/components/checkboxjs.css',
 					'<%= dev %>/css/components/selectjs.css': '<%= dev %>/css/components/selectjs.css',
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 			all: {
 				files: {
 				//follows the pattern 'destination': ['source'] 
-				'<%= dev %>/css/<%= pkg.name %>-oldie.css': ['<%= dev %>/css/<%= pkg.name %>.css']
+				'<%= dev %>/css/basecoat-oldie.css': ['<%= dev %>/css/basecoat.css']
 				}
 			}
 		},
@@ -104,7 +104,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			dist: {
 				files: {
-					'<%= dev %>/css/<%= pkg.name %>.min.css': ['<%= dev %>/css/<%= pkg.name %>.css'],
+					'<%= dev %>/css/basecoat.min.css': ['<%= dev %>/css/basecoat.css'],
 				}
 			}
 		},
