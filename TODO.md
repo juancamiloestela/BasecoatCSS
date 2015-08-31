@@ -6,7 +6,7 @@
 - add to bower system
 - analitics code
 - ab testing
-
+- check what happened with h1's, they seem smaller
 
 
 IE
@@ -23,6 +23,10 @@ GETTING STARTED
 - Installation
 - usage
 - extend
+
+COMPONENTS
+- auto enable/disable of form buttons (form state manager)
+- menu to tab bar/ tabbar.js?
 
 THEMES
 - How does Basecoat work

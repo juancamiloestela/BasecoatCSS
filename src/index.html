@@ -38,8 +38,12 @@
 			-ms-transition: opacity 300ms ease-in;
 			transition: opacity 300ms ease-in;
 		}
-		.broken{
-			background-color: #cacaca;
+		.fake-window{
+			overflow: auto;
+			width:80%;
+			height: 300px;
+			margin: 1em auto;
+			border:4px solid #cacaca;
 		}
 	</style>
 
@@ -48,459 +52,967 @@
 	<!-- endbuild -->
 </head>
 
-<body class="peek-effect-door">
+<body>
 	<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 
-	<div class="peek-left-content">
-		<a href="#" class="close peek-toggle-left">&#xD7;</a>
+	<img src="img/basecoat.svg" alt="Basecoat" class="logo">
 
-		Left Peek Menu
 
-		<a href="#" class="peek-close-all">Close All</a>
-		<a href="#" class="peek-close-left">Close left</a>
-		<a href="#" class="peek-open-right">Open Right</a>
+	<h2>Badges</h2>
+	<div class="test-container">
+		<span class="badge">Default</span>
+		<span class="primary badge">3</span>
+		<span class="warning badge">1,954</span>
+		<span class="dangerous badge">New!</span>
+		<span class="secondary badge"><i class="fa fa-camera"></i> with icon <a href="#"><i class="fa fa-times"></i></a></span>
+		<span class="rewarding badge"><i class="fa fa-camera"></i></span>
+		<span class="warning circular badge">Sale!</span>
+		<p>Inline with text <span class="primary circular badge">Deprecated</span></p>
 	</div>
 
-	<div class="peek-right-content">
-		<a href="#" class="close peek-toggle-right">&#xD7;</a>
-
-		Right Peek Menu
-
-		<a href="#" class="peek-close-all">Close All</a>
-		<a href="#" class="peek-close-right">Close Right</a>
-		<a href="#" class="peek-open-left">Open Left</a>
+	<h2>Blockquotes</h2>
+	<div class="test-container">
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			<small>&mdash; Someone famous in
+				<cite title="Source Title">Source Title</cite>
+			</small>
+		</blockquote>
 	</div>
 
-	<div class="peek-container">
-		<img src="img/basecoat.svg" alt="Basecoat" class="logo">
+	<h2>Brokenjs</h2>
+	<div class="test-container">
+		<img src="Hero Image" width="200" height="150" />
+	</div>
 
-		<h2>Forms</h2>
-		<div class="test-container">
-			<form>
-				<div class="dangerous message">Whoops! We've got some errors here...</div>
-				<div class="form-field error">
-					<label for="name">Default Input</label>
-					<input type="text" id="name" name="name" value="" placeholder="Full name">
-					<div class="help">Your full name.</div>
-					<div class="error">Please type in your name</div>
-				</div>
+	<h2>Buttons</h2>
+	<div class="test-container">
+		<a href="#" class="button">Anchor Button</a>
+		<button>Button</button>
+		<a href="#" class="button disabled">Anchor Button</a>
+		<button disabled="disabled">Button</button>
+		<a href="#" class="button"><i class="fa fa-camera"></i> Anchor Button</a>
+		<button><i class="fa fa-camera"></i> Button</button>
+		<a href="#" class="button">Anchor Button <span class="dangerous badge">2</span></a>
+		<button>Button <span class="engaging circular badge">564</span></button>
+		<a href="#" class="button block">Block Anchor Button</a>
+		<button class="block">Block Button</button>
+		<p>
+			By default buttons are inline-blocks. You can place them in a paragraph like this <a href="#" class="button">Anchor Button</a>
+			or this <button>Button</button> and still keep the vertical rythm.
+		</p>
+		<a href="#" class="primary button">Primary Button</a>
+		<a href="#" class="secondary button">Secondary Button</a>
+		<a href="#" class="rewarding button">Rewarding Button</a>
+		<a href="#" class="dangerous button">Dangerous Button</a>
+		<a href="#" class="engaging button">Engaging Button</a>
+		<a href="#" class="warning button">Warning Button</a>
+	</div>
 
-				<div class="inline form-field error">
-					<label for="name">Inline Input</label>
-					<input type="text" id="name" name="name" value="" placeholder="Full name">
-					<div class="help">Your full name.</div>
-					<div class="error">Please type in your name</div>
-				</div>
+	<h2>Checkboxjs</h2>
+	<div class="test-container">
+		<label for="checkbox-1">Checkbox 1</label>
+		<input type="checkbox" id="checkbox-1" name="checkbox-1" value="yes" />
 
-				<div class="stacked form-field error">
-					<label for="name">Stacked Input</label>
-					<div class="error">Please type in your name</div>
-					<input type="text" id="name" name="name" value="" placeholder="Full name">
-					<div class="help">Your full name.</div>
-				</div>
+		<label for="checkbox-2">Checkbox 2</label>
+		<input type="checkbox" id="checkbox-2" name="checkbox-2" value="yes" class="switch" />
 
-				<div class="mirrored form-field error">
-					<label for="name">
-						Mirrored Input
-						<div class="help">Help can go here.</div>
-					</label>
-					<div class="error">Please type in your name</div>
-					<input type="text" id="name" name="name" value="" placeholder="Full name">
-					<div class="help">Help message can also be placed here.</div>
-				</div>
-			</form>
+		<label for="checkbox-3">Checkbox 3</label>
+		<input type="checkbox" id="checkbox-3" name="checkbox-3" value="yes" class="native" />
+
+		<label for="checkbox-4">Checkbox 4</label>
+		<input type="checkbox" id="checkbox-4" name="checkbox-4" value="yes" disabled="disabled" />
+
+
+		<label for="radio-1">Radio Button 1</label>
+		<input type="radio" id="radio-1" name="radio" value="yes" />
+
+		<label for="radio-2">Radio Button 2</label>
+		<input type="radio" id="radio-2" name="radio" value="yes" />
+
+		<label for="radio-3">Radio Button 3</label>
+		<input type="radio" id="radio-3" name="radio" value="yes" class="switch" />
+
+		<label for="radio-4">Radio Button 4</label>
+		<input type="radio" id="radio-4" name="radio" value="yes" class="native" />
+
+		<label for="radio-5">Radio Button 5</label>
+		<input type="radio" id="radio-5" name="radio" value="yes" disabled="disabled" />
+	</div>
+
+	<h2>Dismissablejs</h2>
+	<div class="test-container">
+		<div class="dismissable">
+			This can be <a href="#" class="dismiss">dismissed</a>
 		</div>
+	</div>
 
+	<h2>Dividers</h2>
+	<div class="test-container">
+		<div class="divider">Divide and Conquer!</div>
+	</div>
 
-		<h2>Panels</h2>
-		<div class="test-container">
-			<div class="panel">
-				<div class="panel-title">
-					<h6>Panel Title</h6>
-				</div>
-				<div class="panel-content">
-					Panel Content
-				</div>
+	<h2>Forms</h2>
+	<div class="test-container">
+		<form>
+			<div class="dangerous message">Whoops! We've got some errors here...</div>
+			<div class="rewarding message">Wohoo! Data saved successfully!</div>
+			<div class="warning message">Warning! a warning message!</div>
+
+			<div class="form-field">
+				<label for="name">Default Input</label>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Your full name.</div>
+				<div class="error">Please type in your name</div>
 			</div>
-		</div>
 
-
-		<h2>Brokenjs</h2>
-		<div class="test-container">
-			<img src="Hero Image" width="200" height="150" />
-		</div>
-
-		<h2>Sequencejs</h2>
-		<div class="test-container">
-			<a href="#" onclick="run();">Run</a>
-
-			<ul class="sequenced-list">
-				<li>One</li>
-				<li>Two</li>
-				<li>Three</li>
-				<li>Four</li>
-				<li>Five</li>
-				<li>Six</li>
-			</ul>
-		</div>
-
-		<h2>Dismissablejs</h2>
-		<div class="test-container">
-			<div class="dismissable">
-				This can be <a href="#" class="dismiss">dismissed</a>
+			<div class="inline form-field">
+				<label for="name">Inline Input</label>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Your full name.</div>
+				<div class="error">Please type in your name</div>
 			</div>
+
+			<div class="stacked form-field">
+				<label for="name">Stacked Input</label>
+				<div class="error">Please type in your name</div>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Your full name.</div>
+			</div>
+
+			<div class="mirrored form-field">
+				<label for="name">
+					Mirrored Input
+					<div class="help">Help can go here.</div>
+				</label>
+				<div class="error">Please type in your name</div>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Help message can also be placed here.</div>
+			</div>
+		</form>
+		<form>
+			<div class="dangerous message">Whoops! We've got some errors here...</div>
+			<div class="form-field error">
+				<label for="name">Default Input</label>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Your full name.</div>
+				<div class="error">Please type in your name</div>
+			</div>
+
+			<div class="inline form-field error">
+				<label for="name">Inline Input</label>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Your full name.</div>
+				<div class="error">Please type in your name</div>
+			</div>
+
+			<div class="stacked form-field error">
+				<label for="name">Stacked Input</label>
+				<div class="error">Please type in your name</div>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Your full name.</div>
+			</div>
+
+			<div class="mirrored form-field error">
+				<label for="name">
+					Mirrored Input
+					<div class="help">Help can go here.</div>
+				</label>
+				<div class="error">Please type in your name</div>
+				<input type="text" id="name" name="name" value="" placeholder="Full name">
+				<div class="help">Help message can also be placed here.</div>
+			</div>
+		</form>
+	</div>
+
+	<h2>Grids</h2>
+	<div class="test-container">
+
+		<label>Helpers</label>
+		<div class="mobile-only">Current: Mobile</div>
+		<div class="tablet-only">Current: Tablet</div>
+		<div class="desktop-only">Current: Desktop</div>
+
+		<div class="mobile-show">Visible on mobile. </div>
+		<div class="tablet-show">Visible on tablet. </div>
+		<div class="desktop-show">Visible on desktop. </div>
+
+		<div class="mobile-hide">Hidden on mobile. </div>
+		<div class="tablet-hide">Hidden on tablet. </div>
+		<div class="desktop-hide">Hidden on desktop. </div>
+
+		<label>A basic grid row</label>
+		<div class="three columns">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
 		</div>
 
-		<h2>Peekjs</h2>
-		<div class="test-container">
-			<a href="#" class="peek-open-left">Open Left</a>
-			<a href="#" class="peek-open-right">Open Right</a>
+		<label>Mobile-six columns</label>
+		<div class="six columns">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
 		</div>
 
-		<h2>Checkboxjs</h2>
-		<div class="test-container">
-			<label for="checkbox-1">Checkbox 1</label>
-			<input type="checkbox" id="checkbox-1" name="checkbox-1" value="yes" />
-
-			<label for="checkbox-2">Checkbox 2</label>
-			<input type="checkbox" id="checkbox-2" name="checkbox-2" value="yes" class="switch" />
-
-			<label for="checkbox-3">Checkbox 3</label>
-			<input type="checkbox" id="checkbox-3" name="checkbox-3" value="yes" class="native" />
-
-			<label for="checkbox-4">Checkbox 4</label>
-			<input type="checkbox" id="checkbox-4" name="checkbox-4" value="yes" disabled="disabled" />
-
-
-			<label for="radio-1">Radio Button 1</label>
-			<input type="radio" id="radio-1" name="radio" value="yes" />
-
-			<label for="radio-2">Radio Button 2</label>
-			<input type="radio" id="radio-2" name="radio" value="yes" />
-
-			<label for="radio-3">Radio Button 3</label>
-			<input type="radio" id="radio-3" name="radio" value="yes" class="switch" />
-
-			<label for="radio-4">Radio Button 4</label>
-			<input type="radio" id="radio-4" name="radio" value="yes" class="native" />
-
-			<label for="radio-5">Radio Button 5</label>
-			<input type="radio" id="radio-5" name="radio" value="yes" disabled="disabled" />
+		<label>Table-six columns</label>
+		<div class="tablet-six columns">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
 		</div>
 
-		<h2>Selectjs</h2>
-		<div class="test-container">
+		<label>Desktop-six columns</label>
+		<div class="desktop-six columns">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+
+		<label>Mobile two - Tablet Three - Desktop-six columns</label>
+		<div class="two tablet-three desktop-six columns">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+
+		<label>Widths</label>
+		<div class="sixteen columns">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+			<div>14</div>
+			<div>15</div>
+			<div>16</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+			<div>14</div>
+			<div class="two wide">15</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+			<div class="three wide">14</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div class="four wide">13</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div class="five wide">12</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div class="six wide">11</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div class="seven wide">10</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div class="eight wide">9</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div class="nine wide">8</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div class="ten wide">7</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div class="eleven wide">6</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div class="twelve wide">5</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div class="thirteen wide">4</div>
+
+			<div>1</div>
+			<div>2</div>
+			<div class="fourteen wide">3</div>
+
+			<div>1</div>
+			<div class="fifteen wide">2</div>
+
+			<div class="sixteen wide">1</div>
+
+
+
+			<div class="fourteen wide">1</div>
+			<div class="two wide">2</div>
+
+			<div class="thirteen wide">1</div>
+			<div class="three wide">2</div>
+
+			<div class="twelve wide">1</div>
+			<div class="four wide">2</div>
+
+			<div class="eleven wide">1</div>
+			<div class="five wide">2</div>
+
+			<div class="ten wide">1</div>
+			<div class="six wide">2</div>
+
+			<div class="nine wide">1</div>
+			<div class="seven wide">2</div>
+
+			<div class="eight wide">1</div>
+			<div class="eight wide">2</div>
+
+			<div class="seven wide">1</div>
+			<div class="nine wide">2</div>
+
+			<div class="six wide">1</div>
+			<div class="ten wide">2</div>
+
+			<div class="five wide">1</div>
+			<div class="eleven wide">2</div>
+
+			<div class="four wide">1</div>
+			<div class="twelve wide">2</div>
+
+			<div class="three wide">1</div>
+			<div class="thirteen wide">2</div>
+
+			<div class="two wide">1</div>
+			<div class="fourteen wide">2</div>
+
+			<div class="four wide">1</div>
+			<div class="four wide">2</div>
+			<div class="four wide">3</div>
+			<div class="four wide">4</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		Multiple rows per row !TODO: wrong paddings should be via nth-child?
+		<div class="three desktop-two tablet-four columns">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div class="desktop-two wide">5</div>
+			<div class="desktop-two tablet-three wide">6</div>
+		</div>
+
+		On mobile [123]
+		On tablet [123]
+		On desktop [122]
+		<div class="three columns">
+			<div>1</div>
+			<div class="desktop-two wide">2</div>
+			<div class="desktop-hide">3</div>
+		</div>
+
+
+
+	</div>
+
+	<h2>Headings</h2>
+	<div class="test-container">
+		<h1>H1 Heading</h1>
+		<h2>H2 Heading</h2>
+		<h3>H3 Heading</h3>
+		<h4>H4 Heading</h4>
+		<h5>H5 Heading</h5>
+		<h6>H6 Heading</h6>
+		<h1>H1 Heading<small>This is the super cool tagline or sub header text</small></h1>
+		<h2>H2 Heading<small>This is the super cool tagline or sub header text</small></h2>
+		<h3>H3 Heading<small>This is the super cool tagline or sub header text</small></h3>
+		<h4>H4 Heading<small>This is the super cool tagline or sub header text</small></h4>
+		<h5>H5 Heading<small>This is the super cool tagline or sub header text</small></h5>
+		<h6>H6 Heading<small>This is the super cool tagline or sub header text</small></h6>
+		<h1><i class="fa fa-camera-retro"></i> H1 Heading</h1>
+		<h2><i class="fa fa-camera-retro"></i> H2 Heading</h2>
+		<h3><i class="fa fa-camera-retro"></i> H3 Heading</h3>
+		<h4><i class="fa fa-camera-retro"></i> H4 Heading</h4>
+		<h5><i class="fa fa-camera-retro"></i> H5 Heading</h5>
+		<h6><i class="fa fa-camera-retro"></i> H6 Heading</h6>
+		<h1 class="layout-object">
+			<i class="fa fa-camera-retro"></i>
+			<div>H1 Heading<small>This is the super cool tagline or sub header text</small></div>
+		</h1>
+		<h2 class="layout-object">
+			<i class="fa fa-camera-retro"></i>
+			<div>H2 Heading<small>This is the super cool tagline or sub header text</small></div>
+		</h2>
+		<h3 class="layout-object">
+			<i class="fa fa-camera-retro"></i>
+			<div>H3 Heading<small>This is the super cool tagline or sub header text</small></div>
+		</h3>
+		<h4 class="layout-object">
+			<i class="fa fa-camera-retro"></i>
+			<div>H4 Heading<small>This is the super cool tagline or sub header text</small></div>
+		</h4>
+		<h5 class="layout-object">
+			<i class="fa fa-camera-retro"></i>
+			<div>H5 Heading<small>This is the super cool tagline or sub header text</small></div>
+		</h5>
+		<h6 class="layout-object">
+			<i class="fa fa-camera-retro"></i>
+			<div>H6 Heading<small>This is the super cool tagline or sub header text</small></div>
+		</h6>
+	</div>
+
+	<h2>Helpers</h2>
+	<div class="test-container">
+		<p class="right-aligned">To make this paragraph right aligned just set it's class to "right-aligned". This is just some extra text to test the multiline behavior.</p>
+        <p class="left-aligned">To make this paragraph left aligned just set it's class to "left-aligned". This is just some extra text to test the multiline behavior.</p>
+        <p class="justified">To make this paragraph justified just set it's class to "justified". This is just some extra text to test the multiline behavior.</p>
+        <p class="centered">To make this paragraph centered just set it's class to "centered". This is just some extra text to test the multiline behavior.</p>
+
+        <p class="italic">This paragraph has the class 'italic'.</p>
+        <p class="bold">This paragraph has the class 'bold'.</p>
+        <p class="strikethrough">This paragraph has the class 'strikethrough'.</p>
+        <p class="underlined">This paragraph has the class 'underlined'.</p>
+	</div>
+
+	<h2>Layout bars</h2>
+	<div class="test-container">
+		Lorem ipsum <div class="layout-bar grouped">
+			<a href="#" class="layout-bar-primary">Hello</a>
+			<span>you</span>
+			<a href="#" class="button">About</a>
+			<input type="text" placeholder="Age" style="width:3em">
+			<label class="desktop-only">
+				Accept:
+				<input type="checkbox">
+			</label>
 			<select>
-				<option value="1">One</option>
-				<option value="2">Two</option>
-				<option value="3">Three</option>
-				<option value="4">Four</option>
+				<option>M</option>
+				<option>F</option>
 			</select>
 		</div>
+		<div class="layout-bar">
+			<a href="#" class="layout-bar-primary">Hello</a>
+			<a href="#" class="button">Sign up</a>
+			<a href="#" class="button desktop-only">About</a>
+			<input type="text" placeholder="Age" class="desktop-only">
+			<label>
+				Accept:
+				<input type="checkbox">
+			</label>
+		</div>
+	</div>
 
-		<h2>Grids</h2>
-		<div class="test-container">
-
-			<label>Helpers</label>
-			<div class="mobile-only">Current: Mobile</div>
-			<div class="tablet-only">Current: Tablet</div>
-			<div class="desktop-only">Current: Desktop</div>
-
-			<div class="mobile-show">Visible on mobile. </div>
-			<div class="tablet-show">Visible on tablet. </div>
-			<div class="desktop-show">Visible on desktop. </div>
-
-			<div class="mobile-hide">Hidden on mobile. </div>
-			<div class="tablet-hide">Hidden on tablet. </div>
-			<div class="desktop-hide">Hidden on desktop. </div>
-
-			<label>A basic grid row</label>
-			<div class="three columns">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-			</div>
-
-			<label>Mobile-six columns</label>
-			<div class="six columns">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-			</div>
-
-			<label>Table-six columns</label>
-			<div class="tablet-six columns">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-			</div>
-
-			<label>Desktop-six columns</label>
-			<div class="desktop-six columns">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-			</div>
-
-			<label>Mobile two - Tablet Three - Desktop-six columns</label>
-			<div class="two tablet-three desktop-six columns">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-			</div>
-
-			<label>Widths</label>
-			<div class="sixteen columns">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div>10</div>
-				<div>11</div>
-				<div>12</div>
-				<div>13</div>
-				<div>14</div>
-				<div>15</div>
-				<div>16</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div>10</div>
-				<div>11</div>
-				<div>12</div>
-				<div>13</div>
-				<div>14</div>
-				<div class="two wide">15</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div>10</div>
-				<div>11</div>
-				<div>12</div>
-				<div>13</div>
-				<div class="three wide">14</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div>10</div>
-				<div>11</div>
-				<div>12</div>
-				<div class="four wide">13</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div>10</div>
-				<div>11</div>
-				<div class="five wide">12</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div>10</div>
-				<div class="six wide">11</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div class="seven wide">10</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div>8</div>
-				<div class="eight wide">9</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
-				<div class="nine wide">8</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div class="ten wide">7</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
-				<div class="eleven wide">6</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div class="twelve wide">5</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div class="thirteen wide">4</div>
-
-				<div>1</div>
-				<div>2</div>
-				<div class="fourteen wide">3</div>
-
-				<div>1</div>
-				<div class="fifteen wide">2</div>
-
-				<div class="sixteen wide">1</div>
-
-
-
-				<div class="fourteen wide">1</div>
-				<div class="two wide">2</div>
-
-				<div class="thirteen wide">1</div>
-				<div class="three wide">2</div>
-
-				<div class="twelve wide">1</div>
-				<div class="four wide">2</div>
-
-				<div class="eleven wide">1</div>
-				<div class="five wide">2</div>
-
-				<div class="ten wide">1</div>
-				<div class="six wide">2</div>
-
-				<div class="nine wide">1</div>
-				<div class="seven wide">2</div>
-
-				<div class="eight wide">1</div>
-				<div class="eight wide">2</div>
-
-				<div class="seven wide">1</div>
-				<div class="nine wide">2</div>
-
-				<div class="six wide">1</div>
-				<div class="ten wide">2</div>
-
-				<div class="five wide">1</div>
-				<div class="eleven wide">2</div>
-
-				<div class="four wide">1</div>
-				<div class="twelve wide">2</div>
-
-				<div class="three wide">1</div>
-				<div class="thirteen wide">2</div>
-
-				<div class="two wide">1</div>
-				<div class="fourteen wide">2</div>
-
-				<div class="four wide">1</div>
-				<div class="four wide">2</div>
-				<div class="four wide">3</div>
-				<div class="four wide">4</div>
-			</div>
-
-
-
-
-
-
-
-
-
-
-			Multiple rows per row !TODO: wrong paddings should be via nth-child?
-			<div class="three desktop-two tablet-four columns">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div class="desktop-two wide">5</div>
-				<div class="desktop-two tablet-three wide">6</div>
-			</div>
-
-			On mobile [123]
-			On tablet [123]
-			On desktop [122]
-			<div class="three columns">
-				<div>1</div>
-				<div class="desktop-two wide">2</div>
-				<div class="desktop-hide">3</div>
-			</div>
-
+	<h2>Layout object</h2>
+	<div class="test-container">
+		<div class="layout-object">
+			<img src="Layout Object" width="80" height="80">
+			<div>This content could be anything, from simple text to more complex controls scoped to the element on the left.</div>
 		</div>
 
+		<div class="layout-object right">
+			<img src="Layout Object" width="80" height="80">
+			<div>The same media object but with the primary element to the right.</div>
+		</div>
+
+		<div class="layout-object">
+			<img src="Layout Object" width="80" height="80">
+			<div>
+				And nested media objects
+				<div class="layout-object">
+					<img src="Sub Object" width="80" height="80">
+					<div>Feels like inception</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2>Layouts</h2>
+	<div class="test-container">
+		<div class="fake-window">
+			<div class="layout-rows">
+				<header style="background-color:#E5E5E5;">This is the header</header>
+				<div class="layout-primary">
+					This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+				</div>
+				<footer style="background-color:#E5E5E5;">This is the footer</footer>
+			</div>
+		</div>
+		<div class="fake-window">
+			<div class="layout-rows layout-fixed">
+				<header style="background-color:#E5E5E5;">This is the header</header>
+				<div class="layout-primary">
+					This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+				</div>
+				<footer style="background-color:#E5E5E5;">This is the footer</footer>
+			</div>
+		</div>
+		<div class="fake-window">
+			<div class="layout-rows layout-fixed">
+				<div class="layout-primary">
+					<header style="background-color:#E5E5E5;">This is the header</header>
+					This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br>
+				</div>
+				<footer style="background-color:#E5E5E5;">This is the footer</footer>
+			</div>
+		</div>
+		<div class="fake-window">
+			<div class="layout-columns">
+				<div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+				<div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+				<div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+			</div>
+		</div>
+		<div class="fake-window">
+			<div class="layout-rows">
+				<header style="background-color:#E5E5E5;">This is the header</header>
+				<div class="layout-columns">
+					<div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+					<div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+					<div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+				</div>
+				<footer style="background-color:#E5E5E5;">This is the footer</footer>
+			</div>
+		</div>
+		<div class="fake-window">
+			<div class="layout-rows layout-fixed">
+				<header style="background-color:#E5E5E5;">This is the header</header>
+				<div class="layout-primary">
+					<div class="layout-columns">
+						<div style="background-color:#EEEEEE;">Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+						<div class="layout-primary">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+						<div style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+					</div>
+				</div>
+				<footer style="background-color:#E5E5E5;">This is the footer</footer>
+			</div>
+		</div>
+		<div class="fake-window">
+			<div class="layout-rows layout-fixed">
+				<header style="background-color:#E5E5E5;">This is the header</header>
+				<div class="layout-primary layout-columns">
+					<div class="layout-navigation layout-scrollable" style="background-color:#EEEEEE;">
+						<div>Navigation content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+					</div>
+					<div class="layout-secondary" style="background-color:#EEEEEE;">Secondary content.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br></div>
+					<div class="layout-primary layout-scrollable">This is the content<br>that<br>can<br>span<br>many<br>lines<br>to<br>allow<br>the<br>main<br>container<br>to<br>scroll<br></div>
+				</div>
+				<footer style="background-color:#E5E5E5;">This is the footer</footer>
+			</div>
+		</div>
+	</div>
+
+	<h2>Links</h2>
+	<div class="test-container">
+		<a href="#">This is a Default link</a>
+		<a href="#" class="primary">This is a primary colored link</a>
+		<a href="#" class="secondary">This is a secondary colored link</a>
+		<a href="#" class="rewarding">This is a rewarding colored link</a>
+		<a href="#" class="dangerous">This is a dangerous colored link</a>
+		<a href="#" class="engaging">This is a engaging colored link</a>
+		<a href="#" class="warning">This is a warning colored link</a>
+	</div>
+
+	<h2>Lists</h2>
+	<div class="test-container">
+		<ul>
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3
+				<ul>
+					<li>subitem 1</li>
+					<li>subitem 2</li>
+					<li>subitem 3</li>
+				</ul>
+			</li>
+			<li>item 4</li>
+		</ul>
+		<ol>
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3
+				<ol>
+					<li>subitem 1</li>
+					<li>subitem 2</li>
+					<li>subitem 3</li>
+				</ol>
+			</li>
+			<li>item 4</li>
+		</ol>
+		<ul class="unstyled">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3
+				<ol class="unstyled">
+					<li>subitem 1</li>
+					<li>subitem 2</li>
+					<li>subitem 3</li>
+				</ol>
+			</li>
+			<li>item 4</li>
+		</ul>
+		<dl>
+			<dt>Coffee</dt>
+			<dd>black-hole hot drink</dd>
+			<dt>Milk</dt>
+			<dd>White cold drink</dd>
+		</dl>
+		<dl class="inline">
+			<dt>Coffee</dt>
+			<dd>black-hole hot drink</dd>
+			<dt>Milk</dt>
+			<dd>White cold drink</dd>
+		</dl>
+	</div>
+
+	<h2>Loaders</h2>
+	<div class="test-container">
+		<p><span class="loading bubble"></span> Inline loading bubble</p>
+		
+		<div class="centered">
+			<div class="loading bubble" style="font-size:3em;"></div><br>
+			Your fancy please wait message
+		</div>
+	</div>
+
+	<h2>Messages</h2>
+	<div class="test-container">
+		<div class="message">
+			<strong>A default message!</strong> <br> Your message goes here. It can be a super loooong message that spans several lines. This is how it looks with a <a href="#">link</a>.
+		</div>
+		<div class="dangerous message">
+			<strong>A error message!</strong> <br> Your message goes here. Run everybody run!
+		</div>
+		<div class="dismissable secondary message">
+			<a href="#" class="close dismiss">&#xD7;</a>
+			<strong>A dismissable message!</strong> <br> You can send me away :(
+		</div>
+	</div>
+
+	<h2>Panels</h2>
+	<div class="test-container">
+		<div class="panel">
+			<div class="panel-title">
+				<h6>Panel Title</h6>
+			</div>
+			<div class="panel-content">
+				Panel Content
+			</div>
+		</div>
+	</div>
+
+	<h2>Preformatted</h2>
+	<div class="test-container">
+		<pre>
+if (this.is('a') == 'chunk'){
+// of preformatted text
+show('it');
+keeping = 'original formatting';
+// but inside a &lt;code&gt; tag
+// this is a very long line of source code that should not wrap around the preformatted text container
+}
+		</pre>
+	</div>
+
+	<h2>Selectjs</h2>
+	<div class="test-container">
+		<select>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+		</select>
+
+		<select class="primary">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+		</select>
+
+		<select class="dangerous">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+		</select>
+
+		<select class="warning">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+		</select>
+	</div>
+
+	<h2>Sequencejs</h2>
+	<div class="test-container">
+		<a href="#" onclick="run();">Run</a>
+
+		<ul class="sequenced-list">
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+			<li>Four</li>
+			<li>Five</li>
+			<li>Six</li>
+		</ul>
+	</div>
+
+	<h2>Tables</h2>
+	<div class="test-container">
+		<table>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First</th>
+					<th>Last</th>
+					<th>User</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Leo</td>
+					<td>Da Vinci</td>
+					<td>leo</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Claude</td>
+					<td>Monet</td>
+					<td>monet</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Paul</td>
+					<td>Cezanne</td>
+					<td>cezanne</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="horizontal borders">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First</th>
+					<th>Last</th>
+					<th>User</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Leo</td>
+					<td>Da Vinci</td>
+					<td>leo</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Claude</td>
+					<td>Monet</td>
+					<td>monet</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Paul</td>
+					<td>Cezanne</td>
+					<td>cezanne</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="vertical borders">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First</th>
+					<th>Last</th>
+					<th>User</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Leo</td>
+					<td>Da Vinci</td>
+					<td>leo</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Claude</td>
+					<td>Monet</td>
+					<td>monet</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Paul</td>
+					<td>Cezanne</td>
+					<td>cezanne</td>
+					<td><a href="#">Action</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<h2>Tooltips</h2>
+	<div class="test-container">
+		Hover to open a 
+		<span class="tooltip">
+			<em>Default Tooltip</em>
+			<div class="message">
+				Hello you :)
+			</div>
+		</span>
+		<span class="tooltip up">
+			I open Up
+			<span class="message">
+				Get up!
+				<a class="button">Do stuff</a>
+			</span>
+		</span>
+		<span class="tooltip right">
+			I open to the Right
+			<span class="message">
+				Wohoo!
+			</span>
+		</span>
+		<span class="tooltip left">
+			I open to the Left
+			<span class="message">
+				Everybody conga to the Left!
+			</span>
+		</span>
+		<span class="tooltip">
+			<em>Colored Tooltip</em>
+			<div class="primary message"  style="width:20em;">
+				This is a very cool tooltip with a very cool <a href="#" class="button">Button</a>
+			</div>
+		</span> with custom width
 	</div>
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
 
-	<script src="js/basecoat.min.js"></script>
+	<script src="js/basecoat-css.min.js"></script>
 
 	<script>
 		function run(){

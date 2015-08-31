@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 				src: [
 					'<%= dev %>/src/basecoat.js',
 					'<%= dev %>/src/console.js',
-					'<%= dev %>/bower_components/peek-js/src/js/peek.js',
+					//'<%= dev %>/bower_components/peek-js/src/js/peek.js',
 					'<%= dev %>/bower_components/select-js/src/js/select.js',
 					'<%= dev %>/bower_components/checkbox-js/src/js/checkbox.js',
 					'<%= dev %>/bower_components/dismissable-js/src/js/dismissable.js',
@@ -74,15 +74,6 @@ module.exports = function(grunt) {
 			css: {
 				files: {
 					'<%= dev %>/css/basecoat.css': '<%= dev %>/css/basecoat.css'
-					/*// Components
-					'<%= dev %>/css/components/checkboxjs.css': '<%= dev %>/css/components/checkboxjs.css',
-					'<%= dev %>/css/components/selectjs.css': '<%= dev %>/css/components/selectjs.css',
-					'<%= dev %>/css/components/peekjs.css': '<%= dev %>/css/components/peekjs.css',
-					// Coats
-					'<%= dev %>/css/coats/colors.css': '<%= dev %>/css/coats/colors.css',
-					'<%= dev %>/css/coats/fonts.css': '<%= dev %>/css/coats/fonts.css',
-					'<%= dev %>/css/coats/pressable.css': '<%= dev %>/css/coats/pressable.css',
-					'<%= dev %>/css/coats/rounded.css': '<%= dev %>/css/coats/rounded.css'*/
 				}
 			}
 		},

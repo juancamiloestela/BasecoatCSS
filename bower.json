@@ -16,18 +16,17 @@
     "phone-gap"
   ],
   "main": [
-    "build/css/basecoat.css",
-    "build/js/basecoat.js"
+    "dist/css/basecoat.css",
+    "dist/js/basecoat.js"
   ],
   "ignore": [
     ".jshintrc",
     "**/*.txt"
   ],
-  "dependencies": {
+  "devDependencies": {
     "normalize-css": "3.0.1",
     "select-js": "*",
     "checkbox-js": "*",
-    "peek-js": "*",
     "dismissable-js": "*",
     "sequence-js": "*",
     "broken-js": "*"
