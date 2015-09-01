@@ -1,11 +1,3 @@
-- revolution landing page and /juan-camilo-estela page
-- cross browser device test
-- check build system
-	- full minified site
-- generate release version
-- add to bower system
-- analitics code
-- ab testing
 - check what happened with h1's, they seem smaller
 
 
