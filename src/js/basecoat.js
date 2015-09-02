@@ -26,7 +26,7 @@
 
 // Place any jQuery/helper plugins in here.
 
-/*! select-js - v0.0.1 - 2015-08-31 *//*!
+/*! select-js - v0.0.1 - 2015-09-01 *//*!
  * Select.js
  * http://www.github.com/juancamiloestela/select.js
  * MIT licensed
@@ -360,7 +360,7 @@
 
 
 
-/*! dismissable-js - v0.0.1 - 2015-08-17 */(function($){
+/*! dismissable-js - v0.0.1 - 2015-09-01 */(function($){
 	'use strict';
 
 	function dismiss(e){
@@ -377,7 +377,7 @@
 	$( document ).on('click', '.dismissable .dismiss', dismiss);
 
 })(jQuery);
-/*! sequence-js - v0.0.1 - 2015-08-17 *//*!
+/*! sequence-js - v0.0.1 - 2015-09-01 *//*!
  * Sequence.js
  * http://www.github.com/juancamiloestela/Sequence.js
  * MIT licensed
@@ -569,7 +569,7 @@
 
 
 
-/*! broken-js - v0.0.2 - 2015-08-17 *//*!
+/*! broken-js - v0.0.2 - 2015-09-01 *//*!
  * Broken.js
  * http://www.github.com/juancamiloestela/select.js
  * MIT licensed
