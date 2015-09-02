@@ -24,6 +24,7 @@
     "**/*.txt"
   ],
   "devDependencies": {
+    "modernizr": "latest",
     "normalize-css": "3.0.1",
     "select-js": "*",
     "checkbox-js": "*",

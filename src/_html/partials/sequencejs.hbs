@@ -9,7 +9,7 @@
 	</div>
 	<div class="tablet-two columns panel-content">
 		<div class="example">
-			<a href="#" class="button" onclick="runSequenceListDemo();">Run</a>
+			<a href="#" class="button" onclick="runSequenceListDemo(event);">Run</a>
 			<ul class="sequenced-list">
 				<li>Item 1</li>
 				<li>Item 2</li>
@@ -32,7 +32,8 @@
 			</style>
 
 			<script>
-				function runSequenceListDemo(){
+				function runSequenceListDemo(e){
+					e.preventDefault();
 					$('.sequenced-list li').sequence({
 						offset: 600, // ms between items
 						properties: {
@@ -62,7 +63,7 @@
 	</div>
 	<div class="tablet-two columns panel-content">
 		<div class="example">
-			<a href="#" class="button" onclick="runSequencePhraseDemo();">Run</a>
+			<a href="#" class="button" onclick="runSequencePhraseDemo(event);">Run</a>
 			<p class="sequenced-phrase">
 				<span>Hi,</span>
 				<span>How </span>
@@ -97,7 +98,8 @@
 			</style>
 
 			<script>
-				function runSequencePhraseDemo(){
+				function runSequencePhraseDemo(e){
+					e.preventDefault();
 					$('.sequenced-phrase span').sequence({
 						offset: 1000, // ms between items
 						add: 'show red', // adds the class show and red

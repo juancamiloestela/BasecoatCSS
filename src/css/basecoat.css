@@ -651,28 +651,70 @@ cite {
   text-decoration: underline;
 }
 @media only screen and (min-width: 30em) {
-  /*body {
-        font-size: 16px;
-    }
-
-    h1 { .h2(); }
-    h2 { .h3(); }
-    h3 { .h4(); }
-    h4 { .h4(); }
-    //h5 { .h5(); }
-    //h6 { .h6(); }*/
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 4.0625em;
+    margin: 0.6em 0 0.4em 0;
+  }
+  h1 small {
+    font-size: 0.4em;
+  }
+  h2 {
+    font-size: 3.25em;
+    margin: 0.5em 0;
+  }
+  h2 small {
+    font-size: 0.5em;
+  }
+  h3 {
+    font-size: 2.4375em;
+    margin: 0.666667em 0;
+  }
+  h3 small {
+    font-size: 0.6667em;
+  }
+  h4 {
+    font-size: 2.4375em;
+    margin: 0.666667em 0;
+  }
+  h4 small {
+    font-size: 0.6667em;
+  }
 }
 @media only screen and (min-width: 50em) {
-  /*body {
-        font-size: 16px;
-    }
-
-    h1 { .h1(); }
-    h2 { .h2(); }
-    h3 { .h3(); }
-    h4 { .h4(); }
-    //h5 { .h5(); }
-    //h6 { .h6(); }*/
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 4.875em;
+    margin: 0.5em 0 0.3334em 0;
+  }
+  h1 small {
+    font-size: 0.5em;
+  }
+  h2 {
+    font-size: 4.0625em;
+    margin: 0.6em 0 0.4em 0;
+  }
+  h2 small {
+    font-size: 0.4em;
+  }
+  h3 {
+    font-size: 3.25em;
+    margin: 0.5em 0;
+  }
+  h3 small {
+    font-size: 0.5em;
+  }
+  h4 {
+    font-size: 2.4375em;
+    margin: 0.666667em 0;
+  }
+  h4 small {
+    font-size: 0.6667em;
+  }
 }
 a {
   text-decoration: none;
@@ -919,6 +961,7 @@ dl.inline:after {
   font-size: 0.8em;
   display: inline-block;
   line-height: 1.625em;
+  color: #B9B9B9;
 }
 .form-field:after {
   content: "";
@@ -7562,7 +7605,7 @@ button.warning:hover,
   padding: 0;
   margin: 2.1%;
   width: 45.84%;
-  height: 91.7%;
+  height: 91.65%;
   border-radius: 0;
   background-color: #efefef;
   position: absolute;
