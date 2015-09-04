@@ -1167,8 +1167,23 @@ figure figcaption {
   line-height: inherit;
 }
 /* Layout */
+.container {
+  padding: 0.5em;
+  margin: 0 auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+.container-full {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 table {
   width: 100%;
+}
+tr {
+  line-height: 2em;
 }
 th {
   padding: 0 0.5em;
@@ -1304,11 +1319,6 @@ table.borders td * {
 }
 .panel .panel-content {
   padding: 0.5em;
-}
-.hero {
-  height: 75%;
-  min-height: 25em;
-  background-color: #EEE;
 }
 .layout-content {
   max-width: 50em;
@@ -7278,7 +7288,7 @@ button:hover,
   background-color: #919191;
   color: #fff;
 }
-.background-primary {
+.primary-background {
   background-color: #0e90d2;
   color: #ffffff;
 }
@@ -7317,7 +7327,7 @@ button.primary:hover,
 .tooltip.right > .primary.message:before {
   border-color: transparent #0e90d2 transparent transparent;
 }
-.background-secondary {
+.secondary-background {
   background-color: #8058a5;
   color: #ffffff;
 }
@@ -7356,7 +7366,7 @@ button.secondary:hover,
 .tooltip.right > .secondary.message:before {
   border-color: transparent #8058a5 transparent transparent;
 }
-.background-rewarding {
+.rewarding-background {
   background-color: #5eb95e;
   color: #ffffff;
 }
@@ -7395,7 +7405,7 @@ button.rewarding:hover,
 .tooltip.right > .rewarding.message:before {
   border-color: transparent #5eb95e transparent transparent;
 }
-.background-dangerous {
+.dangerous-background {
   background-color: #dd514c;
   color: #ffffff;
 }
@@ -7434,7 +7444,7 @@ button.dangerous:hover,
 .tooltip.right > .dangerous.message:before {
   border-color: transparent #dd514c transparent transparent;
 }
-.background-engaging {
+.engaging-background {
   background-color: #f37b1d;
   color: #ffffff;
 }
@@ -7473,7 +7483,7 @@ button.engaging:hover,
 .tooltip.right > .engaging.message:before {
   border-color: transparent #f37b1d transparent transparent;
 }
-.background-warning {
+.warning-background {
   background-color: #fad232;
   color: #ffffff;
 }

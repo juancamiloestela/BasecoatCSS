@@ -78,7 +78,7 @@ module.exports = function(grunt) {
 			}
 		},
 
-		stripmq: {
+		/*stripmq: {
 			//Viewport options 
 			options: {
 				width: 1000,
@@ -88,6 +88,17 @@ module.exports = function(grunt) {
 				files: {
 				//follows the pattern 'destination': ['source'] 
 				'<%= dev %>/css/basecoat-oldie.css': ['<%= dev %>/css/basecoat.css']
+				}
+			}
+		},*/
+
+		mqe: {
+			options: {
+				log: true
+			},
+			all: {
+				files: {
+					'_mqtmp': ['<%= dev %>/css/basecoat.css']
 				}
 			}
 		},
@@ -181,10 +192,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-notify');
 	grunt.loadNpmTasks('grunt-version');
 	grunt.loadNpmTasks('grunt-newer');
-	grunt.loadNpmTasks('grunt-stripmq');
+	grunt.loadNpmTasks('grunt-media-query-extractor');
 
 	// Default task(s).
-	grunt.registerTask('default', ['jshint', 'version:defaults', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin']);
+	grunt.registerTask('default', ['jshint', 'version:defaults', 'concat', 'uglify', 'less', 'autoprefixer', 'mqe', 'cssmin']);
 	grunt.registerTask('build', ['version:patch', 'default', 'clean', 'copy:main']);
 	grunt.registerTask('minor', ['build', 'version:minor']);
 	grunt.registerTask('major', ['build', 'version:major']);

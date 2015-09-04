@@ -45,6 +45,13 @@
 			margin: 1em auto;
 			border:4px solid #cacaca;
 		}
+		.container{
+			background-color:#E3D5EC;
+		}
+		.container-full{
+			background-color:#B69BC7;
+		}
+
 	</style>
 
 	<!-- build:js js/modernizr.min.js -->
@@ -140,6 +147,24 @@
 
 		<label for="radio-5">Radio Button 5</label>
 		<input type="radio" id="radio-5" name="radio" value="yes" disabled="disabled" />
+	</div>
+
+	<h2>Containers</h2>
+	<div class="test-container">
+		<div class="container">
+			container
+			<nav>nav</nav>
+			<div class="container-full">
+				container-full
+			</div>
+		</div>
+		<div class="container-full">
+			container-full
+			<nav>nav</nav>
+			<div class="container">
+				container
+			</div>
+		</div>
 	</div>
 
 	<h2>Dismissablejs</h2>
@@ -1012,7 +1037,7 @@ keeping = 'original formatting';
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
 
-	<script src="js/basecoat-css.min.js"></script>
+	<script src="js/basecoat.min.js"></script>
 
 	<script>
 		function run(){

@@ -1,4 +1,4 @@
-/*! basecoat - v0.0.1 - 2015-09-01 */window.Basecoat = {
+/*! basecoat - v0.0.1 - 2015-09-04 */window.Basecoat = {
 	version: "0.0.1",
 };
 // Avoid `console` errors in browsers that lack a console.
