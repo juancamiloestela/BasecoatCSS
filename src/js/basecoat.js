@@ -1,5 +1,5 @@
-/*! basecoat - v0.0.1 - 2015-09-04 */window.Basecoat = {
-	version: "0.0.1",
+/*! basecoat - v0.0.1 - 2015-10-14 */window.Basecoat = {
+	version: "0.0.2",
 };
 // Avoid `console` errors in browsers that lack a console.
 (function() {
@@ -175,7 +175,7 @@
 
 
 
-/*! checkbox-js - v0.0.1 - 2015-09-01 *//*!
+/*! checkbox-js - v0.0.1 - 2015-09-19 *//*!
  * Checkbox.js
  * http://www.github.com/juancamiloestela/checkbox.js
  * MIT licensed
@@ -303,7 +303,7 @@
 			$checkbox.append($indicator).insertBefore($el);
 
 			// hide DOM checkbox inside
-			$checkbox.append($el.remove().css({
+			$checkbox.append($el.css({
 				'top': '0',
 				'width': '100%',
 				'height': '100%',
@@ -322,6 +322,7 @@
 					.on('change', {}, elChanged);
 
 			refresh();
+			setTimeout(refresh, 50);
 		}
 
 		(function init(){
